@@ -1,0 +1,49 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+.peliculas{
+    max-width: 90%;
+    margin: auto;
+}
+
+//MENU CAJA
+
+.peliculas_menu_caja{
+    background-color: $color_secundario;
+    border-radius: 10px;
+    width: 20%;
+    padding: 0.5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.select_genero{
+    background-color: $color_detalles;
+    color: white;
+    font-family: $fuente_principal;
+    border-radius: 5px;
+}
+
+.peliculas_titulo{
+    font-family: $fuente_principal;
+    color: white;
+}
+
+.options{
+    font-family: $fuente_principal;
+}
+
+.options_select{
+    color: white;
+    font-weight: bold;
+}
+
+//PEliculas

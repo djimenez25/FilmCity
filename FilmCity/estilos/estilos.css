@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poller+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poller+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+<<<<<<< Updated upstream
 * {
   padding: 0;
   margin: 0;
@@ -52,4 +53,49 @@ header .titulo {
 }
 header .titulo h3 {
   text-shadow: 2px 2px 4px #ffffff, -2px -2px 5px rgba(255, 255, 255, 0.5);
+=======
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.peliculas {
+  max-width: 90%;
+  margin: auto;
+}
+
+.peliculas_menu_caja {
+  background-color: #4b4444;
+  border-radius: 10px;
+  width: 20%;
+  padding: 0.5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.select_genero {
+  background-color: #242432;
+  color: white;
+  font-family: "Poppins", serif;
+  border-radius: 5px;
+}
+
+.peliculas_titulo {
+  font-family: "Poppins", serif;
+  color: white;
+}
+
+.options {
+  font-family: "Poppins", serif;
+}
+
+.options_select {
+  color: white;
+  font-weight: bold;
+>>>>>>> Stashed changes
 }/*# sourceMappingURL=estilos.css.map */
