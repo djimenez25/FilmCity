@@ -16,13 +16,16 @@ img{
 //MENU CAJA
 
 .peliculas_menu_caja{
-    background-color: $color_secundario;
-    border-radius: 10px;
-    width: 20%;
+    background-color: red;
+    border-radius: 20px;
+    width: 25%;
     padding: 0.5%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
+}
 
+.peliculas_titulo{
+    display: none;
 }
 
 .select_genero{
@@ -30,11 +33,7 @@ img{
     color: white;
     font-family: $fuente_principal;
     border-radius: 5px;
-}
-
-.peliculas_titulo{
-    font-family: $fuente_principal;
-    color: white;
+    padding: 5%;
 }
 
 .options{
@@ -47,3 +46,56 @@ img{
 }
 
 //PELICULAS
+
+//RESPONSIVE
+
+@media (min-width: 576px) { 
+
+    .peliculas_menu_caja{
+        margin: auto;
+        width: 70%;
+    }
+
+    .peliculas_select{
+        width: 100%;
+        text-align: center;
+    }
+
+ }
+
+@media (min-width: 768px) { 
+    
+    .peliculas_titulo{
+        display: block;
+        font-family: $fuente_principal;
+        color: white;
+        align-content: center;
+        text-align: center;
+    }
+
+    .peliculas_select{
+        text-align: center;
+    }
+
+    .select_genero{
+        padding: 2%;
+    }
+        
+}
+
+@media (min-width: 992px) { 
+    
+    .peliculas_menu_caja{
+        width: 50%;
+    }
+    
+}
+
+@media (min-width: 1200px) { 
+    
+
+ }
+
+@media (min-width: 1400px) { 
+
+ }
