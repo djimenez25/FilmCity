@@ -70,62 +70,66 @@ img {
 }
 
 .peliculas_menu_caja {
-  background-color: red;
-  border-radius: 20px;
-  width: 25%;
-  padding: 0.5%;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr;
+  background-color: rgba(75, 68, 68, 0.2980392157);
+  border-radius: 20px;
+  padding: 1%;
 }
 
 .peliculas_titulo {
+  color: white;
   display: none;
+  font-family: "Poppins", serif;
+  align-content: center;
 }
 
-.select_genero {
+.peliculas_select {
+  margin: auto;
+  text-align: center;
+  width: 60%;
+  font-family: "Poppins", serif;
+}
+.peliculas_select .select_genero {
+  width: 100%;
   background-color: #242432;
+  border: none;
   color: white;
-  font-family: "Poppins", serif;
-  border-radius: 5px;
-  padding: 5%;
+  padding: 2%;
+  text-align: center;
 }
-
-.options {
-  font-family: "Poppins", serif;
-}
-
-.options_select {
-  color: white;
+.peliculas_select .select_genero .options_select {
   font-weight: bold;
 }
 
-@media (min-width: 576px) {
-  .peliculas_menu_caja {
-    margin: auto;
-    width: 70%;
-  }
-  .peliculas_select {
-    width: 100%;
-    text-align: center;
-  }
-}
 @media (min-width: 768px) {
+  .peliculas_menu_caja {
+    grid-template-columns: 1fr 3fr;
+    width: 80%;
+    margin: auto;
+  }
   .peliculas_titulo {
     display: block;
-    font-family: "Poppins", serif;
-    color: white;
-    align-content: center;
-    text-align: center;
+    text-align: end;
   }
-  .peliculas_select {
-    text-align: center;
-  }
-  .select_genero {
-    padding: 2%;
+  .peliculas_select .select_genero {
+    width: 120%;
   }
 }
 @media (min-width: 992px) {
   .peliculas_menu_caja {
     width: 50%;
+    margin: 0;
+  }
+  .peliculas_select .select_genero {
+    width: 120%;
+  }
+}
+@media (min-width: 1200px) {
+  .peliculas_menu_caja {
+    width: 40%;
+  }
+  .peliculas_select .select_genero {
+    width: 130%;
   }
 }/*# sourceMappingURL=estilos.css.map */
