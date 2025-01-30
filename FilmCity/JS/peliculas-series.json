@@ -1,0 +1,1434 @@
+{
+    "peliculas": [
+        {
+            "Id": 1,
+            "Title": "Harry Potter and the Sorcerer's Stone",
+            "Year": "2001",
+            "Rated": "PG",
+            "Released": "16 Nov 2001",
+            "Runtime": "152 min",
+            "Genre": "Adventure, Family, Fantasy",
+            "Director": "Chris Columbus",
+            "Writer": "J.K. Rowling, Steve Kloves",
+            "Actors": "Daniel Radcliffe, Rupert Grint, Emma Watson",
+            "Plot": "An orphaned boy enrolls in a school of wizardry, where he learns the truth about himself, his family and the terrible evil that haunts the magical world.",
+            "Language": "English, Latin",
+            "Country": "United Kingdom, United States",
+            "Awards": "Nominated for 3 Oscars. 20 wins & 74 nominations total",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BNTU1MzgyMDMtMzBlZS00YzczLThmYWEtMjU3YmFlOWEyMjE1XkEyXkFqcGc@._V1_SX300.jpg",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "7.7/10"
+                },
+                {
+                    "Source": "Rotten Tomatoes",
+                    "Value": "80%"
+                },
+                {
+                    "Source": "Metacritic",
+                    "Value": "65/100"
+                }
+            ],
+            "Metascore": "65",
+            "imdbRating": "7.7",
+            "imdbVotes": "885,142",
+            "imdbID": "tt0241527",
+            "Type": "movie",
+            "DVD": "N/A",
+            "BoxOffice": "$318,886,962",
+            "Production": "N/A",
+            "Website": "N/A",
+            "Response": "True"
+        },
+        {
+            "Id": 2,
+            "Title": "Harry Potter and the Prisoner of Azkaban",
+            "Year": "2004",
+            "Rated": "PG",
+            "Released": "04 Jun 2004",
+            "Runtime": "142 min",
+            "Genre": "Adventure, Family, Fantasy",
+            "Director": "Alfonso Cuarón",
+            "Writer": "J.K. Rowling, Steve Kloves",
+            "Actors": "Daniel Radcliffe, Emma Watson, Rupert Grint",
+            "Plot": "Harry Potter, Ron and Hermione return to Hogwarts School of Witchcraft and Wizardry for their third year of study, where they delve into the mystery surrounding an escaped prisoner who poses a dangerous threat to the young wizard.",
+            "Language": "English, Latin, Old English",
+            "Country": "United Kingdom, United States",
+            "Awards": "Nominated for 2 Oscars. 17 wins & 56 nominations total",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BMTY4NTIwODg0N15BMl5BanBnXkFtZTcwOTc0MjEzMw@@._V1_SX300.jpg",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "7.9/10"
+                },
+                {
+                    "Source": "Rotten Tomatoes",
+                    "Value": "90%"
+                },
+                {
+                    "Source": "Metacritic",
+                    "Value": "82/100"
+                }
+            ],
+            "Metascore": "82",
+            "imdbRating": "7.9",
+            "imdbVotes": "715,917",
+            "imdbID": "tt0304141",
+            "Type": "movie",
+            "DVD": "N/A",
+            "BoxOffice": "$250,105,651",
+            "Production": "N/A",
+            "Website": "N/A",
+            "Response": "True"
+        },
+        {
+            "Id": 3,
+            "Title": "Argo",
+            "Year": "2012",
+            "Rated": "R",
+            "Released": "12 Oct 2012",
+            "Runtime": "120 min",
+            "Genre": "Biography, Drama, History",
+            "Director": "Ben Affleck",
+            "Writer": "Chris Terrio, Tony Mendez, Joshuah Bearman",
+            "Actors": "Ben Affleck, Bryan Cranston, John Goodman",
+            "Plot": "Acting under the cover of a Hollywood producer scouting a location for a science fiction film, a CIA agent launches a dangerous operation to rescue six Americans in Tehran during the U.S. hostage crisis in Iran in 1979.",
+            "Language": "English, Persian, German, Arabic",
+            "Country": "United Kingdom, United States",
+            "Awards": "Won 3 Oscars. 96 wins & 156 nominations total",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BM2QyMGUyZTEtMjE4Yi00M2RiLTgwN2QtZDMxZDNiMTFkMTFjXkEyXkFqcGc@._V1_SX300.jpg",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "7.7/10"
+                },
+                {
+                    "Source": "Rotten Tomatoes",
+                    "Value": "96%"
+                },
+                {
+                    "Source": "Metacritic",
+                    "Value": "86/100"
+                }
+            ],
+            "Metascore": "86",
+            "imdbRating": "7.7",
+            "imdbVotes": "646,488",
+            "imdbID": "tt1024648",
+            "Type": "movie",
+            "DVD": "N/A",
+            "BoxOffice": "$136,025,503",
+            "Production": "N/A",
+            "Website": "N/A",
+            "Response": "True"
+        },
+        {
+            "Id": 4,
+            "Title": "Jurassic Park",
+            "Year": "1993",
+            "Rated": "PG-13",
+            "Released": "11 Jun 1993",
+            "Runtime": "127 min",
+            "Genre": "Action, Adventure, Sci-Fi",
+            "Director": "Steven Spielberg",
+            "Writer": "Michael Crichton, David Koepp",
+            "Actors": "Sam Neill, Laura Dern, Jeff Goldblum",
+            "Plot": "An industrialist invites some experts to visit his theme park of cloned dinosaurs. After a power failure, the creatures run loose, putting everyone's lives, including his grandchildren's, in danger.",
+            "Language": "English, Spanish",
+            "Country": "United States",
+            "Awards": "Won 3 Oscars. 44 wins & 27 nominations total",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BMjM2MDgxMDg0Nl5BMl5BanBnXkFtZTgwNTM2OTM5NDE@._V1_SX300.jpg",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "8.2/10"
+                },
+                {
+                    "Source": "Rotten Tomatoes",
+                    "Value": "91%"
+                },
+                {
+                    "Source": "Metacritic",
+                    "Value": "68/100"
+                }
+            ],
+            "Metascore": "68",
+            "imdbRating": "8.2",
+            "imdbVotes": "1,097,944",
+            "imdbID": "tt0107290",
+            "Type": "movie",
+            "DVD": "N/A",
+            "BoxOffice": "$407,185,075",
+            "Production": "N/A",
+            "Website": "N/A",
+            "Response": "True"
+        },
+        {
+            "Id": 5,
+            "Title": "Jurassic World",
+            "Year": "2015",
+            "Rated": "PG-13",
+            "Released": "12 Jun 2015",
+            "Runtime": "124 min",
+            "Genre": "Action, Adventure, Sci-Fi",
+            "Director": "Colin Trevorrow",
+            "Writer": "Rick Jaffa, Amanda Silver, Colin Trevorrow",
+            "Actors": "Chris Pratt, Bryce Dallas Howard, Ty Simpkins",
+            "Plot": "A new theme park, built on the original site of Jurassic Park, creates a genetically modified hybrid dinosaur, the Indominus Rex, which escapes containment and goes on a killing spree.",
+            "Language": "English",
+            "Country": "United States, Canada",
+            "Awards": "15 wins & 58 nominations total",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BNzBhNzlkM2UtZTQyOC00NjUyLTkzMmMtNDQ1YTM5N2NmMGE5XkEyXkFqcGc@._V1_SX300.jpg",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "6.9/10"
+                },
+                {
+                    "Source": "Rotten Tomatoes",
+                    "Value": "72%"
+                },
+                {
+                    "Source": "Metacritic",
+                    "Value": "59/100"
+                }
+            ],
+            "Metascore": "59",
+            "imdbRating": "6.9",
+            "imdbVotes": "693,345",
+            "imdbID": "tt0369610",
+            "Type": "movie",
+            "DVD": "N/A",
+            "BoxOffice": "$653,406,625",
+            "Production": "N/A",
+            "Website": "N/A",
+            "Response": "True"
+        },
+        {
+            "Id": 6,
+            "Title": "The Lord of the Rings: The Fellowship of the Ring",
+            "Year": "2001",
+            "Rated": "PG-13",
+            "Released": "19 Dec 2001",
+            "Runtime": "178 min",
+            "Genre": "Adventure, Drama, Fantasy",
+            "Director": "Peter Jackson",
+            "Writer": "J.R.R. Tolkien, Fran Walsh, Philippa Boyens",
+            "Actors": "Elijah Wood, Ian McKellen, Orlando Bloom",
+            "Plot": "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.",
+            "Language": "English, Sindarin",
+            "Country": "New Zealand, United States, United Kingdom",
+            "Awards": "Won 4 Oscars. 125 wins & 126 nominations total",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BNzIxMDQ2YTctNDY4MC00ZTRhLTk4ODQtMTVlOWY4NTdiYmMwXkEyXkFqcGc@._V1_SX300.jpg",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "8.9/10"
+                },
+                {
+                    "Source": "Rotten Tomatoes",
+                    "Value": "92%"
+                },
+                {
+                    "Source": "Metacritic",
+                    "Value": "92/100"
+                }
+            ],
+            "Metascore": "92",
+            "imdbRating": "8.9",
+            "imdbVotes": "2,072,339",
+            "imdbID": "tt0120737",
+            "Type": "movie",
+            "DVD": "N/A",
+            "BoxOffice": "$319,372,078",
+            "Production": "N/A",
+            "Website": "N/A",
+            "Response": "True"
+        },
+        {
+            "Id": 7,
+            "Title": "The Avengers",
+            "Year": "2012",
+            "Rated": "PG-13",
+            "Released": "04 May 2012",
+            "Runtime": "143 min",
+            "Genre": "Action, Sci-Fi",
+            "Director": "Joss Whedon",
+            "Writer": "Joss Whedon, Zak Penn",
+            "Actors": "Robert Downey Jr., Chris Evans, Scarlett Johansson",
+            "Plot": "Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.",
+            "Language": "English, Russian",
+            "Country": "United States",
+            "Awards": "Nominated for 1 Oscar. 39 wins & 81 nominations total",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BNGE0YTVjNzUtNzJjOS00NGNlLTgxMzctZTY4YTE1Y2Y1ZTU4XkEyXkFqcGc@._V1_SX300.jpg",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "8.0/10"
+                },
+                {
+                    "Source": "Rotten Tomatoes",
+                    "Value": "91%"
+                },
+                {
+                    "Source": "Metacritic",
+                    "Value": "69/100"
+                }
+            ],
+            "Metascore": "69",
+            "imdbRating": "8.0",
+            "imdbVotes": "1,490,358",
+            "imdbID": "tt0848228",
+            "Type": "movie",
+            "DVD": "N/A",
+            "BoxOffice": "$623,357,910",
+            "Production": "N/A",
+            "Website": "N/A",
+            "Response": "True"
+        },
+        {
+            "Id": 8,
+            "Title": "Avengers: Endgame",
+            "Year": "2019",
+            "Rated": "PG-13",
+            "Released": "26 Apr 2019",
+            "Runtime": "181 min",
+            "Genre": "Action, Adventure, Drama",
+            "Director": "Anthony Russo, Joe Russo",
+            "Writer": "Christopher Markus, Stephen McFeely, Stan Lee",
+            "Actors": "Robert Downey Jr., Chris Evans, Mark Ruffalo",
+            "Plot": "After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.",
+            "Language": "English, Japanese, Xhosa, German",
+            "Country": "United States",
+            "Awards": "Nominated for 1 Oscar. 70 wins & 133 nominations total",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_SX300.jpg",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "8.4/10"
+                },
+                {
+                    "Source": "Rotten Tomatoes",
+                    "Value": "94%"
+                },
+                {
+                    "Source": "Metacritic",
+                    "Value": "78/100"
+                }
+            ],
+            "Metascore": "78",
+            "imdbRating": "8.4",
+            "imdbVotes": "1,328,385",
+            "imdbID": "tt4154796",
+            "Type": "movie",
+            "DVD": "N/A",
+            "BoxOffice": "$858,373,000",
+            "Production": "N/A",
+            "Website": "N/A",
+            "Response": "True"
+        },
+        {
+            "Id": 9,
+            "Title": "The Good, the Bad and the Ugly",
+            "Year": "1966",
+            "Rated": "R",
+            "Released": "29 Dec 1967",
+            "Runtime": "178 min",
+            "Genre": "Adventure, Drama, Western",
+            "Director": "Sergio Leone",
+            "Writer": "Luciano Vincenzoni, Sergio Leone, Agenore Incrocci",
+            "Actors": "Clint Eastwood, Eli Wallach, Lee Van Cleef",
+            "Plot": "A bounty-hunting scam joins two men in an uneasy alliance against a third in a race to find a fortune in gold buried in a remote cemetery.",
+            "Language": "English, Italian",
+            "Country": "Italy, Spain, West Germany, United States",
+            "Awards": "2 wins & 5 nominations total",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BMWM5ZjQxM2YtNDlmYi00ZDNhLWI4MWUtN2VkYjBlMTY1ZTkwXkEyXkFqcGc@._V1_SX300.jpg",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "8.8/10"
+                },
+                {
+                    "Source": "Rotten Tomatoes",
+                    "Value": "97%"
+                },
+                {
+                    "Source": "Metacritic",
+                    "Value": "90/100"
+                }
+            ],
+            "Metascore": "90",
+            "imdbRating": "8.8",
+            "imdbVotes": "838,907",
+            "imdbID": "tt0060196",
+            "Type": "movie",
+            "DVD": "N/A",
+            "BoxOffice": "$25,100,000",
+            "Production": "N/A",
+            "Website": "N/A",
+            "Response": "True"
+        },
+        {
+            "Id": 10,
+            "Title": "The Dark Knight",
+            "Year": "2008",
+            "Rated": "PG-13",
+            "Released": "18 Jul 2008",
+            "Runtime": "152 min",
+            "Genre": "Action, Crime, Drama",
+            "Director": "Christopher Nolan",
+            "Writer": "Jonathan Nolan, Christopher Nolan, David S. Goyer",
+            "Actors": "Christian Bale, Heath Ledger, Aaron Eckhart",
+            "Plot": "When a menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman, James Gordon and Harvey Dent must work together to put an end to the madness.",
+            "Language": "English, Mandarin",
+            "Country": "United States, United Kingdom",
+            "Awards": "Won 2 Oscars. 164 wins & 165 nominations total",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_SX300.jpg",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "9.0/10"
+                },
+                {
+                    "Source": "Rotten Tomatoes",
+                    "Value": "94%"
+                },
+                {
+                    "Source": "Metacritic",
+                    "Value": "84/100"
+                }
+            ],
+            "Metascore": "84",
+            "imdbRating": "9.0",
+            "imdbVotes": "2,974,670",
+            "imdbID": "tt0468569",
+            "Type": "movie",
+            "DVD": "N/A",
+            "BoxOffice": "$534,987,076",
+            "Production": "N/A",
+            "Website": "N/A",
+            "Response": "True"
+        },
+        {
+            "Id": 11,
+            "Title": "Gran Torino",
+            "Year": "2008",
+            "Rated": "R",
+            "Released": "09 Jan 2009",
+            "Runtime": "116 min",
+            "Genre": "Drama",
+            "Director": "Clint Eastwood",
+            "Writer": "Nick Schenk, Dave Johannson",
+            "Actors": "Clint Eastwood, Bee Vang, Christopher Carley",
+            "Plot": "After a Hmong teenager tries to steal his prized 1972 Gran Torino, a disgruntled, prejudiced Korean War veteran seeks to redeem both the boy and himself.",
+            "Language": "English, Hmong",
+            "Country": "Germany, United States",
+            "Awards": "21 wins & 22 nominations",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BMTc5NTk2OTU1Nl5BMl5BanBnXkFtZTcwMDc3NjAwMg@@._V1_SX300.jpg",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "8.1/10"
+                },
+                {
+                    "Source": "Rotten Tomatoes",
+                    "Value": "81%"
+                },
+                {
+                    "Source": "Metacritic",
+                    "Value": "72/100"
+                }
+            ],
+            "Metascore": "72",
+            "imdbRating": "8.1",
+            "imdbVotes": "827,967",
+            "imdbID": "tt1205489",
+            "Type": "movie",
+            "DVD": "N/A",
+            "BoxOffice": "$148,095,302",
+            "Production": "N/A",
+            "Website": "N/A",
+            "Response": "True"
+        },
+        {
+            "Id": 12,
+            "Title": "Ted",
+            "Year": "2012",
+            "Rated": "R",
+            "Released": "29 Jun 2012",
+            "Runtime": "106 min",
+            "Genre": "Comedy",
+            "Director": "Seth MacFarlane",
+            "Writer": "Seth MacFarlane, Alec Sulkin, Wellesley Wild",
+            "Actors": "Mark Wahlberg, Mila Kunis, Seth MacFarlane",
+            "Plot": "John Bennett, a man whose childhood wish of bringing his teddy bear to life came true, now must decide between keeping the relationship with the bear, Ted or his girlfriend, Lori.",
+            "Language": "English, Japanese, Ukrainian",
+            "Country": "United States",
+            "Awards": "Nominated for 1 Oscar. 13 wins & 28 nominations total",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BMTQ1OTU0ODcxMV5BMl5BanBnXkFtZTcwOTMxNTUwOA@@._V1_SX300.jpg",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "6.9/10"
+                },
+                {
+                    "Source": "Rotten Tomatoes",
+                    "Value": "69%"
+                },
+                {
+                    "Source": "Metacritic",
+                    "Value": "62/100"
+                }
+            ],
+            "Metascore": "62",
+            "imdbRating": "6.9",
+            "imdbVotes": "674,593",
+            "imdbID": "tt1637725",
+            "Type": "movie",
+            "DVD": "N/A",
+            "BoxOffice": "$218,815,487",
+            "Production": "N/A",
+            "Website": "N/A",
+            "Response": "True"
+        },
+        {
+            "Id": 13,
+            "Title": "Scarface",
+            "Year": "1983",
+            "Rated": "R",
+            "Released": "09 Dec 1983",
+            "Runtime": "170 min",
+            "Genre": "Crime, Drama",
+            "Director": "Brian De Palma",
+            "Writer": "Oliver Stone, Howard Hawks, Ben Hecht",
+            "Actors": "Al Pacino, Michelle Pfeiffer, Steven Bauer",
+            "Plot": "In the 1980s, a determined criminal-minded Cuban immigrant becomes the biggest drug smuggler in Miami, and is eventually undone by his own drug addiction.",
+            "Language": "English, Spanish",
+            "Country": "United States",
+            "Awards": "8 nominations total",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BNDUzYjY0NmUtMDM4OS00Y2Q5LWJiODYtNTk0ZTk0YjZhMTg1XkEyXkFqcGc@._V1_SX300.jpg",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "8.3/10"
+                },
+                {
+                    "Source": "Rotten Tomatoes",
+                    "Value": "79%"
+                },
+                {
+                    "Source": "Metacritic",
+                    "Value": "65/100"
+                }
+            ],
+            "Metascore": "65",
+            "imdbRating": "8.3",
+            "imdbVotes": "949,331",
+            "imdbID": "tt0086250",
+            "Type": "movie",
+            "DVD": "N/A",
+            "BoxOffice": "$45,967,303",
+            "Production": "N/A",
+            "Website": "N/A",
+            "Response": "True"
+        },
+        {
+            "Id": 14,
+            "Title": "Pulp Fiction",
+            "Year": "1994",
+            "Rated": "R",
+            "Released": "14 Oct 1994",
+            "Runtime": "154 min",
+            "Genre": "Crime, Drama",
+            "Director": "Quentin Tarantino",
+            "Writer": "Quentin Tarantino, Roger Avary",
+            "Actors": "John Travolta, Uma Thurman, Samuel L. Jackson",
+            "Plot": "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+            "Language": "English, Spanish, French",
+            "Country": "United States",
+            "Awards": "Won 1 Oscar. 69 wins & 72 nominations total",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BYTViYTE3ZGQtNDBlMC00ZTAyLTkyODMtZGRiZDg0MjA2YThkXkEyXkFqcGc@._V1_SX300.jpg",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "8.9/10"
+                },
+                {
+                    "Source": "Rotten Tomatoes",
+                    "Value": "92%"
+                },
+                {
+                    "Source": "Metacritic",
+                    "Value": "95/100"
+                }
+            ],
+            "Metascore": "95",
+            "imdbRating": "8.9",
+            "imdbVotes": "2,289,917",
+            "imdbID": "tt0110912",
+            "Type": "movie",
+            "DVD": "N/A",
+            "BoxOffice": "$107,928,762",
+            "Production": "N/A",
+            "Website": "N/A",
+            "Response": "True"
+        },
+        {
+            "Id": 15,
+            "Title": "Forrest Gump",
+            "Year": "1994",
+            "Rated": "PG-13",
+            "Released": "06 Jul 1994",
+            "Runtime": "142 min",
+            "Genre": "Drama, Romance",
+            "Director": "Robert Zemeckis",
+            "Writer": "Winston Groom, Eric Roth",
+            "Actors": "Tom Hanks, Robin Wright, Gary Sinise",
+            "Plot": "The history of the United States from the 1950s to the '70s unfolds from the perspective of an Alabama man with an IQ of 75, who yearns to be reunited with his childhood sweetheart.",
+            "Language": "English",
+            "Country": "United States",
+            "Awards": "Won 6 Oscars. 51 wins & 74 nominations total",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BNDYwNzVjMTItZmU5YS00YjQ5LTljYjgtMjY2NDVmYWMyNWFmXkEyXkFqcGc@._V1_SX300.jpg",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "8.8/10"
+                },
+                {
+                    "Source": "Rotten Tomatoes",
+                    "Value": "75%"
+                },
+                {
+                    "Source": "Metacritic",
+                    "Value": "82/100"
+                }
+            ],
+            "Metascore": "82",
+            "imdbRating": "8.8",
+            "imdbVotes": "2,342,884",
+            "imdbID": "tt0109830",
+            "Type": "movie",
+            "DVD": "N/A",
+            "BoxOffice": "$330,455,270",
+            "Production": "N/A",
+            "Website": "N/A",
+            "Response": "True"
+        },
+        {
+            "Id": 16,
+            "Title": "Interstellar",
+            "Year": "2014",
+            "Rated": "PG-13",
+            "Released": "07 Nov 2014",
+            "Runtime": "169 min",
+            "Genre": "Adventure, Drama, Sci-Fi",
+            "Director": "Christopher Nolan",
+            "Writer": "Jonathan Nolan, Christopher Nolan",
+            "Actors": "Matthew McConaughey, Anne Hathaway, Jessica Chastain",
+            "Plot": "When Earth becomes uninhabitable in the future, a farmer and ex-NASA pilot, Joseph Cooper, is tasked to pilot a spacecraft, along with a team of researchers, to find a new planet for humans.",
+            "Language": "English",
+            "Country": "United States, United Kingdom, Canada",
+            "Awards": "Won 1 Oscar. 44 wins & 148 nominations total",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BYzdjMDAxZGItMjI2My00ODA1LTlkNzItOWFjMDU5ZDJlYWY3XkEyXkFqcGc@._V1_SX300.jpg",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "8.7/10"
+                },
+                {
+                    "Source": "Rotten Tomatoes",
+                    "Value": "73%"
+                },
+                {
+                    "Source": "Metacritic",
+                    "Value": "74/100"
+                }
+            ],
+            "Metascore": "74",
+            "imdbRating": "8.7",
+            "imdbVotes": "2,259,078",
+            "imdbID": "tt0816692",
+            "Type": "movie",
+            "DVD": "N/A",
+            "BoxOffice": "$203,227,580",
+            "Production": "N/A",
+            "Website": "N/A",
+            "Response": "True"
+        },
+        {
+            "Id": 17,
+            "Title": "Oppenheimer",
+            "Year": "2023",
+            "Rated": "R",
+            "Released": "21 Jul 2023",
+            "Runtime": "180 min",
+            "Genre": "Biography, Drama, History",
+            "Director": "Christopher Nolan",
+            "Writer": "Christopher Nolan, Kai Bird, Martin Sherwin",
+            "Actors": "Cillian Murphy, Emily Blunt, Matt Damon",
+            "Plot": "A dramatization of the life story of J. Robert Oppenheimer, the physicist who had a large hand in the development of the atomic bombs that brought an end to World War II.",
+            "Language": "English, German, Italian, Dutch",
+            "Country": "United States, United Kingdom",
+            "Awards": "Won 7 Oscars. 355 wins & 369 nominations total",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BN2JkMDc5MGQtZjg3YS00NmFiLWIyZmQtZTJmNTM5MjVmYTQ4XkEyXkFqcGc@._V1_SX300.jpg",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "8.3/10"
+                },
+                {
+                    "Source": "Rotten Tomatoes",
+                    "Value": "93%"
+                },
+                {
+                    "Source": "Metacritic",
+                    "Value": "90/100"
+                }
+            ],
+            "Metascore": "90",
+            "imdbRating": "8.3",
+            "imdbVotes": "844,329",
+            "imdbID": "tt15398776",
+            "Type": "movie",
+            "DVD": "N/A",
+            "BoxOffice": "$329,862,540",
+            "Production": "N/A",
+            "Website": "N/A",
+            "Response": "True"
+        },
+        {
+            "Id": 18,
+            "Title": "Goodfellas",
+            "Year": "1990",
+            "Rated": "R",
+            "Released": "21 Sep 1990",
+            "Runtime": "145 min",
+            "Genre": "Biography, Crime, Drama",
+            "Director": "Martin Scorsese",
+            "Writer": "Nicholas Pileggi, Martin Scorsese",
+            "Actors": "Robert De Niro, Ray Liotta, Joe Pesci",
+            "Plot": "The story of Henry Hill and his life in the mafia, covering his relationship with his wife Karen and his mob partners Jimmy Conway and Tommy DeVito.",
+            "Language": "English, Italian, Hebrew, Yiddish",
+            "Country": "United States",
+            "Awards": "Won 1 Oscar. 44 wins & 38 nominations total",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BN2E5NzI2ZGMtY2VjNi00YTRjLWI1MDUtZGY5OWU1MWJjZjRjXkEyXkFqcGc@._V1_SX300.jpg",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "8.7/10"
+                },
+                {
+                    "Source": "Rotten Tomatoes",
+                    "Value": "94%"
+                },
+                {
+                    "Source": "Metacritic",
+                    "Value": "92/100"
+                }
+            ],
+            "Metascore": "92",
+            "imdbRating": "8.7",
+            "imdbVotes": "1,300,902",
+            "imdbID": "tt0099685",
+            "Type": "movie",
+            "DVD": "N/A",
+            "BoxOffice": "$46,909,721",
+            "Production": "N/A",
+            "Website": "N/A",
+            "Response": "True"
+        },
+        {
+            "Id": 19,
+            "Title": "Casino Royale",
+            "Year": "2006",
+            "Rated": "PG-13",
+            "Released": "17 Nov 2006",
+            "Runtime": "144 min",
+            "Genre": "Action, Adventure, Thriller",
+            "Director": "Martin Campbell",
+            "Writer": "Neal Purvis, Robert Wade, Paul Haggis",
+            "Actors": "Daniel Craig, Eva Green, Judi Dench",
+            "Plot": "After earning a licence to kill, secret agent James Bond sets out on his first mission as 007. Bond must defeat a private banker funding terrorists in a high-stakes game of poker at Casino Royale, in Montenegro.",
+            "Language": "English, Serbian, German, Italian, French",
+            "Country": "United States, United Kingdom, Czech Republic, Germany, Bahamas",
+            "Awards": "Won 1 BAFTA Award28 wins & 44 nominations total",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BMTM5MjI4NDExNF5BMl5BanBnXkFtZTcwMDM1MjMzMQ@@._V1_SX300.jpg",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "8.0/10"
+                },
+                {
+                    "Source": "Rotten Tomatoes",
+                    "Value": "94%"
+                },
+                {
+                    "Source": "Metacritic",
+                    "Value": "80/100"
+                }
+            ],
+            "Metascore": "80",
+            "imdbRating": "8.0",
+            "imdbVotes": "707,869",
+            "imdbID": "tt0381061",
+            "Type": "movie",
+            "DVD": "N/A",
+            "BoxOffice": "$167,445,960",
+            "Production": "N/A",
+            "Website": "N/A",
+            "Response": "True"
+        },
+        {
+            "Id": 20,
+            "Title": "The Butler",
+            "Year": "2013",
+            "Rated": "PG-13",
+            "Released": "16 Aug 2013",
+            "Runtime": "132 min",
+            "Genre": "Biography, Drama",
+            "Director": "Lee Daniels",
+            "Writer": "Danny Strong, Wil Haygood",
+            "Actors": "Forest Whitaker, Oprah Winfrey, John Cusack",
+            "Plot": "As Cecil Gaines serves eight presidents during his tenure as a butler at the White House, the civil rights movement, Vietnam, and other major events affect this man's life, family, and American society.",
+            "Language": "English",
+            "Country": "United States",
+            "Awards": "Nominated for 2 BAFTA 16 wins & 55 nominations total",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BMjM2NDY3MjkyMF5BMl5BanBnXkFtZTcwMDM5Nzg5OQ@@._V1_SX300.jpg",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "7.2/10"
+                },
+                {
+                    "Source": "Rotten Tomatoes",
+                    "Value": "71%"
+                },
+                {
+                    "Source": "Metacritic",
+                    "Value": "65/100"
+                }
+            ],
+            "Metascore": "65",
+            "imdbRating": "7.2",
+            "imdbVotes": "121,194",
+            "imdbID": "tt1327773",
+            "Type": "movie",
+            "DVD": "N/A",
+            "BoxOffice": "$116,632,095",
+            "Production": "N/A",
+            "Website": "N/A",
+            "Response": "True"
+        }
+    ],
+    "series": [
+        {
+            "Id": 1,
+            "Title": "Stranger Things",
+            "Year": "2016–2025",
+            "Rated": "TV-14",
+            "Released": "15 Jul 2016",
+            "Runtime": "51 min",
+            "Genre": "Drama, Fantasy, Horror",
+            "Director": "N/A",
+            "Writer": "Matt Duffer, Ross Duffer",
+            "Actors": "Millie Bobby Brown, Finn Wolfhard, Winona Ryder",
+            "Plot": "In 1980s Indiana, a group of young friends witness supernatural forces and secret government exploits. As they search for answers, the children unravel a series of extraordinary mysteries.",
+            "Language": "English",
+            "Country": "United States",
+            "Awards": "Won 12 Primetime Emmys. 114 wins & 323 nominations total",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BMjE2N2MyMzEtNmU5NS00OTI0LTlkNTMtMWM1YWYyNmU4NmY0XkEyXkFqcGc@._V1_SX300.jpg",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "8.7/10"
+                }
+            ],
+            "Metascore": "N/A",
+            "imdbRating": "8.7",
+            "imdbVotes": "1,406,344",
+            "imdbID": "tt4574334",
+            "Type": "series",
+            "totalSeasons": "5",
+            "Response": "True"
+        },
+        {
+            "Id": 2,
+            "Title": "The Sopranos",
+            "Year": "1999–2007",
+            "Rated": "TV-MA",
+            "Released": "10 Jan 1999",
+            "Runtime": "60 min",
+            "Genre": "Crime, Drama",
+            "Director": "David Chase",
+            "Writer": "David Chase",
+            "Actors": "James Gandolfini, Lorraine Bracco, Edie Falco",
+            "Plot": "New Jersey mob boss Tony Soprano deals with personal and professional issues in his home and business life, while seeking professional psychiatric counseling.",
+            "Language": "English",
+            "Country": "United States",
+            "Awards": "Won 21 Primetime Emmys. 171 wins & 280 nominations total",
+            "Poster": "https://pics.filmaffinity.com/Los_Soprano_Serie_de_TV-196243243-large.jpg",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "9.0/10"
+                }
+            ],
+            "Metascore": "N/A",
+            "imdbRating": "9.0",
+            "imdbVotes": "318,964",
+            "imdbID": "tt0141842",
+            "Type": "series",
+            "totalSeasons": "6",
+            "Response": "True"
+        },
+        {
+            "Id": 3,
+            "Title": "The Bear",
+            "Year": "2022–",
+            "Rated": "TV-MA",
+            "Released": "23 Jun 2022",
+            "Runtime": "N/A",
+            "Genre": "Comedy, Drama",
+            "Director": "N/A",
+            "Writer": "Christopher Storer",
+            "Actors": "Jeremy Allen White, Ayo Edebiri, Liza Colón-Zayas",
+            "Plot": "A young chef from the fine dining world returns to Chicago to run his family's sandwich shop.",
+            "Language": "English, Spanish",
+            "Country": "United States",
+            "Awards": "Won 21 Primetime Emmys. 110 wins & 168 nominations total",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BZjE0MjBkNWMtOGUzZS00MzMyLTgwYjgtNTBkZWQ5YWRlMmM1XkEyXkFqcGc@._V1_SX300.jpg",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "8.5/10"
+                }
+            ],
+            "Metascore": "N/A",
+            "imdbRating": "8.5",
+            "imdbVotes": "256,178",
+            "imdbID": "tt14452776",
+            "Type": "series",
+            "totalSeasons": "4",
+            "Response": "True"
+        },
+        {
+            "Id": 4,
+            "Title": "Godfather of Harlem",
+            "Year": "2019–",
+            "Rated": "TV-MA",
+            "Released": "29 Sep 2019",
+            "Runtime": "55 min",
+            "Genre": "Crime, Drama",
+            "Director": "N/A",
+            "Writer": "Chris Brancato, Paul Eckstein",
+            "Actors": "Forest Whitaker, Ilfenesh Hadera, Lucy Fry",
+            "Plot": "A gangster named Bumpy Johnson makes his way in Harlem during the 1960s. A TV prequel to the 2007 film, 'American Gangster', which centered on the criminal enterprise of Frank Lucas.",
+            "Language": "English",
+            "Country": "United States",
+            "Awards": "Won 1 Primetime Emmy. 2 wins & 31 nominations total",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BMWQ2NTliYWItYjFhMS00ODgyLWIzODYtMGVlMTAzYTNjOGZmXkEyXkFqcGc@._V1_SX300.jpg",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "8.1/10"
+                }
+            ],
+            "Metascore": "N/A",
+            "imdbRating": "8.1",
+            "imdbVotes": "22,538",
+            "imdbID": "tt8080122",
+            "Type": "series",
+            "totalSeasons": "3",
+            "Response": "True"
+        },
+        {
+            "Id": 5,
+            "Title": "Breaking Bad",
+            "Year": "2008–2013",
+            "Rated": "TV-MA",
+            "Released": "20 Jan 2008",
+            "Runtime": "49 min",
+            "Genre": "Crime, Drama, Thriller",
+            "Director": "N/A",
+            "Writer": "Vince Gilligan",
+            "Actors": "Bryan Cranston, Aaron Paul, Anna Gunn",
+            "Plot": "A chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine with a former student to secure his family's future.",
+            "Language": "English, Spanish",
+            "Country": "United States",
+            "Awards": "Won 16 Primetime Emmys. 169 wins & 269 nominations total",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BMzU5ZGYzNmQtMTdhYy00OGRiLTg0NmQtYjVjNzliZTg1ZGE4XkEyXkFqcGc@._V1_SX300.jpg",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "9.5/10"
+                },
+                {
+                    "Source": "Rotten Tomatoes",
+                    "Value": "96%"
+                }
+            ],
+            "Metascore": "N/A",
+            "imdbRating": "9.5",
+            "imdbVotes": "2,261,726",
+            "imdbID": "tt0903747",
+            "Type": "series",
+            "totalSeasons": "5",
+            "Response": "True"
+        },
+        {
+            "Id": 6,
+            "Title": "Game of Thrones",
+            "Year": "2011–2019",
+            "Rated": "TV-MA",
+            "Released": "17 Apr 2011",
+            "Runtime": "57 min",
+            "Genre": "Action, Adventure, Drama",
+            "Director": "N/A",
+            "Writer": "David Benioff, D.B. Weiss",
+            "Actors": "Emilia Clarke, Peter Dinklage, Kit Harington",
+            "Plot": "Nine noble families fight for control over the lands of Westeros, while an ancient enemy returns after being dormant for millennia.",
+            "Language": "English",
+            "Country": "United States, United Kingdom",
+            "Awards": "Won 59 Primetime Emmys. 397 wins & 655 nominations total",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BMTNhMDJmNmYtNDQ5OS00ODdlLWE0ZDAtZTgyYTIwNDY3OTU3XkEyXkFqcGc@._V1_SX300.jpg",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "9.2/10"
+                }
+            ],
+            "Metascore": "N/A",
+            "imdbRating": "9.2",
+            "imdbVotes": "2,382,857",
+            "imdbID": "tt0944947",
+            "Type": "series",
+            "totalSeasons": "8",
+            "Response": "True"
+        },
+        {
+            "Id": 7,
+            "Title": "The Office",
+            "Year": "2005–2013",
+            "Rated": "TV-14",
+            "Released": "24 Mar 2005",
+            "Runtime": "22 min",
+            "Genre": "Comedy",
+            "Director": "N/A",
+            "Writer": "Greg Daniels, Ricky Gervais, Stephen Merchant",
+            "Actors": "Steve Carell, Jenna Fischer, John Krasinski",
+            "Plot": "A mockumentary on a group of typical office workers, where the workday consists of ego clashes, inappropriate behavior, tedium and romance.",
+            "Language": "English, Spanish, German, French",
+            "Country": "United States",
+            "Awards": "Won 5 Primetime Emmys. 59 wins & 211 nominations total",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BZjQwYzBlYzUtZjhhOS00ZDQ0LWE0NzAtYTk4MjgzZTNkZWEzXkEyXkFqcGc@._V1_SX300.jpg",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "9.0/10"
+                }
+            ],
+            "Metascore": "N/A",
+            "imdbRating": "9.0",
+            "imdbVotes": "754,331",
+            "imdbID": "tt0386676",
+            "Type": "series",
+            "totalSeasons": "9",
+            "Response": "True"
+        },
+        {
+            "Id": 8,
+            "Title": "The Witcher",
+            "Year": "2019–",
+            "Rated": "TV-MA",
+            "Released": "20 Dec 2019",
+            "Runtime": "60 min",
+            "Genre": "Action, Adventure, Drama",
+            "Director": "Tomek Baginski",
+            "Writer": "Lauren Schmidt Hissrich",
+            "Actors": "Freya Allan, Henry Cavill, Anya Chalotra",
+            "Plot": "Geralt of Rivia, a solitary monster hunter, struggles to find his place in a world where people often prove more wicked than beasts.",
+            "Language": "English",
+            "Country": "Poland, Hungary, United States, United Kingdom",
+            "Awards": "Nominated for 4 Primetime Emmys. 9 wins & 37 nominations total",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BMTQ5MDU5MTktMDZkMy00NDU1LWIxM2UtODg5OGFiNmRhNDBjXkEyXkFqcGc@._V1_SX300.jpg",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "8.0/10"
+                }
+            ],
+            "Metascore": "N/A",
+            "imdbRating": "8.0",
+            "imdbVotes": "587,128",
+            "imdbID": "tt5180504",
+            "Type": "series",
+            "totalSeasons": "3",
+            "Response": "True"
+        },
+        {
+            "Id": 9,
+            "Title": "Narcos",
+            "Year": "2015–2017",
+            "Rated": "TV-MA",
+            "Released": "28 Aug 2015",
+            "Runtime": "49 min",
+            "Genre": "Biography, Crime, Drama",
+            "Director": "N/A",
+            "Writer": "Carlo Bernard, Chris Brancato, Doug Miro",
+            "Actors": "Pedro Pascal, Wagner Moura, Boyd Holbrook",
+            "Plot": "A chronicled look at the criminal exploits of Colombian drug lord Pablo Escobar, as well as the many other drug kingpins who plagued the country through the years.",
+            "Language": "English, Spanish",
+            "Country": "United States, Colombia",
+            "Awards": "Nominated for 3 Primetime Emmys. 8 wins & 20 nominations total",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BNzQwOTcwMzIwN15BMl5BanBnXkFtZTgwMjYxMTA0NjE@._V1_SX300.jpg",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "8.7/10"
+                }
+            ],
+            "Metascore": "N/A",
+            "imdbRating": "8.7",
+            "imdbVotes": "486,489",
+            "imdbID": "tt2707408",
+            "Type": "series",
+            "totalSeasons": "3",
+            "Response": "True"
+        },
+        {
+            "Id": 10,
+            "Title": "The Walking Dead",
+            "Year": "2010–2022",
+            "Rated": "TV-MA",
+            "Released": "31 Oct 2010",
+            "Runtime": "44 min",
+            "Genre": "Drama, Horror, Thriller",
+            "Director": "N/A",
+            "Writer": "Frank Darabont",
+            "Actors": "Andrew Lincoln, Norman Reedus, Melissa McBride",
+            "Plot": "Sheriff Deputy Rick Grimes wakes up from a coma to learn the world is in ruins and must lead a group of survivors to stay alive.",
+            "Language": "English",
+            "Country": "United States",
+            "Awards": "Won 2 Primetime Emmys. 85 wins & 239 nominations total",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BYWQwMGRhNGEtZTNhMy00MzVjLWJhMjItYjcwMDljMTkyNTg2XkEyXkFqcGc@._V1_SX300.jpg",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "8.1/10"
+                }
+            ],
+            "Metascore": "N/A",
+            "imdbRating": "8.1",
+            "imdbVotes": "1,118,376",
+            "imdbID": "tt1520211",
+            "Type": "series",
+            "totalSeasons": "11",
+            "Response": "True"
+        },
+        {
+            "Id": 11,
+            "Title": "True Detective",
+            "Year": "2014–",
+            "Rated": "TV-MA",
+            "Released": "12 Jan 2014",
+            "Runtime": "55 min",
+            "Genre": "Crime, Drama, Mystery",
+            "Director": "N/A",
+            "Writer": "Nic Pizzolatto, Issa López",
+            "Actors": "Vince Vaughn, Colin Farrell, Rachel McAdams",
+            "Plot": "Anthology series in which police investigations unearth the personal and professional secrets of those involved, both within and outside the law.",
+            "Language": "English",
+            "Country": "United States",
+            "Awards": "Won 6 Primetime Emmys. 40 wins & 168 nominations total",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BYjgwYzA1NWMtNDYyZi00ZGQyLWI5NTktMDYwZjE2OTIwZWEwXkEyXkFqcGc@._V1_SX300.jpg",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "8.9/10"
+                }
+            ],
+            "Metascore": "N/A",
+            "imdbRating": "8.9",
+            "imdbVotes": "682,451",
+            "imdbID": "tt2356777",
+            "Type": "series",
+            "totalSeasons": "4",
+            "Response": "True"
+        },
+        {
+            "Id": 12,
+            "Title": "Money Heist",
+            "Year": "2017–2021",
+            "Rated": "TV-MA",
+            "Released": "02 May 2017",
+            "Runtime": "70 min",
+            "Genre": "Action, Crime, Drama",
+            "Director": "N/A",
+            "Writer": "Álex Pina",
+            "Actors": "Úrsula Corberó, Álvaro Morte, Itziar Ituño",
+            "Plot": "An unusual group of robbers attempt to carry out the most perfect robbery in Spanish history - stealing 2.4 billion euros from the Royal Mint of Spain.",
+            "Language": "Spanish, Russian, Serbian, English",
+            "Country": "Spain",
+            "Awards": "38 wins & 45 nominations total",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BZjkxZWJiNTUtYjQwYS00MTBlLTgwODQtM2FkNWMyMjMwOGZiXkEyXkFqcGc@._V1_SX300.jpg",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "8.2/10"
+                }
+            ],
+            "Metascore": "N/A",
+            "imdbRating": "8.2",
+            "imdbVotes": "554,822",
+            "imdbID": "tt6468322",
+            "Type": "series",
+            "totalSeasons": "5",
+            "Response": "True"
+        },
+        {
+            "Id": 13,
+            "Title": "Criminal Minds",
+            "Year": "2005–",
+            "Rated": "TV-14",
+            "Released": "22 Sep 2005",
+            "Runtime": "42 min",
+            "Genre": "Crime, Drama, Mystery",
+            "Director": "N/A",
+            "Writer": "Jeff Davis",
+            "Actors": "Kirsten Vangsness, Matthew Gray Gubler, A.J. Cook",
+            "Plot": "A group of criminal profilers who work for the FBI as members of its Behavioral Analysis Unit (BAU) using behavioral analysis and profiling to help investigate crimes and find the suspect known as the unsub.",
+            "Language": "English",
+            "Country": "United States",
+            "Awards": "Nominated for 3 Primetime Emmys. 24 wins & 35 nominations total",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BNjJhMWNjNGYtMmQ2Ny00NTdlLTlkOTAtNDc2NjA4MmQyOWFhXkEyXkFqcGc@._V1_SX300.jpg",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "8.1/10"
+                }
+            ],
+            "Metascore": "N/A",
+            "imdbRating": "8.1",
+            "imdbVotes": "226,600",
+            "imdbID": "tt0452046",
+            "Type": "series",
+            "totalSeasons": "17",
+            "Response": "True"
+        },
+        {
+            "Id": 14,
+            "Title": "Lost",
+            "Year": "2004–2010",
+            "Rated": "TV-14",
+            "Released": "22 Sep 2004",
+            "Runtime": "44 min",
+            "Genre": "Adventure, Drama, Fantasy",
+            "Director": "N/A",
+            "Writer": "J.J. Abrams, Jeffrey Lieber, Damon Lindelof",
+            "Actors": "Jorge Garcia, Josh Holloway, Yunjin Kim",
+            "Plot": "The survivors of a plane crash are forced to work together in order to survive on a seemingly deserted tropical island.",
+            "Language": "English, Portuguese, Spanish, Arabic, French, Korean, German, Latin, Russian, Japanese",
+            "Country": "United States",
+            "Awards": "Won 10 Primetime Emmys. 118 wins & 418 nominations total",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BZmZhY2ViYzYtMTQ0NS00NDcyLWIxZTYtMGUyODE0NDA0NmNkXkEyXkFqcGc@._V1_SX300.jpg",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "8.3/10"
+                },
+                {
+                    "Source": "Rotten Tomatoes",
+                    "Value": "80%"
+                }
+            ],
+            "Metascore": "N/A",
+            "imdbRating": "8.3",
+            "imdbVotes": "624,126",
+            "imdbID": "tt0411008",
+            "Type": "series",
+            "totalSeasons": "6",
+            "Response": "True"
+        },
+        {
+            "Id": 15,
+            "Title": "House of Cards",
+            "Year": "2013–2018",
+            "Rated": "TV-MA",
+            "Released": "01 Feb 2013",
+            "Runtime": "51 min",
+            "Genre": "Drama",
+            "Director": "N/A",
+            "Writer": "Beau Willimon",
+            "Actors": "Kevin Spacey, Michel Gill, Robin Wright",
+            "Plot": "A Congressman works with his equally conniving wife to exact revenge on the people who betrayed him.",
+            "Language": "English",
+            "Country": "United States",
+            "Awards": "Won 7 Primetime Emmys. 35 wins & 220 nominations total",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BMTQ4MDczNDYwNV5BMl5BanBnXkFtZTcwNjMwMDk5OA@@._V1_SX300.jpg",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "8.6/10"
+                }
+            ],
+            "Metascore": "N/A",
+            "imdbRating": "8.6",
+            "imdbVotes": "541,811",
+            "imdbID": "tt1856010",
+            "Type": "series",
+            "totalSeasons": "6",
+            "Response": "True"
+        },
+        {
+            "Id": 16,
+            "Title": "The Mandalorian",
+            "Year": "2019–",
+            "Rated": "TV-14",
+            "Released": "12 Nov 2019",
+            "Runtime": "40 min",
+            "Genre": "Action, Adventure, Fantasy",
+            "Director": "N/A",
+            "Writer": "Jon Favreau",
+            "Actors": "Pedro Pascal, Chris Bartlett, Katee Sackhoff",
+            "Plot": "The travels of a lone bounty hunter in the outer reaches of the galaxy, far from the authority of the New Republic.",
+            "Language": "English",
+            "Country": "United States",
+            "Awards": "Won 15 Primetime Emmys. 62 wins & 162 nominations total",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BNjgxZGM0OWUtZGY1MS00MWRmLTk2N2ItYjQyZTI1OThlZDliXkEyXkFqcGc@._V1_SX300.jpg",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "8.6/10"
+                }
+            ],
+            "Metascore": "N/A",
+            "imdbRating": "8.6",
+            "imdbVotes": "609,642",
+            "imdbID": "tt8111088",
+            "Type": "series",
+            "totalSeasons": "3",
+            "Response": "True"
+        },
+        {
+            "Id": 17,
+            "Title": "Suits",
+            "Year": "2011–2019",
+            "Rated": "TV-14",
+            "Released": "23 Jun 2011",
+            "Runtime": "44 min",
+            "Genre": "Comedy, Drama",
+            "Director": "N/A",
+            "Writer": "Aaron Korsh",
+            "Actors": "Gabriel Macht, Patrick J. Adams, Meghan Markle",
+            "Plot": "On the run from a drug deal gone bad, brilliant college dropout Mike Ross finds himself working with Harvey Specter, one of New York City's best lawyers.",
+            "Language": "English",
+            "Country": "United States",
+            "Awards": "1 win & 9 nominations total",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BYmE4MmNjZjUtNTEyNy00NTZiLWE4NTktYjM2NjBhYzQ1N2IzXkEyXkFqcGc@._V1_SX300.jpg",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "8.4/10"
+                }
+            ],
+            "Metascore": "N/A",
+            "imdbRating": "8.4",
+            "imdbVotes": "503,922",
+            "imdbID": "tt1632701",
+            "Type": "series",
+            "totalSeasons": "9",
+            "Response": "True"
+        },
+        {
+            "Id": 18,
+            "Title": "Lucifer",
+            "Year": "2016–2021",
+            "Rated": "TV-14",
+            "Released": "25 Jan 2016",
+            "Runtime": "42 min",
+            "Genre": "Crime, Drama, Fantasy",
+            "Director": "N/A",
+            "Writer": "Tom Kapinos",
+            "Actors": "Tom Ellis, Lauren German, Kevin Alejandro",
+            "Plot": "Lucifer Morningstar has decided he's had enough of being the dutiful servant in Hell and decides to spend some time on Earth to better understand humanity. He settles in Los Angeles - the City of Angels.",
+            "Language": "English",
+            "Country": "United States",
+            "Awards": "Nominated for 1 Primetime Emmy. 2 wins & 20 nominations total",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BYzMwNzI3MWItZTIzYi00YjkxLThhOWQtYmUwYjg4NWM0ZWI1XkEyXkFqcGc@._V1_SX300.jpg",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "8.0/10"
+                }
+            ],
+            "Metascore": "N/A",
+            "imdbRating": "8.0",
+            "imdbVotes": "368,551",
+            "imdbID": "tt4052886",
+            "Type": "series",
+            "totalSeasons": "6",
+            "Response": "True"
+        },
+        {
+            "Id": 19,
+            "Title": "BoJack Horseman",
+            "Year": "2014–2020",
+            "Rated": "TV-MA",
+            "Released": "22 Aug 2014",
+            "Runtime": "25 min",
+            "Genre": "Animation, Comedy, Drama",
+            "Director": "N/A",
+            "Writer": "Raphael Bob-Waksberg",
+            "Actors": "Will Arnett, Amy Sedaris, Alison Brie",
+            "Plot": "BoJack Horseman was the star of the hit television show \"Horsin' Around\" in the '80s and '90s, but now he's washed up, living in Hollywood, complaining about everything, and wearing colorful sweaters.",
+            "Language": "English",
+            "Country": "United States",
+            "Awards": "Nominated for 3 Primetime Emmys. 36 wins & 48 nominations total",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BZmMwMDlkNTEtMmQzZS00ODQ0LWJlZmItOTgwYWMwZGM4MzFiXkEyXkFqcGc@._V1_SX300.jpg",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "8.8/10"
+                }
+            ],
+            "Metascore": "N/A",
+            "imdbRating": "8.8",
+            "imdbVotes": "202,506",
+            "imdbID": "tt3398228",
+            "Type": "series",
+            "totalSeasons": "6",
+            "Response": "True"
+        },
+        {
+            "Id": 20,
+            "Title": "South Park",
+            "Year": "1997–",
+            "Rated": "TV-MA",
+            "Released": "13 Aug 1997",
+            "Runtime": "22 min",
+            "Genre": "Animation, Comedy",
+            "Director": "N/A",
+            "Writer": "Trey Parker, Matt Stone, Brian Graden",
+            "Actors": "Trey Parker, Matt Stone, Isaac Hayes",
+            "Plot": "Follows the misadventures of four irreverent grade-schoolers in the quiet, dysfunctional town of South Park, Colorado.",
+            "Language": "English",
+            "Country": "United States",
+            "Awards": "Won 5 Primetime Emmys. 20 wins & 94 nominations total",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BNTBlMzA3ZTUtODZjNi00NTM0LWExMjMtNjJhYzA3YTkwMWYwXkEyXkFqcGc@._V1_SX300.jpg",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "8.7/10"
+                }
+            ],
+            "Metascore": "N/A",
+            "imdbRating": "8.7",
+            "imdbVotes": "417,533",
+            "imdbID": "tt0121955",
+            "Type": "series",
+            "totalSeasons": "26",
+            "Response": "True"
+        }
+    ]
+}
