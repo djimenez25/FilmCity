@@ -20,3 +20,5 @@ rad.json
 *.flf
 #Test results file
 TestResults.xml
+FilmCity/estilos/estilos.css
+FilmCity/estilos/estilos.css.map
