@@ -32,12 +32,12 @@ function leerPeliculas(){
                 let mostrar_informacion = `
                                             <div>
                                                 <img src="${pelicula.Poster}"></img>
-                                            </div
-                                            <div>
-                                                <p>${pelicula.Rated}</p>
-                                                <p>${pelicula.Runtime}</p>
                                             </div>
-                                            <div>
+                                            <div class="valoracion_tiempo">
+                                                <p class="align-right">${pelicula.Rated}</p>
+                                                <p class="align-left">${pelicula.Runtime}</p>
+                                            </div>
+                                            <div class="genero align-left">
                                                 <p>${pelicula.Genre}</p>
                                             </div>
                                         `;
