@@ -13,6 +13,10 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -23,66 +27,127 @@
     <!-- Aqui va el HEADER -->
 
     <!-- BANNER -->
-    <div id="carouselExampleIndicators" class="carousel slide">
+    <div id="carouselNetflix" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button
           type="button"
-          data-bs-target="#carouselExampleIndicators"
+          data-bs-target="#carouselNetflix"
           data-bs-slide-to="0"
           class="active"
-          aria-current="true"
-          aria-label="Slide 1"
         ></button>
         <button
           type="button"
-          data-bs-target="#carouselExampleIndicators"
+          data-bs-target="#carouselNetflix"
           data-bs-slide-to="1"
-          aria-label="Slide 2"
         ></button>
         <button
           type="button"
-          data-bs-target="#carouselExampleIndicators"
+          data-bs-target="#carouselNetflix"
           data-bs-slide-to="2"
-          aria-label="Slide 3"
         ></button>
       </div>
+
       <div class="carousel-inner">
+        <!-- Slide 1 -->
         <div class="carousel-item active">
-          <img
-            src="multimedia/imagenes/banner_harry_potter.jpg"
-            class="d-block w-100"
-            alt="..."
-          />
+          <img src="multimedia/imagenes/banner_harry.jpeg" alt="Harry Potter" />
+          <div class="carousel-caption">
+            <h1>Harry Potter y la Piedra Filosofal</h1>
+            <p>
+              Un niño huérfano ingresa a una escuela de magia, donde descubre la
+              verdad sobre sí mismo, su familia y el terrible mal que acecha al
+              mundo mágico.
+            </p>
+            <div class="btn-container">
+              <button class="btn-netflix">
+                <i class="bi bi-play-fill"></i> Ver ahora
+              </button>
+              <button class="btn-plus">
+                <i class="bi bi-plus-lg"></i>
+              </button>
+            </div>
+          </div>
         </div>
+
+        <!-- Slide 2 -->
         <div class="carousel-item">
           <img
-            src="multimedia/imagenes/banner_señor_anillos.jpg"
-            class="d-block w-100"
-            alt="..."
+            src="multimedia/imagenes/banner_jurasicpark.jpg"
+            alt="El Señor de los Anillos"
           />
+          <div class="carousel-caption">
+            <h1>Jurassic Park</h1>
+            <p>
+              Un industrial invita a varios expertos a visitar su parque
+              temático de dinosaurios clonados. Tras un fallo en el suministro
+              eléctrico, las criaturas quedan libres, poniendo en peligro la
+              vida de todos, incluida la de sus nietos.
+            </p>
+            <div class="btn-container">
+              <button class="btn-netflix">
+                <i class="bi bi-play-fill"></i> Ver ahora
+              </button>
+              <button class="btn-plus">
+                <i class="bi bi-plus-lg"></i>
+              </button>
+            </div>
+          </div>
         </div>
+
+        <!-- Slide 3 -->
         <div class="carousel-item">
-          <img src="..." class="d-block w-100" alt="..." />
+          <img
+            src="multimedia/imagenes/banner_vengadores.jpg"
+            alt="Nueva película"
+          />
+          <div class="carousel-caption">
+            <h1>Los vengadores</h1>
+            <p>
+              Los héroes más poderosos de la Tierra deben unirse y aprender a
+              luchar en equipo si quieren detener al travieso Loki y su ejército
+              alienígena de esclavizar a la humanidad.
+            </p>
+            <div class="btn-container">
+              <button class="btn-netflix">
+                <i class="bi bi-play-fill"></i> Ver ahora
+              </button>
+              <button class="btn-plus">
+                <i class="bi bi-plus-lg"></i>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
+
+      <!-- Controles de navegación -->
       <button
         class="carousel-control-prev"
         type="button"
-        data-bs-target="#carouselExampleIndicators"
+        data-bs-target="#carouselNetflix"
         data-bs-slide="prev"
       >
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
       </button>
       <button
         class="carousel-control-next"
         type="button"
-        data-bs-target="#carouselExampleIndicators"
+        data-bs-target="#carouselNetflix"
         data-bs-slide="next"
       >
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
       </button>
+    </div>
+
+    <!-- Slider 10 mejores peliculas -->
+    <div class="slider-container">
+      <h5>Las 10 películas más populares en este momento</h5>
+      <div class="slider">
+        <button class="slider-btn prev" onclick="moveSlide(-1)">
+          &#10094;
+        </button>
+        <div class="slides" id="slides"></div>
+        <button class="slider-btn next" onclick="moveSlide(1)">&#10095;</button>
+      </div>
     </div>
   </body>
 </html>
