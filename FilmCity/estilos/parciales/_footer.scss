@@ -1,0 +1,100 @@
+footer{
+    color: $color_principal;
+    text-align: center;
+        .redes{
+            margin: auto;
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+            font-size: 40px;
+        }
+        .enlaces{
+            font-size: 30px;
+            text-align: left;
+
+        }
+
+
+        .titulo {
+            font-family: $fuente_titulo;
+            font-size: 40px;
+            color: $color_titulo;
+            margin-left: 20px;
+            
+            h3 {
+                text-shadow: 2px 2px 4px #ffffff, -2px -2px 5px rgba(255, 255, 255, 0.5);
+            }
+        }
+}
+
+.copy{
+    color: $color_principal;
+    text-align: center;
+    margin-top: 15px;
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+    footer{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 10px;
+        hr{
+            display: none;
+        }
+        .enlaces{
+            margin-left: 100px;
+            margin-top: 15px;
+            font-size: 20px;
+            gap: 70px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+        }
+
+        .titulo{
+            margin-top: 20px;
+        }
+    }
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+
+    footer{
+        width: 95%;
+
+        .enlaces{
+
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            font-size: 15px;
+
+        }
+
+        .columna{
+            p{
+                padding: 10px;
+            }
+        }
+
+        .titulo{
+            margin-top: -50px;
+        }
+
+    }
+
+ }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+    footer{
+        .titulo{
+            margin-top: 1px;
+            font-size: 35px;
+        }
+    }
+ }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {  }

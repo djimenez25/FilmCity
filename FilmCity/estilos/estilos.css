@@ -1,10 +1,16 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poller+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poller+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* Estilos base - Móviles (Mobile First) */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
 }
 
 body {
@@ -14,34 +20,43 @@ body {
 
 header {
   background-color: rgba(75, 68, 68, 0.2980392157);
-  width: 90%;
+  width: 100%;
   margin: auto;
   padding: 7px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border-bottom-right-radius: 50px;
   border-bottom-left-radius: 50px;
 }
+header .desplegable {
+  display: block;
+  font-size: 45px;
+  color: white;
+  margin-left: -100px;
+  margin-top: 13px;
+}
 header .perfil {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-right: 13px;
   margin-top: 5px;
-  margin-right: 20px;
 }
 header .perfil .user {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border-radius: 40px;
 }
 header .perfil .menu {
-  width: 40px;
-  margin-right: 20px;
-  margin-bottom: 0px;
+  width: 30px;
+}
+header .perfil .lupa {
+  font-size: 30px;
+  color: white;
 }
 header .secciones {
-  display: flex;
-  gap: 70px;
-  font-size: 20px;
-  color: #ffffff;
-  margin-top: 20px;
+  display: none;
 }
 header .titulo {
   font-family: "Poller One", serif;
@@ -54,6 +69,7 @@ header .titulo h3 {
   text-shadow: 2px 2px 4px #ffffff, -2px -2px 5px rgba(255, 255, 255, 0.5);
 }
 
+<<<<<<< Updated upstream
 *, *::after, *::before {
   margin: 0;
   padding: 0;
@@ -210,5 +226,163 @@ p {
   .peliculas_catalogo, .series_catalogo {
     margin-top: 5%;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+=======
+/* Tablets (>= 576px) */
+@media (min-width: 576px) {
+  header .perfil {
+    gap: 20px;
+  }
+  header .perfil .menu {
+    width: 35px;
+  }
+  header .perfil .lupa {
+    font-size: 35px;
+  }
+}
+/* Tablets y pantallas medianas (>= 768px) */
+@media (min-width: 768px) {
+  header .desplegable {
+    margin-left: -230px;
+  }
+  header .titulo {
+    font-size: 35px;
+  }
+  header .perfil .user {
+    width: 60px;
+    height: 60px;
+  }
+  header .perfil .menu {
+    width: 35px;
+  }
+  header .perfil .lupa {
+    font-size: 35px;
+  }
+}
+/* Escritorios pequeños (>= 992px) */
+@media (min-width: 992px) {
+  header .secciones {
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    color: #ffffff;
+    margin-top: 20px;
+  }
+  header .desplegable {
+    display: none;
+  }
+  header .perfil {
+    gap: 25px;
+  }
+  header .perfil .user {
+    width: 50px;
+    height: 50px;
+  }
+  header .perfil .menu {
+    width: 33px;
+  }
+  header .perfil .lupa {
+    font-size: 33px;
+  }
+}
+/* Escritorios grandes (>= 1200px) */
+@media (min-width: 1200px) {
+  header .perfil {
+    gap: 25px;
+  }
+  header .perfil .user {
+    width: 50px;
+    height: 50px;
+  }
+  header .secciones {
+    gap: 40px;
+  }
+}
+/* Pantallas extra grandes (>= 1400px) */
+@media (min-width: 1400px) {
+  header .perfil {
+    margin-right: 30px;
+    gap: 25px;
+  }
+  header .perfil .user {
+    width: 50px;
+    height: 50px;
+  }
+  header .secciones {
+    gap: 70px;
+  }
+}
+footer {
+  color: #ffffff;
+  text-align: center;
+}
+footer .redes {
+  margin: auto;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 40px;
+}
+footer .enlaces {
+  font-size: 30px;
+  text-align: left;
+}
+footer .titulo {
+  font-family: "Poller One", serif;
+  font-size: 40px;
+  color: #E50914;
+  margin-left: 20px;
+}
+footer .titulo h3 {
+  text-shadow: 2px 2px 4px #ffffff, -2px -2px 5px rgba(255, 255, 255, 0.5);
+}
+
+.copy {
+  color: #ffffff;
+  text-align: center;
+  margin-top: 15px;
+}
+
+@media (min-width: 768px) {
+  footer {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  footer hr {
+    display: none;
+  }
+  footer .enlaces {
+    margin-left: 100px;
+    margin-top: 15px;
+    font-size: 20px;
+    gap: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  footer .titulo {
+    margin-top: 20px;
+  }
+}
+@media (min-width: 992px) {
+  footer {
+    width: 95%;
+  }
+  footer .enlaces {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-size: 15px;
+  }
+  footer .columna p {
+    padding: 10px;
+  }
+  footer .titulo {
+    margin-top: -50px;
+  }
+}
+@media (min-width: 1200px) {
+  footer .titulo {
+    margin-top: 1px;
+    font-size: 35px;
+>>>>>>> Stashed changes
   }
 }/*# sourceMappingURL=estilos.css.map */
