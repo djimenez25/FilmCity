@@ -13,8 +13,15 @@ img{
     margin: auto;
 }
 
-//MENU CAJA
+p{
+    color: white;
+}
 
+.bottom{
+    margin-bottom: 10%;
+}
+
+//MENU CAJA
 .peliculas_menu_caja{
     display: grid;
     grid-template-columns: 1fr;
@@ -53,6 +60,13 @@ img{
 }
 
 //PELICULAS
+.peliculas_catalogo{
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
 
 //RESPONSIVE
 @media (min-width: 576px) { 
@@ -81,6 +95,11 @@ img{
         }
     
     }
+
+    .peliculas_catalogo{
+        margin-top: 5%;
+        grid-template-columns: 1fr 1fr;
+    }
         
 }
 
@@ -98,6 +117,12 @@ img{
         }
     
     }
+
+    .peliculas_catalogo{
+        margin-top: 5%;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 2%;
+    }
     
 }
 
@@ -113,6 +138,11 @@ img{
             width: 130%;
         }
     
+    }
+
+    .peliculas_catalogo{
+        margin-top: 5%;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
 
  }
