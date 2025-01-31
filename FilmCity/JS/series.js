@@ -20,6 +20,7 @@ function leerSeries(){
                 const datos = [];
                 //Guardamos los datos de la serie en un array
                 datos.push({
+                    "Titulo": serie.Title,
                     "Temporadas": serie.totalSeasons, 
                     "Rated": serie.Rated, 
                     "Genero": serie.Genre

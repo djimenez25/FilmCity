@@ -73,10 +73,6 @@ p {
   color: white;
 }
 
-.bottom {
-  margin-bottom: 10%;
-}
-
 .peliculas_menu_caja, .series_menu_caja {
   display: grid;
   grid-template-columns: 1fr;
@@ -115,6 +111,19 @@ p {
   display: grid;
   grid-template-columns: 1fr;
   text-align: center;
+}
+
+.bottom {
+  margin-bottom: 10%;
+  position: relative;
+}
+
+.detalles {
+  background-color: red;
+  width: 80%;
+  position: absolute;
+  top: 0;
+  left: 10%;
 }
 
 @media (min-width: 768px) {
