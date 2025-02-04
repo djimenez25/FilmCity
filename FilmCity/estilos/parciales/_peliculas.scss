@@ -1,25 +1,33 @@
-*, *::after, *::before{
+*,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-img{
+img {
     max-width: 100%;
 }
 
-.peliculas, .series{
+a{
+    text-decoration: none;
+}
+
+.peliculas,
+.series {
     max-width: 90%;
     margin: auto;
 }
 
-p{
+p {
     color: white;
 }
 
 
 //MENU CAJA
-.peliculas_menu_caja, .series_menu_caja{
+.peliculas_menu_caja,
+.series_menu_caja {
     display: grid;
     grid-template-columns: 1fr;
     background-color: $color_secundario;
@@ -27,37 +35,40 @@ p{
     padding: 1%;
 }
 
-.peliculas_titulo, .series_titulo{
+.peliculas_titulo,
+.series_titulo {
     color: white;
     display: none;
     font-family: $fuente_principal;
     align-content: center;
 }
 
-.peliculas_select, .series_select{
+.peliculas_select,
+.series_select {
     margin: auto;
     text-align: center;
     width: 60%;
     font-family: $fuente_principal;
-    
-    .select_genero{
+
+    .select_genero {
         width: 100%;
         background-color: $color_detalles;
         border: none;
         color: white;
         padding: 2%;
         text-align: center;
-        
-        .options_select{
+
+        .options_select {
             font-weight: bold;
         }
-        
+
     }
-    
+
 }
 
 //PELICULAS
-.peliculas_catalogo, .series_catalogo{
+.peliculas_catalogo,
+.series_catalogo {
     margin-top: 10%;
     display: grid;
     grid-template-columns: 1fr;
@@ -67,142 +78,180 @@ p{
     margin: auto;
 }
 
-.bottom{
+.bottom {
     margin-bottom: 15%;
     position: relative;
 }
 
 //CAJA DETALLES
-.detalles{
+.detalles {
     background-color: $color_detalles;
     width: 85%;
     position: absolute;
     top: 0;
     left: 7.6%;
+    transition: 1s ease;
+    box-shadow: 0px 0px 147px 23px rgb(65, 64, 64);
 }
 
-.valoracion_tiempo{
-    background-color: green;
+.detalles:hover {
+    z-index: 100; //Nos lo pone encima de otra caja
+    width: 90%;
+}
+
+.enlaces_pelicula{
+    padding: 2%;
+    text-align: center;
+}
+
+.valoracion_tiempo {
     display: grid;
-    grid-template-columns: 1fr 6fr;
+    grid-template-columns: 1fr 4fr 6fr;
     padding: 1%;
     padding-left: 10%;
 }
 
-.genero{
+.genero {
     padding: 1%;
     padding-left: 5%;
 }
 
-.align-right{
+.align-right {
     text-align: end;
 }
 
-.align-left{
+.align-left {
     text-align: start;
     margin-left: 5%;
 }
 
+.text-start{
+    text-align: start;
+}
+
 //RESPONSIVE
-@media (min-width: 576px) { 
+@media (min-width: 576px) {}
 
-    
+@media (min-width: 768px) {
 
- }
-
-@media (min-width: 768px) { 
-    
-    .peliculas_menu_caja, .series_menu_caja{
+    .peliculas_menu_caja,
+    .series_menu_caja {
         grid-template-columns: 1fr 3fr;
         width: 80%;
         margin: auto;
     }
 
-    .peliculas_titulo, .series_titulo{
+    .peliculas_titulo,
+    .series_titulo {
         display: block;
         text-align: end;
     }
 
-    .peliculas_select, .series_select{
-        
-        .select_genero{
+    .peliculas_select,
+    .series_select {
+
+        .select_genero {
             width: 120%;
         }
-    
+
     }
 
-    .peliculas_catalogo, .series_catalogo{
+    .peliculas_catalogo,
+    .series_catalogo {
         margin-top: 5%;
         grid-template-columns: 1fr 1fr;
     }
-        
-    .bottom{
+
+    .bottom {
         margin-bottom: 20%;
     }
 
-    .detalles{
+    .detalles {
         width: 95%;
         left: 2.5%;
     }
 
-    .valoracion_tiempo{
-        background-color: green;
-        display: grid;
-        grid-template-columns: 1fr 6fr;
-        padding: 1%;
+    .detalles:hover {
+        z-index: 100; //Nos lo pone encima de otra caja
+        width: 105%;
+    }
+
+    .valoracion_tiempo {
         padding-left: 3%;
     }
 
 }
 
-@media (min-width: 992px) { 
-    
-    .peliculas_menu_caja, .series_menu_caja{
+@media (min-width: 992px) {
+
+    .peliculas_menu_caja,
+    .series_menu_caja {
         width: 50%;
         margin: 0;
     }
 
-    .peliculas_select, .series_select{
-        
-        .select_genero{
+    .peliculas_select,
+    .series_select {
+
+        .select_genero {
             width: 120%;
         }
-    
+
     }
 
-    .peliculas_catalogo, .series_catalogo{
+    .peliculas_catalogo,
+    .series_catalogo {
         margin-top: 5%;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 2%;
     }
 
-    .bottom{
+    .bottom {
         margin-bottom: 25%;
     }
-    
+
+    .detalles {
+        width: 110%;
+        left: -5%;
+    }
+
+    .detalles:hover {
+        z-index: 100; //Nos lo pone encima de otra caja
+        width: 120%;
+    }
+
+    .enlaces_pelicula{
+        text-align: start;
+    }
+
+    .valoracion_tiempo {
+        grid-template-columns: 1fr 4fr 6fr;
+    }
+
 }
 
-@media (min-width: 1200px) { 
-    
-    .peliculas_menu_caja, .series_menu_caja{
+@media (min-width: 1200px) {
+
+    .peliculas_menu_caja,
+    .series_menu_caja {
         width: 40%;
     }
 
-    .peliculas_select, .series_select{
-        
-        .select_genero{
+    .peliculas_select,
+    .series_select {
+
+        .select_genero {
             width: 130%;
         }
-    
+
     }
 
-    .peliculas_catalogo, .series_catalogo{
+    .peliculas_catalogo,
+    .series_catalogo {
         margin-top: 5%;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
 
- }
+}
 
-@media (min-width: 1400px) { 
-
- }
+@media (min-width: 1400px) {}

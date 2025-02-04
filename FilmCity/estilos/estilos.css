@@ -369,7 +369,9 @@ header .titulo h3 {
     padding: 14px;
   }
 }
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -379,7 +381,12 @@ img {
   max-width: 100%;
 }
 
-.peliculas, .series {
+a {
+  text-decoration: none;
+}
+
+.peliculas,
+.series {
   max-width: 90%;
   margin: auto;
 }
@@ -388,7 +395,8 @@ p {
   color: white;
 }
 
-.peliculas_menu_caja, .series_menu_caja {
+.peliculas_menu_caja,
+.series_menu_caja {
   display: grid;
   grid-template-columns: 1fr;
   background-color: rgba(75, 68, 68, 0.2980392157);
@@ -396,20 +404,23 @@ p {
   padding: 1%;
 }
 
-.peliculas_titulo, .series_titulo {
+.peliculas_titulo,
+.series_titulo {
   color: white;
   display: none;
   font-family: "Poppins", serif;
   align-content: center;
 }
 
-.peliculas_select, .series_select {
+.peliculas_select,
+.series_select {
   margin: auto;
   text-align: center;
   width: 60%;
   font-family: "Poppins", serif;
 }
-.peliculas_select .select_genero, .series_select .select_genero {
+.peliculas_select .select_genero,
+.series_select .select_genero {
   width: 100%;
   background-color: #242432;
   border: none;
@@ -417,11 +428,13 @@ p {
   padding: 2%;
   text-align: center;
 }
-.peliculas_select .select_genero .options_select, .series_select .select_genero .options_select {
+.peliculas_select .select_genero .options_select,
+.series_select .select_genero .options_select {
   font-weight: bold;
 }
 
-.peliculas_catalogo, .series_catalogo {
+.peliculas_catalogo,
+.series_catalogo {
   margin-top: 10%;
   display: grid;
   grid-template-columns: 1fr;
@@ -442,12 +455,23 @@ p {
   position: absolute;
   top: 0;
   left: 7.6%;
+  transition: 1s ease;
+  box-shadow: 0px 0px 147px 23px rgb(65, 64, 64);
+}
+
+.detalles:hover {
+  z-index: 100;
+  width: 90%;
+}
+
+.enlaces_pelicula {
+  padding: 2%;
+  text-align: center;
 }
 
 .valoracion_tiempo {
-  background-color: green;
   display: grid;
-  grid-template-columns: 1fr 6fr;
+  grid-template-columns: 1fr 4fr 6fr;
   padding: 1%;
   padding-left: 10%;
 }
@@ -466,20 +490,28 @@ p {
   margin-left: 5%;
 }
 
+.text-start {
+  text-align: start;
+}
+
 @media (min-width: 768px) {
-  .peliculas_menu_caja, .series_menu_caja {
+  .peliculas_menu_caja,
+  .series_menu_caja {
     grid-template-columns: 1fr 3fr;
     width: 80%;
     margin: auto;
   }
-  .peliculas_titulo, .series_titulo {
+  .peliculas_titulo,
+  .series_titulo {
     display: block;
     text-align: end;
   }
-  .peliculas_select .select_genero, .series_select .select_genero {
+  .peliculas_select .select_genero,
+  .series_select .select_genero {
     width: 120%;
   }
-  .peliculas_catalogo, .series_catalogo {
+  .peliculas_catalogo,
+  .series_catalogo {
     margin-top: 5%;
     grid-template-columns: 1fr 1fr;
   }
@@ -490,23 +522,26 @@ p {
     width: 95%;
     left: 2.5%;
   }
+  .detalles:hover {
+    z-index: 100;
+    width: 105%;
+  }
   .valoracion_tiempo {
-    background-color: green;
-    display: grid;
-    grid-template-columns: 1fr 6fr;
-    padding: 1%;
     padding-left: 3%;
   }
 }
 @media (min-width: 992px) {
-  .peliculas_menu_caja, .series_menu_caja {
+  .peliculas_menu_caja,
+  .series_menu_caja {
     width: 50%;
     margin: 0;
   }
-  .peliculas_select .select_genero, .series_select .select_genero {
+  .peliculas_select .select_genero,
+  .series_select .select_genero {
     width: 120%;
   }
-  .peliculas_catalogo, .series_catalogo {
+  .peliculas_catalogo,
+  .series_catalogo {
     margin-top: 5%;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 2%;
@@ -514,15 +549,32 @@ p {
   .bottom {
     margin-bottom: 25%;
   }
+  .detalles {
+    width: 110%;
+    left: -5%;
+  }
+  .detalles:hover {
+    z-index: 100;
+    width: 120%;
+  }
+  .enlaces_pelicula {
+    text-align: start;
+  }
+  .valoracion_tiempo {
+    grid-template-columns: 1fr 4fr 6fr;
+  }
 }
 @media (min-width: 1200px) {
-  .peliculas_menu_caja, .series_menu_caja {
+  .peliculas_menu_caja,
+  .series_menu_caja {
     width: 40%;
   }
-  .peliculas_select .select_genero, .series_select .select_genero {
+  .peliculas_select .select_genero,
+  .series_select .select_genero {
     width: 130%;
   }
-  .peliculas_catalogo, .series_catalogo {
+  .peliculas_catalogo,
+  .series_catalogo {
     margin-top: 5%;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
