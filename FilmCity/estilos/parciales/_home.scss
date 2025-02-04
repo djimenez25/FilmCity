@@ -79,50 +79,65 @@
     padding: 20px;
   
     h5 {
-      margin-bottom: 20px;
+      color: $color_principal;
+      margin-top: 30px;
     }
   }
   
   // Estilos para el slider
   .slider {
     position: relative;
-    max-width: 1000px;
+    max-width: 1150px;
     margin: 0 auto;
     overflow: hidden;
   
     .slides {
       display: flex;
       transition: transform 0.5s ease-in-out;
-    }
-
-    .slide_final{
-        display: flex;
-        transition: transform 0s ease-in-out !important;
       
     }
-
+  
+    .slide_final {
+      display: flex;
+      transition: transform 0s ease-in-out !important;
+    }
+  
     .slide {
-      min-width: 100%;
-      box-sizing: border-box;
+      position: relative;
+      margin-top: -30px;
+      display: flex;
+      align-items: center;
+      justify-content: center; // Centra el contenido horizontalmente
+      min-width: 100%; // Por defecto, 1 imagen (100% del ancho)
       padding: 10px;
-      text-align: center;
+      box-sizing: border-box;
   
-      img {
-        max-width: 100%;
-        border-radius: 10px;
+      .ranking-number {
+        font-size: 330px; // Tamaño grande para el número
+        font-weight: bold;
+        color: #000000; // Color oscuro con transparencia
+        position: relative;
+        z-index: 1; // Número detrás de la imagen
+        font-family: $fuente_numeros; // Fuente gruesa y llamativa
+        margin-right: 70px; // Ajusta para superponer la imagen
+        -webkit-text-stroke: 4px #595959; // Borde grueso gris
       }
   
-      h2 {
-        font-size: 1.5rem;
-        margin: 10px 0;
-      }
+      .image-container {
+        position: relative;
+        z-index: 2; // Imagen por encima del número
+        width: 205px; // Ajusta el tamaño de la imagen
+        margin-left: -86px; // Ajusta para superponer la imagen sobre el número
   
-      p {
-        font-size: 1rem;
-        color: #ccc;
+        img {
+          width: 100%;
+         
+          border-radius: 10px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); // Sombra para resaltar
+        }
       }
     }
-
+  
     .slider-btn {
       position: absolute;
       top: 50%;
@@ -132,15 +147,15 @@
       border: none;
       padding: 10px;
       cursor: pointer;
-      font-size: 1.5rem;
+      font-size: 2rem;
       z-index: 10;
   
       &.prev {
-        left: 10px;
+        left: -10px;
       }
   
       &.next {
-        right: 10px;
+        right: -10px;
       }
   
       &:hover {
@@ -148,12 +163,8 @@
       }
     }
   }
-
   
 
-  
-  
-  
   // Small devices (landscape phones, 576px and up)
   @media (min-width: 576px) {
     
@@ -201,6 +212,22 @@
         }
       }
     }
+
+    .slider {
+      .slide {
+        min-width: calc(100% / 3); // 3 imágenes (33.33% del ancho)
+  
+        .ranking-number {
+          font-size: 200px; // Tamaño ajustado para tablets
+          margin-right: 60px; // Ajuste de margen para tablets
+        }
+  
+        .image-container {
+          width: 130px; // Tamaño ajustado para tablets
+          margin-left: -70px; // Ajuste de margen para tablets
+        }
+      }
+    }
   }
   
   // Large devices (desktops, 992px and up)
@@ -229,6 +256,21 @@
             font-size: 1.2rem; // Tamaño de fuente más grande para desktops
             padding: 12px;
           }
+        }
+      }
+    }
+    .slider {
+      .slide {
+        min-width: calc(100% / 5); // 5 imágenes (20% del ancho)
+  
+        .ranking-number {
+          font-size: 150px; // Tamaño ajustado para escritorios
+          margin-right: 0px; // Ajuste de margen para escritorios
+        }
+  
+        .image-container {
+          width: 100px; // Tamaño ajustado para escritorios
+          margin-left: -10px; // Ajuste de margen para escritorios
         }
       }
     }

@@ -6,21 +6,26 @@ function moveSlide(direction) {
   const slides = document.querySelectorAll(".slide");
   const totalSlides = slides.length - 1;
 
-  currentSlide += direction;
+  // Determinar cuántas diapositivas se muestran según el tamaño de la pantalla
+  const slidesToShow =
+    window.innerWidth >= 992 ? 5 : window.innerWidth >= 768 ? 3 : 1;
 
+  currentSlide += direction * slidesToShow;
+
+  // Ajustar el índice para que no se salga de los límites
   if (currentSlide < 0) {
-    currentSlide = totalSlides - 1; // Vuelve al último slide si está en el primero
+    currentSlide = totalSlides - slidesToShow; // Vuelve al último grupo de diapositivas
     document.querySelector(".slides").classList.add("slide_final");
-  } else if (currentSlide >= totalSlides) {
-    currentSlide = 0; // Vuelve al primer slide si está en el último
+  } else if (currentSlide >= totalSlides - slidesToShow + 1) {
+    currentSlide = 0; // Vuelve al primer grupo de diapositivas
     document.querySelector(".slides").classList.add("slide_final");
   } else {
     document.querySelector(".slides").classList.remove("slide_final");
   }
 
-  const offset = -currentSlide * 100; // Calcula el desplazamiento
-  slidesContainer.style.transform = `translateX(${offset}%)`; // Mueve el contenedor
-  //
+  // Calcular el desplazamiento en función del número de diapositivas visibles
+  const offset = -currentSlide * (100 / slidesToShow);
+  slidesContainer.style.transform = `translateX(${offset}%)`;
 }
 
 // Cargar las películas desde el JSON
@@ -33,8 +38,10 @@ fetch("JS/peliculas-series.json")
       const cartaPelicula = document.createElement("div");
       cartaPelicula.classList.add("slide");
       cartaPelicula.innerHTML = `
-      <h1>${pelicula.Id}</h1>
-        <img src="${pelicula.Poster}" alt="${pelicula.Title}">
+       <span class="ranking-number">${pelicula.Id}</span>
+        <div class="image-container">
+           <img src="${pelicula.Poster}" alt="${pelicula.Title}">
+        </div>
       `;
 
       slidesContainer.append(cartaPelicula);
