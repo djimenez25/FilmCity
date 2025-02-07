@@ -1,0 +1,124 @@
+.content{
+    position: relative;
+
+    .trailerDetalles{
+        position: relative;
+        width: 100%;
+        height: 550px;
+        overflow: hidden;
+            video{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                min-width: 100%;
+                min-height: 100%;
+                transform: translate(-50%, -50%);
+                z-index: -1;
+                object-fit: cover; /* Ajusta el video sin deformación */
+            }
+    
+    }
+
+    .filmcity {
+        position: relative;
+        font-family: $fuente_titulo;
+        font-size: 15px;
+        color: $color_titulo;
+        margin-top: 10px;
+        margin-left: 20px;
+        
+            h3 {
+                position: absolute;
+                top: 200px;
+                left: 30px;
+                text-shadow: 2px 2px 4px #ffffff, -2px -2px 5px rgba(255, 255, 255, 0.5);
+            }
+    }
+
+    .titulo-pelicula{
+        position: relative;
+        img{
+            width: 400px;
+            position: absolute;
+            top: 200px;
+            left: 30px;
+
+        }
+    }
+    
+    .descripcion{
+        position: absolute;
+        top: 350px;
+        left: 30px;
+        width: 55%;
+        font-family: $fuente_principal;
+        font-size: 20px;
+        font-weight: 500;
+        color: white;
+
+    }
+
+    .masDetalles{
+        position: absolute;
+        top: 450px;
+        display: flex;
+        gap: 20px;
+        margin-left: 30px;
+
+        p{
+            font-weight: bold;
+            color: grey;
+        }
+        ul{
+            margin-left: 20px;
+            display: flex;
+            gap: 25px;
+            color: grey;
+        }
+    }
+
+    .verAhora{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        top: 485px;
+        width: 180px;
+        height: 50px;
+        margin-left: 30px;
+        border-radius: 50px;
+        background-color: grey;
+        font-family: $fuente_principal;
+        font-size: 17px;
+        font-weight: bold;
+        color: white;
+        gap: 5px;
+        box-shadow: 0 5px 5px 0 rgb(39, 39, 39);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        border: none;
+        i{
+            margin-left: 20px;
+            font-size:40px;
+            color: white;
+            
+        }
+    }
+
+    .botones{
+        position: absolute;
+        top: 485px;
+        margin-left: 250px;
+        display: flex;
+        gap: 10px;
+
+        i{
+
+            font-size: 40px;
+            color: white;
+        }
+        .circulo{
+            border-radius: 100px;
+            border: 3px solid white;
+        }
+    }
+    
+}
