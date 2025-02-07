@@ -25,6 +25,24 @@
   </head>
   <body>
     <!-- Aqui va el HEADER -->
+    <header>
+      <div class="titulo"><h3>FILMCITY</h3></div>
+      <i class="desplegable bi bi-list"></i>
+      <div class="secciones">
+        <p><strong>Inicio</strong></p>
+        <p>Películas</p>
+        <p>Series</p>
+        <p>Documentales</p>
+      </div>
+      <div class="perfil">
+        <i class="lupa bi bi-search"></i>
+        <img
+          class="menu"
+          src="multimedia/imagenes/logotipoMenu.png"
+          alt=""
+        /><img class="user" src="multimedia/imagenes/fotoPerfil.jpg" alt="" />
+      </div>
+    </header>
 
     <!-- BANNER -->
     <div id="carouselNetflix" class="carousel slide" data-bs-ride="carousel">
@@ -142,12 +160,101 @@
     <div class="slider-container">
       <h5>Las 10 películas más populares en este momento</h5>
       <div class="slider">
-        <button class="slider-btn prev" onclick="moveSlide(-1)">
+        <button class="slider-btn prev" onclick="moveSlide(-1,'movies')">
           &#10094;
         </button>
-        <div class="slides" id="slides"></div>
-        <button class="slider-btn next" onclick="moveSlide(1)">&#10095;</button>
+        <div class="slides" id="movies-slides"></div>
+        <button class="slider-btn next" onclick="moveSlide(1,'movies')">
+          &#10095;
+        </button>
       </div>
+    </div>
+
+    <!-- Carrusel de 20 películas -->
+    <div class="slider-container">
+      <h5>Películas</h5>
+      <div class="slider">
+        <button class="slider-btn prev" onclick="moveSlide(-1, 'more-movies')">
+          &#10094;
+        </button>
+        <div class="slides" id="more-movies-slides"></div>
+        <button class="slider-btn next" onclick="moveSlide(1, 'more-movies')">
+          &#10095;
+        </button>
+      </div>
+    </div>
+
+    <!-- Slider 10 mejores peliculas -->
+    <div class="slider-container">
+      <h5>Las 10 series más populares en este momento</h5>
+      <div class="slider">
+        <button class="slider-btn prev" onclick="moveSlide(-1, 'series')">
+          &#10094;
+        </button>
+        <div class="slides" id="series-slides"></div>
+        <button class="slider-btn next" onclick="moveSlide(1, 'series')">
+          &#10095;
+        </button>
+      </div>
+    </div>
+
+    <!-- Carrusel de 20 series -->
+    <div class="slider-container">
+      <h5>Series</h5>
+      <div class="slider">
+        <button class="slider-btn prev" onclick="moveSlide(-1, 'more-series')">
+          &#10094;
+        </button>
+        <div class="slides" id="more-series-slides"></div>
+        <button class="slider-btn next" onclick="moveSlide(1, 'more-series')">
+          &#10095;
+        </button>
+      </div>
+    </div>
+
+    <footer>
+      <div class="redes">
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-twitter-x"></i>
+        <i class="bi bi-tiktok"></i>
+        <i class="bi bi-youtube"></i>
+      </div>
+      <div class="enlaces">
+        <hr />
+        <div class="columna">
+          <p>Preguntas frecuentes</p>
+          <p>Inversores</p>
+          <p>Formas de ver</p>
+          <p>Avisos legales</p>
+        </div>
+        <hr />
+        <div class="columna">
+          <p>Centro de ayuda</p>
+          <p>Empleo</p>
+          <p>Terminos de uso</p>
+        </div>
+        <hr />
+        <div class="columna">
+          <p>Cuenta</p>
+          <p>Solo en FilmCity</p>
+          <p>Garantía legal</p>
+        </div>
+        <hr />
+        <div class="columna">
+          <p>Informacion corporativa</p>
+          <p>Zona de prensa</p>
+          <p>Privacidad</p>
+          <p>Anuncios</p>
+        </div>
+      </div>
+      <div class="titulo"><h3>FILMCITY</h3></div>
+    </footer>
+    <hr />
+    <div class="copy">
+      <p>
+        &copy; 2025 FILMCITY S.A. Todos los derechos reservados. <br />
+        Diseñado y maquetado por el equipo de FilmCity.
+      </p>
     </div>
   </body>
 </html>

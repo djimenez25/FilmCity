@@ -222,15 +222,25 @@ header .titulo h3 {
 }
 
 .slider-container {
-  padding: 20px;
+  padding: 10px;
 }
 .slider-container h5 {
+<<<<<<< Updated upstream
   margin-bottom: 20px;
+=======
+  color: #ffffff;
+  margin-top: 20px;
+  margin-left: 10px;
+>>>>>>> Stashed changes
 }
 
 .slider {
   position: relative;
+<<<<<<< Updated upstream
   max-width: 1000px;
+=======
+  max-width: 1300px;
+>>>>>>> Stashed changes
   margin: 0 auto;
   overflow: hidden;
 }
@@ -238,14 +248,69 @@ header .titulo h3 {
   display: flex;
   transition: transform 0.5s ease-in-out;
 }
+<<<<<<< Updated upstream
 .slider .slide {
+=======
+.slider .slide_final {
+  display: flex;
+  transition: transform 0s ease-in-out !important;
+}
+.slider .slide, .slider .slide-grande {
+  position: relative;
+  margin-top: -30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+>>>>>>> Stashed changes
   min-width: 100%;
   box-sizing: border-box;
   padding: 10px;
   text-align: center;
 }
+<<<<<<< Updated upstream
 .slider .slide img {
   max-width: 100%;
+=======
+.slider .slide .ranking-number, .slider .slide-grande .ranking-number {
+  font-size: 330px;
+  font-weight: bold;
+  color: #000000;
+  position: relative;
+  z-index: 1;
+  font-family: "Anton";
+  margin-right: 70px;
+  -webkit-text-stroke: 4px #595959;
+}
+.slider .slide .image-container, .slider .slide-grande .image-container {
+  position: relative;
+  z-index: 2;
+  width: 205px;
+  margin-left: -86px;
+}
+.slider .slide .image-container img, .slider .slide-grande .image-container img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+.slider .slide-grande {
+  position: relative;
+  margin-top: -30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.slider .slide-grande .image-container {
+  position: relative;
+  z-index: 2;
+  width: 305px;
+  margin-left: 0px;
+}
+.slider .slide-grande .image-container img {
+  width: 100%;
+>>>>>>> Stashed changes
   border-radius: 10px;
 }
 .slider .slide h2 {
@@ -311,6 +376,31 @@ header .titulo h3 {
     font-size: 1.1rem;
     padding: 10px;
   }
+<<<<<<< Updated upstream
+=======
+  .slider .slide {
+    min-width: 33.3333333333%;
+  }
+  .slider .slide .ranking-number {
+    font-size: 200px;
+    margin-right: 60px;
+  }
+  .slider .slide .image-container {
+    width: 140px;
+    margin-left: -70px;
+  }
+  .slider .slide-grande {
+    min-width: 33.3333333333%;
+  }
+  .slider .slide-grande .image-container {
+    width: 180px;
+  }
+  .slider .slide-grande .image-container img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+>>>>>>> Stashed changes
 }
 @media (min-width: 992px) {
   .carousel-item img {
@@ -330,6 +420,26 @@ header .titulo h3 {
     font-size: 1.2rem;
     padding: 12px;
   }
+<<<<<<< Updated upstream
+=======
+  .slider .slide {
+    min-width: 20%;
+  }
+  .slider .slide .ranking-number {
+    font-size: 150px;
+    margin-right: 0px;
+  }
+  .slider .slide .image-container {
+    width: 100px;
+    margin-left: -10px;
+  }
+  .slider .slide-grande {
+    min-width: 20%;
+  }
+  .slider .slide-grande .image-container {
+    width: 160px;
+  }
+>>>>>>> Stashed changes
 }
 @media (min-width: 1200px) {
   .carousel-item img {
