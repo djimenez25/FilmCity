@@ -101,12 +101,23 @@ p {
 
 .enlaces_pelicula{
     padding: 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     text-align: center;
+
+    .peliculas_derecha{
+        text-align: end;
+    }
+    
+    .peliculas_izquierda{
+        text-align: start;
+    }
+
 }
 
 .valoracion_tiempo {
     display: grid;
-    grid-template-columns: 1fr 4fr 6fr;
+    grid-template-columns: 3fr 4fr 6fr;
     padding: 1%;
     padding-left: 10%;
 }
@@ -127,6 +138,25 @@ p {
 
 .text-start{
     text-align: start;
+}
+
+.naranja{
+    // background-color: orangered;
+    border-radius: 6px;
+    text-align: center;
+    padding: 1%;
+}
+
+.verde{
+    background-color: green;
+}
+
+.orange{
+    background-color: orangered;
+}
+
+.red{
+    background-color: rgb(135, 22, 22);
 }
 
 //RESPONSIVE
@@ -176,6 +206,19 @@ p {
         width: 105%;
     }
 
+    .enlaces_pelicula{
+        grid-template-columns: 2fr 1fr;
+    
+        .peliculas_derecha{
+            text-align: start;
+        }
+        
+        .peliculas_izquierda{
+            text-align: end;
+        }
+    
+    }
+
     .valoracion_tiempo {
         padding-left: 3%;
     }
@@ -221,11 +264,20 @@ p {
     }
 
     .enlaces_pelicula{
-        text-align: start;
+        grid-template-columns: 3fr 1fr;
+    
+        .peliculas_derecha{
+            text-align: start;
+        }
+        
+        .peliculas_izquierda{
+            text-align: end;
+        }
+    
     }
 
     .valoracion_tiempo {
-        grid-template-columns: 1fr 4fr 6fr;
+        grid-template-columns: 2fr 3fr 1fr;
     }
 
 }
