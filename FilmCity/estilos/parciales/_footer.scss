@@ -2,28 +2,48 @@ footer{
     color: $color_principal;
     text-align: center;
         .redes{
-            margin: auto;
+            margin:  auto;
+            margin-top: 110px;
             width: 50%;
             display: flex;
             justify-content: space-between;
-            font-size: 40px;
+            font-size: 25px;
         }
         .enlaces{
             font-size: 30px;
             text-align: left;
+            font-weight: 200;
+
+            a{
+                text-decoration: none;
+                display: block;
+                color: $color_principal;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
 
         }
 
 
         .titulo {
             font-family: $fuente_titulo;
-            font-size: 40px;
-            color: $color_titulo;
+            
+            
             margin-left: 20px;
             
-            h3 {
+            a {
+                text-decoration: none;
+                font-size: 30px;
+                color: $color_titulo;
                 text-shadow: 2px 2px 4px #ffffff, -2px -2px 5px rgba(255, 255, 255, 0.5);
             }
+        }
+
+        .copy p{
+            font-size: 10px;
+            font-weight: 200;
         }
 }
 
@@ -65,15 +85,14 @@ footer{
         width: 95%;
 
         .enlaces{
-
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
-            font-size: 15px;
+            font-size: 13px;
 
         }
 
         .columna{
-            p{
+            a{
                 padding: 10px;
             }
         }

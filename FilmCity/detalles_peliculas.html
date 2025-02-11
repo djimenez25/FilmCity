@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Detalles Película</title>
     <link rel="stylesheet" href="estilos/estilos.css" />
+    <script src="./JS/detalles_pelicula.js" defer></script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
@@ -12,21 +13,24 @@
   </head>
   <body>
     <header>
-      <div class="titulo"><h3>FILMCITY</h3></div>
+      <div class="titulo"><a href="">FILMCITY</a></div>
       <i class="desplegable bi bi-list"></i>
       <div class="secciones">
-        <p><strong>Inicio</strong></p>
-        <p>Películas</p>
-        <p>Series</p>
-        <p>Documentales</p>
+        <a href="home.html">Inicio</a>
+        <a href="#"><b>Peliculas</b></a>
+        <a href="series.html">Series</a>
+        <a href="#">Documentales</a>
       </div>
       <div class="perfil">
-        <i class="lupa bi bi-search"></i>
-        <img
-          class="menu"
-          src="multimedia/imagenes/logotipoMenu.png"
-          alt=""
-        /><img class="user" src="multimedia/imagenes/fotoPerfil.jpg" alt="" />
+        <a href="#"><i class="lupa bi bi-search"></i></a>
+        <a href="#"
+          ><img
+            class="menu"
+            src="multimedia/imagenes/logotipoMenu.png"
+            alt="" /></a
+        ><a href=""
+          ><img class="user" src="multimedia/imagenes/fotoPerfil.jpg" alt=""
+        /></a>
       </div>
     </header>
     <!---content DETALLES DE PELICULAS-->
@@ -74,6 +78,16 @@
       </div>
     </div>
 
+    <div class="detalle_pelicula">
+      <h3>Detalles</h3>
+
+      <div id="sinopsis"></div>
+      <div class="reparto-audio">
+        <div id="reparto"></div>
+        <div id="audio"></div>
+      </div>
+    </div>
+
     <footer>
       <div class="redes">
         <i class="bi bi-instagram"></i>
@@ -84,39 +98,41 @@
       <div class="enlaces">
         <hr />
         <div class="columna">
-          <p>Preguntas frecuentes</p>
-          <p>Inversores</p>
-          <p>Formas de ver</p>
-          <p>Avisos legales</p>
+          <a href="#">Preguntas frecuentes</a>
+          <a href="#">Inversores</a>
+          <a href="#">Formas de ver</a>
+          <a href="#">Avisos legales</a>
         </div>
         <hr />
         <div class="columna">
-          <p>Centro de ayuda</p>
-          <p>Empleo</p>
-          <p>Terminos de uso</p>
+          <a href="#">Centro de ayuda</a>
+          <a href="#">Empleo</a>
+          <a href="#">Terminos de uso</a>
         </div>
         <hr />
         <div class="columna">
-          <p>Cuenta</p>
-          <p>Solo en FilmCity</p>
-          <p>Garantía legal</p>
+          <a href="#">Cuenta</a>
+          <a href="#">Solo en FilmCity</a>
+          <a href="#">Garantía legal</a>
         </div>
         <hr />
         <div class="columna">
-          <p>Informacion corporativa</p>
-          <p>Zona de prensa</p>
-          <p>Privacidad</p>
-          <p>Anuncios</p>
+          <a href="#">Informacion corporativa</a>
+          <a href="#">Zona de prensa</a>
+          <a href="#">Privacidad</a>
+          <a href="#">Anuncios</a>
         </div>
       </div>
-      <div class="titulo"><h3>FILMCITY</h3></div>
+      <div class="titulo">
+        <a href="#">FILMCITY</a>
+      </div>
+
+      <div class="copy">
+        <p>
+          &copy; 2025 FILMCITY S.A. Todos los derechos reservados. <br />
+          Diseñado y maquetado por el equipo de FilmCity.
+        </p>
+      </div>
     </footer>
-    <hr />
-    <div class="copy">
-      <p>
-        &copy; 2025 FILMCITY S.A. Todos los derechos reservados. <br />
-        Diseñado y maquetado por el equipo de FilmCity.
-      </p>
-    </div>
   </body>
 </html>

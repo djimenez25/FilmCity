@@ -14,9 +14,7 @@ body {
     font-family: $fuente_principal !important;
 }
 
-.hola{
-    display: block;
-}
+
 
 header {
     background-color: $color_secundario;
@@ -28,6 +26,11 @@ header {
     align-items: center;
     border-bottom-right-radius: 50px;
     border-bottom-left-radius: 50px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    
     
     .desplegable {
         display: block;
@@ -62,16 +65,29 @@ header {
 
     .secciones {
         display: none;
+
+        a{
+            text-decoration: none;
+            color: $color_principal;
+            font-weight: 250;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            &:hover {
+                transform: scale(1.1); // Aumenta el tamaño ligeramente
+                opacity: 0.8; // Reduce un poco la opacidad
+            }
+        }
+       
     }
 
     .titulo {
         font-family: $fuente_titulo;
-        font-size: 30px;
-        color: $color_titulo;
         margin-top: 10px;
         margin-left: 20px;
         
-        h3 {
+        a {
+            text-decoration: none;
+            font-size: 30px;
+            color: $color_titulo;
             text-shadow: 2px 2px 4px #ffffff, -2px -2px 5px rgba(255, 255, 255, 0.5);
         }
     }
@@ -128,7 +144,7 @@ header {
         .secciones {
             display: flex;
             gap: 20px;
-            font-size: 20px;
+            font-size: 16px;
             color: $color_principal;
             margin-top: 20px;
         }
@@ -144,10 +160,10 @@ header {
                 height: 50px;
             }
             .menu{
-                width: 33px;
+                width: 20px;
             }
             .lupa{
-                font-size: 33px;
+                font-size: 20px;
             }
         }
     }
