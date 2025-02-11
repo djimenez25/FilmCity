@@ -87,6 +87,7 @@ p {
 .detalles {
     background-color: $color_detalles;
     width: 85%;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 7.6%;
@@ -97,6 +98,10 @@ p {
 .detalles:hover {
     z-index: 100; //Nos lo pone encima de otra caja
     width: 90%;
+}
+
+.video{
+    width: 100%;
 }
 
 .enlaces_pelicula{

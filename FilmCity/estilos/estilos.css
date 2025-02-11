@@ -80,7 +80,7 @@ header .titulo {
 header .titulo a {
   text-decoration: none;
   font-size: 30px;
-  color: #E50914;
+  color: #e50914;
   text-shadow: 2px 2px 4px #ffffff, -2px -2px 5px rgba(255, 255, 255, 0.5);
 }
 
@@ -255,7 +255,8 @@ header .titulo a {
   display: flex;
   transition: transform 0s ease-in-out !important;
 }
-.slider .slide, .slider .slide-grande {
+.slider .slide,
+.slider .slide-grande {
   position: relative;
   margin-top: -30px;
   display: flex;
@@ -265,7 +266,8 @@ header .titulo a {
   padding: 10px;
   box-sizing: border-box;
 }
-.slider .slide .ranking-number, .slider .slide-grande .ranking-number {
+.slider .slide .ranking-number,
+.slider .slide-grande .ranking-number {
   font-size: 330px;
   font-weight: bold;
   color: #000000;
@@ -275,13 +277,15 @@ header .titulo a {
   margin-right: 70px;
   -webkit-text-stroke: 4px #595959;
 }
-.slider .slide .image-container, .slider .slide-grande .image-container {
+.slider .slide .image-container,
+.slider .slide-grande .image-container {
   position: relative;
   z-index: 2;
   width: 205px;
   margin-left: -86px;
 }
-.slider .slide .image-container img, .slider .slide-grande .image-container img {
+.slider .slide .image-container img,
+.slider .slide-grande .image-container img {
   width: 100%;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
@@ -542,6 +546,7 @@ p {
 .detalles {
   background-color: #242432;
   width: 85%;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 7.6%;
@@ -552,6 +557,10 @@ p {
 .detalles:hover {
   z-index: 100;
   width: 90%;
+}
+
+.video {
+  width: 100%;
 }
 
 .enlaces_pelicula {
@@ -728,13 +737,13 @@ p {
   transform: translate(-50%, -50%);
   z-index: -1;
   -o-object-fit: cover;
-     object-fit: cover; /* Ajusta el video sin deformación */
+  object-fit: cover; /* Ajusta el video sin deformación */
 }
 .content .filmcity {
   position: relative;
   font-family: "Poller One", serif;
   font-size: 15px;
-  color: #E50914;
+  color: #e50914;
   margin-top: 10px;
   margin-left: 20px;
 }
@@ -850,7 +859,8 @@ p {
   margin-bottom: 20px;
 }
 
-#reparto, #audio {
+#reparto,
+#audio {
   margin-top: 20px;
   grid-column: 2; /* El director y el audio están en la segunda columna */
 }
@@ -901,7 +911,7 @@ footer .titulo {
 footer .titulo a {
   text-decoration: none;
   font-size: 30px;
-  color: #E50914;
+  color: #e50914;
   text-shadow: 2px 2px 4px #ffffff, -2px -2px 5px rgba(255, 255, 255, 0.5);
 }
 footer .copy p {
@@ -957,4 +967,4 @@ footer .copy p {
     margin-top: 1px;
     font-size: 35px;
   }
-}/*# sourceMappingURL=estilos.css.map */
+} /*# sourceMappingURL=estilos.css.map */
