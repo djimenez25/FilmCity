@@ -1,0 +1,73 @@
+.capitulos{
+    width: 90%;
+    margin: auto;
+}
+
+.temporadas{
+    text-align: center;
+    width: 100%;
+    border-radius: 20px;
+    background-color: $color_secundario;
+    margin: auto;
+    padding: 1%;
+    margin-bottom: 5%;
+    
+    .temporadas_serie{
+        font-family: $fuente_principal;
+        background-color: $color_detalles;
+        border: none;
+        width: 80%;
+        color: white;
+        padding: 1%;
+        text-align: center;
+            
+    }
+
+}
+
+//CAPITULOS
+
+.capitulo_pequeño{
+    background-color: $color_secundario;
+    margin-bottom: 5%;
+    text-align: center;
+    padding: 2%;
+    border-radius: 20px;
+}
+
+
+
+//RESPONSIVE
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+
+    .temporadas{
+        width: 60%;
+    }
+
+}
+
+@media (min-width: 992px) {
+
+    .temporadas{
+        width: 40%;
+        margin: 0;
+
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    .temporadas{
+        width: 35%;
+    }
+
+}
+
+@media (min-width: 1400px) {
+
+}

@@ -519,7 +519,7 @@ p {
   display: grid;
   grid-template-columns: 1fr;
   text-align: center;
-  position: absolute;
+  position: relative;
   width: 90%;
   margin: auto;
 }
@@ -532,6 +532,7 @@ p {
 .detalles {
   background-color: #242432;
   width: 85%;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 7.6%;
@@ -542,6 +543,10 @@ p {
 .detalles:hover {
   z-index: 100;
   width: 90%;
+}
+
+.video {
+  width: 100%;
 }
 
 .enlaces_pelicula {
@@ -810,6 +815,54 @@ p {
   border: 3px solid white;
 }
 
+.capitulos {
+  width: 90%;
+  margin: auto;
+}
+
+.temporadas {
+  text-align: center;
+  width: 100%;
+  border-radius: 20px;
+  background-color: rgba(75, 68, 68, 0.2980392157);
+  margin: auto;
+  padding: 1%;
+  margin-bottom: 5%;
+}
+.temporadas .temporadas_serie {
+  font-family: "Poppins", serif;
+  background-color: #242432;
+  border: none;
+  width: 80%;
+  color: white;
+  padding: 1%;
+  text-align: center;
+}
+
+.capitulo_pequeño {
+  background-color: rgba(75, 68, 68, 0.2980392157);
+  margin-bottom: 5%;
+  text-align: center;
+  padding: 2%;
+  border-radius: 20px;
+}
+
+@media (min-width: 768px) {
+  .temporadas {
+    width: 60%;
+  }
+}
+@media (min-width: 992px) {
+  .temporadas {
+    width: 40%;
+    margin: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .temporadas {
+    width: 35%;
+  }
+}
 footer {
   color: #ffffff;
   text-align: center;
