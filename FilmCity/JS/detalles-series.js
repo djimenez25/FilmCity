@@ -39,7 +39,15 @@ function temporadas(){
 
             pequeños.appendChild(capitulo);
 
-            capitulo.addEventListener("click", ()=>{
+            capitulo.addEventListener("click", (e)=>{
+
+                
+                const detalles_cap = document.querySelectorAll(".detalles_capitulo");
+
+                detalles_cap.forEach(cap => {
+                    cap.parentElement.removeChild(cap);
+                })
+
                 if(capitulo.contains(caja_serie_detalle)){
                     capitulo.removeChild(caja_serie_detalle);
                 }else{
