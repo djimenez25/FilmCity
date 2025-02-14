@@ -35,3 +35,28 @@ fetch("JS/peliculas-series.json") // Cargar el JSON externo
     }
   })
   .catch((error) => console.error("Error cargando JSON:", error));
+
+//PELICULAS
+fetch("JS/peliculas-series.json") // Cargar el JSON externo
+  .then((response) => response.json()) // Convertir la respuesta en un objeto JavaScript
+  .then((data) => {
+    // Filtrar las primeras 3 películas (o las que desees)
+    const peliculasRelacionadas = data.peliculas.slice(12, 15); // Cambia el filtro según tus necesidades
+
+    const peliculasContainer = document.getElementById("peliculas");
+
+    if (peliculasRelacionadas.length > 0) {
+      // Generar el HTML para cada película
+      peliculasRelacionadas.forEach((pelicula) => {
+        const peliculaHTML = `
+          <div class="pelicula">
+            <img src="${pelicula.Poster}" alt="${pelicula.Title}" />
+          </div>
+        `;
+        peliculasContainer.innerHTML += peliculaHTML; // Agregar cada película al contenedor
+      });
+    } else {
+      console.error("No se encontraron películas relacionadas.");
+    }
+  })
+  .catch((error) => console.error("Error cargando JSON:", error));

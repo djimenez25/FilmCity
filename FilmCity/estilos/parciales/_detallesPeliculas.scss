@@ -1,90 +1,99 @@
-.content{
+// DISEÑO MÓVIL (Por defecto)
+.content {
     position: relative;
 
-    .trailerDetalles{
+    .trailerDetalles {
         position: relative;
         width: 100%;
         height: 550px;
         overflow: hidden;
-            video{
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                min-width: 100%;
-                min-height: 100%;
-                transform: translate(-50%, -50%);
-                z-index: -1;
-                object-fit: cover; /* Ajusta el video sin deformación */
-            }
-    
+
+        video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+            object-fit: cover; /* Ajusta el video sin deformación */
+        }
     }
 
     .filmcity {
         position: relative;
         font-family: $fuente_titulo;
-        font-size: 15px;
+        font-size: 20px; // Aumentado para mejor visibilidad
         color: $color_titulo;
-        margin-top: 10px;
+        margin-top: 20px; // Aumentado para mejor espaciado
         margin-left: 20px;
-        
-            h3 {
-                position: absolute;
-                top: 200px;
-                left: 30px;
-                text-shadow: 2px 2px 4px #ffffff, -2px -2px 5px rgba(255, 255, 255, 0.5);
-            }
-    }
 
-    .titulo-pelicula{
-        position: relative;
-        img{
-            width: 400px;
+        h3 {
             position: absolute;
-            top: 200px;
+            top: 180px; // Ajustado para mejor posicionamiento
             left: 30px;
-
+            text-shadow: 2px 2px 4px #ffffff, -2px -2px 5px rgba(255, 255, 255, 0.5);
         }
     }
-    
-    .descripcion{
+
+    .titulo-pelicula {
+        position: relative;
+
+        img {
+            width: 100%; // Se adapta a la pantalla en móvil
+            max-width: 330px;
+            position: absolute;
+            top: 180px; // Ajustado para mejor posicionamiento
+            left: 30px;
+        }
+    }
+
+    .descripcion {
         position: absolute;
-        top: 350px;
+        top: 320px; // Ajustado para mejor posicionamiento
         left: 30px;
-        width: 55%;
+        width: 90%; // Más adaptable a móviles
         font-family: $fuente_principal;
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 500;
         color: white;
-
+        line-height: 1.5; // Mejor legibilidad
     }
 
-    .masDetalles{
+    .masDetalles {
         position: absolute;
-        top: 450px;
+        top: 455px; // Ajustado para mejor posicionamiento
         display: flex;
-        gap: 20px;
+        flex-direction: row; // Cambiado a "row" para que todo esté en línea
+        align-items: center; // Alinea verticalmente los elementos
+        gap: 20px; // Espacio entre los elementos
         margin-left: 30px;
-
-        p{
+    
+        p {
             font-weight: bold;
             color: grey;
+            margin: 0; // Elimina el margen por defecto de los párrafos
         }
-        ul{
-            margin-left: 20px;
+    
+        ul {
+            margin: 0; // Elimina el margen por defecto de la lista
             display: flex;
-            gap: 25px;
+            flex-wrap: wrap; // Si hay poco espacio, permite saltos de línea
+            gap: 15px; // Espacio entre los elementos de la lista
             color: grey;
+            list-style-type: none; // Elimina los puntos de la lista
+            padding: 0;
         }
     }
 
-    .verAhora{
+    .verAhora {
         position: absolute;
         display: flex;
         align-items: center;
         top: 485px;
-        width: 180px;
-        height: 50px;
-        margin-left: 30px;
+        width: 160px;
+        height: 39px;
+        margin-left: 15px;
         border-radius: 50px;
         background-color: grey;
         font-family: $fuente_principal;
@@ -95,83 +104,239 @@
         box-shadow: 0 5px 5px 0 rgb(39, 39, 39);
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         border: none;
-        i{
-            margin-left: 20px;
-            font-size:40px;
+        cursor: pointer;
+    
+        i {
+            margin-left: 23px; // Reducido el margen izquierdo
+            font-size: 30px; // Reducido el tamaño del ícono
             color: white;
-            
         }
     }
-
-    .botones{
+    
+    .botones {
         position: absolute;
-        top: 485px;
-        margin-left: 250px;
+        top: 485px; // Ajustado para alinear con el botón "Ver ahora"
+        left: 180px; // Ajustado para colocar los íconos al lado del botón
         display: flex;
         gap: 10px;
-
-        i{
-
-            font-size: 40px;
+    
+        i {
+            font-size: 20px; // Reducido el tamaño de los íconos
             color: white;
+            cursor: pointer;
+
+           
         }
-        .circulo{
+
+        .mas{
+            margin-top: -5px;
+            font-size: 30px;
+        }
+    
+        .circulo {
             border-radius: 100px;
-            border: 3px solid white;
+            border: 2px solid white;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
         }
     }
-
-    
-    
 }
 
 .detalle_pelicula {
     margin-left: 20px;
     margin-top: 30px;
     color: $color_principal;
-    border-bottom: 3px solid $color_principal;
     width: fit-content;
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Dos columnas */
+    display: flex;
+    flex-direction: column; // Todo en columna en móvil
     gap: 20px;
 
-    h3{
+    h3 {
         border-bottom: 3px solid $color_principal;
         width: 90px;
     }
+
+    #sinopsis, #reparto, #audio {
+        background-color: #2c2c3a; // Mismo fondo que .detalle_box
+        padding: 15px; // Mismo padding que .detalle_box
+        border-radius: 10px; // Mismo borde redondeado que .detalle_box
+        color: $color_principal; // Mismo color de texto que .detalle_box
+        width: 95%; // Mismo ancho que .detalle_box
+    }
+
+    #reparto, #audio{
+        margin-bottom:20px ;
+    }
+
+    h4 {
+        color: gray;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 1.5; // Mejor legibilidad
+    }
+
+    p strong {
+        color: gray;
+        font-weight: 500;
+    }
 }
 
-.detalle_box {
-    background-color: #2c2c3a;
-    padding: 15px;
-    border-radius: 10px;
-    color: $color_principal;
-    width: 95%;
+.relacionado_pelicula {
+    margin-left: 20px;
+    margin-top: 10px;
+
+    h3{
+        color: $color_principal;
+        border-bottom: 3px solid $color_principal;
+        width: fit-content;
+    }
+
+    h4{
+        margin-top: 10px;
+        color: $color_principal;
+    }
+
+    #peliculas {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px; // Espacio entre las películas
+    }
+
+    .pelicula {
+        margin: auto;
+        padding: 15px;
+        border-radius: 10px;
+        width: 70%; // Ancho fijo para cada película
+        text-align: center;
+
+        img {
+            width: 100%;
+        }
+    }
+    
 }
 
-#sinopsis {
-    grid-column: 1; /* La sinopsis ocupa la primera columna */
-    height: 100%; /* Asegura que la sinopsis ocupe todo el espacio en la primera columna */
-    margin-bottom: 20px;
+@media (min-width: 495px){
+    .botones {
+        top: 485px; // Ajustado para alinear con el botón "Ver ahora"
+        left: 220px; // Ajustado para colocar los íconos al lado del botón
+
+    
+        i {
+            font-size: 30px; // Reducido el tamaño de los íconos
+        }
+
+        .mas{
+            margin-top: -8px;
+            font-size: 40px;
+        }
+    
+        .circulo {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
 }
 
 
+@media (min-width: 768px) {
+    .detalle_pelicula {
+        display: flex;
+        flex-direction: column; // La sinopsis arriba y los detalles abajo
+        width: 100%;
+    }
 
-#reparto, #audio {
-    margin-top: 20px;
-    grid-column: 2; /* El director y el audio están en la segunda columna */
+    // Sinopsis ocupa toda la parte superior
+    #sinopsis {
+        width: 100%;
+    }
+
+    // Contenedor de los detalles (dirección, reparto, audio, etc.)
+    .reparto-audio {
+        display: flex;
+        justify-content: space-between; // Divide en dos columnas
+        gap: 20px;
+    }
+
+    #reparto, #audio {
+        flex: 1; // Ambas columnas tienen el mismo ancho
+    }
+
+    #audio{
+        margin-right: 40px;
+    }
+
+    .botones {
+        top: 485px;
+        margin-top: 5px;
+        margin-left: 20px;
+    }
+
+    .relacionado_pelicula {
+        margin-left: 20px;
+        margin-top: 10px;
+    
+        h3{
+            color: $color_principal;
+            border-bottom: 3px solid $color_principal;
+            width: fit-content;
+        }
+    
+        h4{
+            margin-top: 10px;
+            color: $color_principal;
+        }
+    
+        #peliculas {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px; // Espacio entre las películas
+        }
+    
+        .pelicula {
+            margin: auto;
+            padding: 15px;
+            border-radius: 10px;
+            width: 70%; // Ancho fijo para cada película
+            text-align: center;
+    
+            img {
+                width: 80%;
+            }
+        }
+    }
+    
 }
 
-h4 {
-    color: gray;
-    margin-bottom: 10px;
-}
+@media (min-width: 992px) {
+    .detalle_pelicula {
+        display: grid;
+        grid-template-columns: 1fr 1fr; // Dos columnas
+        gap: 20px; // Espacio entre columnas
+        width: 100%;
 
-p {
-    font-size: 14px;
-}
+        #sinopsis {
+            grid-column: 1; // Ocupa la primera columna
+            grid-row: 1 / span 2; // Ocupa dos filas
+        }
 
-p strong {
-    color: gray;
-    font-weight: 500;
+        .reparto-audio {
+            grid-column: 2; // Ocupa la segunda columna
+            display: flex;
+            flex-direction: column; // Reparto y audio en columna
+            gap: 20px; // Espacio entre reparto y audio
+        }
+
+        #reparto, #audio {
+            margin: 0; // Elimina márgenes innecesarios
+        }
+    }
 }

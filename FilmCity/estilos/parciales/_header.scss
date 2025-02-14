@@ -34,7 +34,7 @@ header {
     
     .desplegable {
         display: block;
-        font-size: 45px;
+        font-size: 35px;
         color: white;
         margin-left: -100px;
         margin-top:13px;
@@ -48,17 +48,17 @@ header {
         margin-top: 5px;
         
         .user {
-            width: 50px;
-            height: 50px;
+            width: 35px;
+            height: 36px;
             border-radius: 40px;
         }
 
         .menu {
-            width: 30px;
+            width: 23px;
         }
 
         .lupa {
-            font-size: 30px;
+            font-size: 22px;
             color: white;
         }
     }
@@ -86,7 +86,7 @@ header {
         
         a {
             text-decoration: none;
-            font-size: 30px;
+            font-size: 20px;
             color: $color_titulo;
             text-shadow: 2px 2px 4px #ffffff, -2px -2px 5px rgba(255, 255, 255, 0.5);
         }
