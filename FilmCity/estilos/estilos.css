@@ -1019,9 +1019,18 @@ p {
     margin: 0;
   }
 }
+body {
+  margin: auto;
+}
+
 .capitulos {
   width: 90%;
   margin: auto;
+  margin-top: 1%;
+}
+
+.capitulos_grandes {
+  display: none;
 }
 
 .temporadas {
@@ -1051,6 +1060,35 @@ p {
   border-radius: 20px;
 }
 
+.detalles_capitulo {
+  width: 80%;
+  background-color: #242432;
+  margin: auto;
+  padding: 2%;
+  border-radius: 20px;
+}
+.detalles_capitulo img {
+  border-radius: 20px;
+}
+
+.capitulo_grande {
+  margin-top: 5%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 5%;
+}
+.capitulo_grande .caja_imagen .imagen_serie {
+  border-radius: 15px;
+}
+.capitulo_grande .caja_imagen .imagen_serie:hover {
+  filter: blur(1px);
+}
+.capitulo_grande .titulo {
+  font-weight: 700;
+  font-size: 120%;
+  margin-bottom: 2%;
+}
+
 @media (min-width: 768px) {
   .temporadas {
     width: 60%;
@@ -1061,10 +1099,22 @@ p {
     width: 40%;
     margin: 0;
   }
+  .capitulos_pequeños {
+    display: none;
+  }
+  .capitulos_grandes {
+    display: block;
+  }
 }
 @media (min-width: 1200px) {
   .temporadas {
     width: 35%;
+  }
+}
+@media (min-width: 1400px) {
+  body {
+    max-width: 1600px;
+    margin: auto !important;
   }
 }
 footer {
