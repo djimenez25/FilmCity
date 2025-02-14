@@ -1,6 +1,16 @@
+body{
+    // max-width: 1300px;
+    margin: auto;
+}
+
 .capitulos{
     width: 90%;
     margin: auto;
+    margin-top: 1%;
+}
+
+.capitulos_grandes{
+    display: none;
 }
 
 .temporadas{
@@ -25,7 +35,7 @@
 
 }
 
-//CAPITULOS
+//CAPITULOS PEQUEÑOS
 
 .capitulo_pequeño{
     background-color: $color_secundario;
@@ -35,7 +45,45 @@
     border-radius: 20px;
 }
 
+.detalles_capitulo{
+    width: 80%;
+    background-color: $color_detalles;
+    margin: auto;
+    padding: 2%;
+    border-radius: 20px;
 
+    img{
+        border-radius: 20px;
+    }
+
+}
+
+//CAPITULOS GRANDES
+.capitulo_grande{
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 5%;
+
+    .caja_imagen{
+
+        .imagen_serie{
+            border-radius: 15px;
+        }
+
+        .imagen_serie:hover{
+            filter: blur(1px);
+        }
+
+    }
+
+    .titulo{
+        font-weight: 700;
+        font-size: 120%;
+        margin-bottom: 2%;
+    }
+    
+}
 
 //RESPONSIVE
 @media (min-width: 576px) {
@@ -58,6 +106,14 @@
 
     }
 
+    .capitulos_pequeños{
+        display: none;
+    }
+
+    .capitulos_grandes{
+        display: block;
+    }
+
 }
 
 @media (min-width: 1200px) {
@@ -70,4 +126,8 @@
 
 @media (min-width: 1400px) {
 
+    body{
+        max-width: 1600px;
+        margin: auto !important;
+    }
 }

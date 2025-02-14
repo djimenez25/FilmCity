@@ -80,7 +80,7 @@ header .titulo {
 header .titulo a {
   text-decoration: none;
   font-size: 30px;
-  color: #e50914;
+  color: #E50914;
   text-shadow: 2px 2px 4px #ffffff, -2px -2px 5px rgba(255, 255, 255, 0.5);
 }
 
@@ -255,8 +255,7 @@ header .titulo a {
   display: flex;
   transition: transform 0s ease-in-out !important;
 }
-.slider .slide,
-.slider .slide-grande {
+.slider .slide, .slider .slide-grande {
   position: relative;
   margin-top: -30px;
   display: flex;
@@ -266,8 +265,7 @@ header .titulo a {
   padding: 10px;
   box-sizing: border-box;
 }
-.slider .slide .ranking-number,
-.slider .slide-grande .ranking-number {
+.slider .slide .ranking-number, .slider .slide-grande .ranking-number {
   font-size: 330px;
   font-weight: bold;
   color: #000000;
@@ -277,15 +275,13 @@ header .titulo a {
   margin-right: 70px;
   -webkit-text-stroke: 4px #595959;
 }
-.slider .slide .image-container,
-.slider .slide-grande .image-container {
+.slider .slide .image-container, .slider .slide-grande .image-container {
   position: relative;
   z-index: 2;
   width: 205px;
   margin-left: -86px;
 }
-.slider .slide .image-container img,
-.slider .slide-grande .image-container img {
+.slider .slide .image-container img, .slider .slide-grande .image-container img {
   width: 100%;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
@@ -471,6 +467,10 @@ header .titulo a {
   box-sizing: border-box;
 }
 
+body {
+  margin: auto;
+}
+
 img {
   max-width: 100%;
 }
@@ -489,13 +489,17 @@ p {
   color: white;
 }
 
+.peliculas_menu,
+.series_menu {
+  margin-top: 1%;
+}
+
 .peliculas_menu_caja,
 .series_menu_caja {
   display: grid;
   grid-template-columns: 1fr;
   background-color: rgba(75, 68, 68, 0.2980392157);
   border-radius: 20px;
-  padding: 1%;
 }
 
 .peliculas_titulo,
@@ -504,6 +508,11 @@ p {
   display: none;
   font-family: "Poppins", serif;
   align-content: center;
+}
+.peliculas_titulo p,
+.series_titulo p {
+  margin-top: 10%;
+  font-size: 18px;
 }
 
 .peliculas_select,
@@ -521,6 +530,7 @@ p {
   color: white;
   padding: 2%;
   text-align: center;
+  border-radius: 10px;
 }
 .peliculas_select .select_genero .options_select,
 .series_select .select_genero .options_select {
@@ -737,13 +747,13 @@ p {
   transform: translate(-50%, -50%);
   z-index: -1;
   -o-object-fit: cover;
-  object-fit: cover; /* Ajusta el video sin deformación */
+     object-fit: cover; /* Ajusta el video sin deformación */
 }
 .content .filmcity {
   position: relative;
   font-family: "Poller One", serif;
   font-size: 15px;
-  color: #e50914;
+  color: #E50914;
   margin-top: 10px;
   margin-left: 20px;
 }
@@ -859,8 +869,7 @@ p {
   margin-bottom: 20px;
 }
 
-#reparto,
-#audio {
+#reparto, #audio {
   margin-top: 20px;
   grid-column: 2; /* El director y el audio están en la segunda columna */
 }
@@ -879,6 +888,104 @@ p strong {
   font-weight: 500;
 }
 
+body {
+  margin: auto;
+}
+
+.capitulos {
+  width: 90%;
+  margin: auto;
+  margin-top: 1%;
+}
+
+.capitulos_grandes {
+  display: none;
+}
+
+.temporadas {
+  text-align: center;
+  width: 100%;
+  border-radius: 20px;
+  background-color: rgba(75, 68, 68, 0.2980392157);
+  margin: auto;
+  padding: 1%;
+  margin-bottom: 5%;
+}
+.temporadas .temporadas_serie {
+  font-family: "Poppins", serif;
+  background-color: #242432;
+  border: none;
+  width: 80%;
+  color: white;
+  padding: 1%;
+  text-align: center;
+}
+
+.capitulo_pequeño {
+  background-color: rgba(75, 68, 68, 0.2980392157);
+  margin-bottom: 5%;
+  text-align: center;
+  padding: 2%;
+  border-radius: 20px;
+}
+
+.detalles_capitulo {
+  width: 80%;
+  background-color: #242432;
+  margin: auto;
+  padding: 2%;
+  border-radius: 20px;
+}
+.detalles_capitulo img {
+  border-radius: 20px;
+}
+
+.capitulo_grande {
+  margin-top: 5%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 5%;
+}
+.capitulo_grande .caja_imagen .imagen_serie {
+  border-radius: 15px;
+}
+.capitulo_grande .caja_imagen .imagen_serie:hover {
+  filter: blur(1px);
+}
+.capitulo_grande .titulo {
+  font-weight: 700;
+  font-size: 120%;
+  margin-bottom: 2%;
+}
+
+@media (min-width: 768px) {
+  .temporadas {
+    width: 60%;
+  }
+}
+@media (min-width: 992px) {
+  .temporadas {
+    width: 40%;
+    margin: 0;
+  }
+  .capitulos_pequeños {
+    display: none;
+  }
+  .capitulos_grandes {
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  .temporadas {
+    width: 35%;
+  }
+}
+@media (min-width: 1400px) {
+  body {
+    max-width: 1600px;
+    margin: auto !important;
+  }
+}
 footer {
   color: #ffffff;
   text-align: center;
@@ -911,7 +1018,7 @@ footer .titulo {
 footer .titulo a {
   text-decoration: none;
   font-size: 30px;
-  color: #e50914;
+  color: #E50914;
   text-shadow: 2px 2px 4px #ffffff, -2px -2px 5px rgba(255, 255, 255, 0.5);
 }
 footer .copy p {
@@ -967,4 +1074,4 @@ footer .copy p {
     margin-top: 1px;
     font-size: 35px;
   }
-} /*# sourceMappingURL=estilos.css.map */
+}/*# sourceMappingURL=estilos.css.map */

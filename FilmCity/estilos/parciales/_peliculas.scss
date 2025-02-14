@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+body{
+    margin: auto;
+}
+
 img {
     max-width: 100%;
 }
@@ -26,13 +30,17 @@ p {
 
 
 //MENU CAJA
+.peliculas_menu,
+.series_menu{
+    margin-top: 1%;
+}
+
 .peliculas_menu_caja,
 .series_menu_caja {
     display: grid;
     grid-template-columns: 1fr;
     background-color: $color_secundario;
     border-radius: 20px;
-    padding: 1%;
 }
 
 .peliculas_titulo,
@@ -41,6 +49,12 @@ p {
     display: none;
     font-family: $fuente_principal;
     align-content: center;
+
+    p{
+        margin-top: 10%;
+        font-size: 18px;
+    }
+
 }
 
 .peliculas_select,
@@ -57,6 +71,7 @@ p {
         color: white;
         padding: 2%;
         text-align: center;
+        border-radius: 10px;
 
         .options_select {
             font-weight: bold;
