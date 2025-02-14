@@ -467,6 +467,10 @@ header .titulo a {
   box-sizing: border-box;
 }
 
+body {
+  margin: auto;
+}
+
 img {
   max-width: 100%;
 }
@@ -485,13 +489,17 @@ p {
   color: white;
 }
 
+.peliculas_menu,
+.series_menu {
+  margin-top: 1%;
+}
+
 .peliculas_menu_caja,
 .series_menu_caja {
   display: grid;
   grid-template-columns: 1fr;
   background-color: rgba(75, 68, 68, 0.2980392157);
   border-radius: 20px;
-  padding: 1%;
 }
 
 .peliculas_titulo,
@@ -500,6 +508,11 @@ p {
   display: none;
   font-family: "Poppins", serif;
   align-content: center;
+}
+.peliculas_titulo p,
+.series_titulo p {
+  margin-top: 10%;
+  font-size: 18px;
 }
 
 .peliculas_select,
@@ -517,6 +530,7 @@ p {
   color: white;
   padding: 2%;
   text-align: center;
+  border-radius: 10px;
 }
 .peliculas_select .select_genero .options_select,
 .series_select .select_genero .options_select {
