@@ -319,24 +319,52 @@
 @media (min-width: 992px) {
     .detalle_pelicula {
         display: grid;
-        grid-template-columns: 1fr 1fr; // Dos columnas
-        gap: 20px; // Espacio entre columnas
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: auto auto; 
+        gap: 20px;
         width: 100%;
+    }
 
-        #sinopsis {
-            grid-column: 1; // Ocupa la primera columna
-            grid-row: 1 / span 2; // Ocupa dos filas
-        }
+    .detalle_pelicula h3 {
+        grid-column: 1 / span 2; 
+        grid-row: 1; 
+    }
 
-        .reparto-audio {
-            grid-column: 2; // Ocupa la segunda columna
-            display: flex;
-            flex-direction: column; // Reparto y audio en columna
-            gap: 20px; // Espacio entre reparto y audio
-        }
+    #sinopsis {
+        grid-column: 1; 
+        grid-row: 2; 
+        margin-bottom: 10px;
+    }
 
-        #reparto, #audio {
-            margin: 0; // Elimina márgenes innecesarios
+    .reparto-audio {
+        margin-top: 10px;
+        grid-column: 2;
+        grid-row: 2;
+        display: flex;
+        flex-direction: column; 
+        gap: 10px;
+    }
+
+    #reparto, #audio {
+        margin: 0;
+    }
+
+    #peliculas {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; 
+        gap: 10px;
+    }
+    
+    .pelicula {
+        flex: 1 1 calc(33.33% - 10px);
+        max-width: calc(33.33% - 10px); 
+        padding: 15px;
+        border-radius: 10px;
+        text-align: center;
+        
+        img {
+            width: 100%; // Se ajusta al contenedor
         }
     }
 }

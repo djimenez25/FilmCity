@@ -198,6 +198,9 @@ header .titulo a {
   gap: 10px;
   margin-top: 15px;
 }
+.carousel-item .carousel-caption .btn-container a {
+  text-decoration: none;
+}
 .carousel-item .carousel-caption .btn-container .btn-netflix {
   display: flex;
   align-items: center;
@@ -1002,21 +1005,45 @@ p {
   .detalle_pelicula {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
     gap: 20px;
     width: 100%;
   }
-  .detalle_pelicula #sinopsis {
-    grid-column: 1;
-    grid-row: 1/span 2;
+  .detalle_pelicula h3 {
+    grid-column: 1/span 2;
+    grid-row: 1;
   }
-  .detalle_pelicula .reparto-audio {
+  #sinopsis {
+    grid-column: 1;
+    grid-row: 2;
+    margin-bottom: 10px;
+  }
+  .reparto-audio {
+    margin-top: 10px;
     grid-column: 2;
+    grid-row: 2;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
   }
-  .detalle_pelicula #reparto, .detalle_pelicula #audio {
+  #reparto, #audio {
     margin: 0;
+  }
+  #peliculas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .pelicula {
+    flex: 1 1 calc(33.33% - 10px);
+    max-width: calc(33.33% - 10px);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .pelicula img {
+    width: 100%;
   }
 }
 body {
