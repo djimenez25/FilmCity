@@ -1,140 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Series</title>
-    <link rel="stylesheet" href="./estilos/estilos.css" />
-    <script src="JS/series.js" defer></script>
-    <!-- BOOTSTRAP -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <!--HEADER-->
-    <header>
-      <div class="titulo"><a href="">FILMCITY</a></div>
-      <i class="desplegable bi bi-list"></i>
-      <div class="secciones">
-        <a href="home.html">Inicio</a>
-        <a href="peliculas.html">Peliculas</a>
-        <a href="#"><b>Series</b></a>
-        <a href="#">Documentales</a>
-      </div>
-      <div class="perfil">
-        <a href="#"><i class="lupa bi bi-search"></i></a>
-        <a href="#"
-          ><img class="menu" src="multimedia/imagenes/logotipoMenu.png" alt=""
-        /></a>
-        <a href="#"
-          ><img class="user" src="multimedia/imagenes/fotoPerfil.jpg" alt=""
-        /></a>
-      </div>
-    </header>
 
-    <!--SERIES-->
-    <section class="series">
-      <div class="series_menu">
-        <div class="series_menu_caja">
-          <div class="series_titulo">
-            <p>Peliculas</p>
-          </div>
-          <div class="series_select">
-            <select name="" id="" class="select_genero">
-              <option
-                value="Generos"
-                class="options_select"
-                style="font-family: Poppins, serif"
-              >
-                Todos los generos
-              </option>
-              <option
-                value="Drama"
-                class="options"
-                style="font-family: Poppins, serif"
-              >
-                Drama
-              </option>
-              <option
-                value="Comedia"
-                class="options"
-                style="font-family: Poppins, serif"
-              >
-                Comedia
-              </option>
-              <option
-                value="Accion"
-                class="options"
-                style="font-family: Poppins, serif"
-              >
-                Accion
-              </option>
-            </select>
-          </div>
-        </div>
-      </div>
-      <div class="series_catalogo"></div>
-    </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Series</title>
+  <link rel="stylesheet" href="./estilos/estilos.css" />
+  <script src="JS/series.js" defer></script>
+  <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</head>
 
-    <!--FOOTER-->
-    <footer>
-      <div class="redes">
-        <i class="bi bi-instagram"></i>
-        <i class="bi bi-twitter-x"></i>
-        <i class="bi bi-tiktok"></i>
-        <i class="bi bi-youtube"></i>
-      </div>
-      <div class="enlaces">
-        <hr />
-        <div class="columna">
-          <a href="#">Preguntas frecuentes</a>
-          <a href="#">Inversores</a>
-          <a href="#">Formas de ver</a>
-          <a href="#">Avisos legales</a>
-        </div>
-        <hr />
-        <div class="columna">
-          <a href="#">Centro de ayuda</a>
-          <a href="#">Empleo</a>
-          <a href="#">Terminos de uso</a>
-        </div>
-        <hr />
-        <div class="columna">
-          <a href="#">Cuenta</a>
-          <a href="#">Solo en FilmCity</a>
-          <a href="#">Garantía legal</a>
-        </div>
-        <hr />
-        <div class="columna">
-          <a href="#">Informacion corporativa</a>
-          <a href="#">Zona de prensa</a>
-          <a href="#">Privacidad</a>
-          <a href="#">Anuncios</a>
-        </div>
-      </div>
-      <div class="titulo">
-        <a href="#">FILMCITY</a>
-      </div>
+<body>
+  <!--HEADER-->
+  <header>
+    <div class="titulo"><a href="">FILMCITY</a></div>
+    <i class="desplegable bi bi-list"></i>
+    <div class="secciones">
+      <a href="home.html">Inicio</a>
+      <a href="peliculas.html">Peliculas</a>
+      <a href="#"><b>Series</b></a>
+      <a href="#">Documentales</a>
+    </div>
+    <div class="perfil">
+      <a href="#"><i class="lupa bi bi-search"></i></a>
+      <a href="#"><img class="menu" src="multimedia/imagenes/logotipoMenu.png" alt="" /></a>
+      <a href="#"><img class="user" src="multimedia/imagenes/fotoPerfil.jpg" alt="" /></a>
+    </div>
+  </header>
 
-      <div class="copy">
-        <p>
-          &copy; 2025 FILMCITY S.A. Todos los derechos reservados. <br />
-          Diseñado y maquetado por el equipo de FilmCity.
-        </p>
+  <!--SERIES-->
+  <section class="series">
+    <div class="series_menu">
+      <div class="series_menu_caja">
+        <div class="series_titulo">
+          <p>Peliculas</p>
+        </div>
+        <div class="series_select">
+          <select name="" id="" class="select_genero">
+            <option value="Generos" class="options_select" style="font-family: Poppins, serif">
+              Todos los generos
+            </option>
+            <option value="Drama" class="options" style="font-family: Poppins, serif">
+              Drama
+            </option>
+            <option value="Comedia" class="options" style="font-family: Poppins, serif">
+              Comedia
+            </option>
+            <option value="Accion" class="options" style="font-family: Poppins, serif">
+              Accion
+            </option>
+          </select>
+        </div>
       </div>
-    </footer>
-  </body>
+    </div>
+    <div class="series_catalogo"></div>
+  </section>
+
+  <!--FOOTER-->
+  <footer>
+    <div class="redes">
+      <i class="bi bi-instagram"></i>
+      <i class="bi bi-twitter-x"></i>
+      <i class="bi bi-tiktok"></i>
+      <i class="bi bi-youtube"></i>
+    </div>
+    <div class="enlaces">
+      <hr />
+      <div class="columna">
+        <a href="#">Preguntas frecuentes</a>
+        <a href="#">Inversores</a>
+        <a href="#">Formas de ver</a>
+        <a href="#">Avisos legales</a>
+      </div>
+      <hr />
+      <div class="columna">
+        <a href="#">Centro de ayuda</a>
+        <a href="#">Empleo</a>
+        <a href="#">Terminos de uso</a>
+      </div>
+      <hr />
+      <div class="columna">
+        <a href="#">Cuenta</a>
+        <a href="#">Solo en FilmCity</a>
+        <a href="#">Garantía legal</a>
+      </div>
+      <hr />
+      <div class="columna">
+        <a href="#">Informacion corporativa</a>
+        <a href="#">Zona de prensa</a>
+        <a href="#">Privacidad</a>
+        <a href="#">Anuncios</a>
+      </div>
+    </div>
+    <div class="titulo">
+      <a href="#">FILMCITY</a>
+    </div>
+
+    <div class="copy">
+      <p>
+        &copy; 2025 FILMCITY S.A. Todos los derechos reservados. <br />
+        Diseñado y maquetado por el equipo de FilmCity.
+      </p>
+    </div>
+  </footer>
+</body>
+
 </html>
