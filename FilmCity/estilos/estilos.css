@@ -80,7 +80,7 @@ header .titulo {
 header .titulo a {
   text-decoration: none;
   font-size: 30px;
-  color: #e50914;
+  color: #E50914;
   text-shadow: 2px 2px 4px #ffffff, -2px -2px 5px rgba(255, 255, 255, 0.5);
 }
 
@@ -255,8 +255,7 @@ header .titulo a {
   display: flex;
   transition: transform 0s ease-in-out !important;
 }
-.slider .slide,
-.slider .slide-grande {
+.slider .slide, .slider .slide-grande {
   position: relative;
   margin-top: -30px;
   display: flex;
@@ -266,8 +265,7 @@ header .titulo a {
   padding: 10px;
   box-sizing: border-box;
 }
-.slider .slide .ranking-number,
-.slider .slide-grande .ranking-number {
+.slider .slide .ranking-number, .slider .slide-grande .ranking-number {
   font-size: 330px;
   font-weight: bold;
   color: #000000;
@@ -277,15 +275,13 @@ header .titulo a {
   margin-right: 70px;
   -webkit-text-stroke: 4px #595959;
 }
-.slider .slide .image-container,
-.slider .slide-grande .image-container {
+.slider .slide .image-container, .slider .slide-grande .image-container {
   position: relative;
   z-index: 2;
   width: 205px;
   margin-left: -86px;
 }
-.slider .slide .image-container img,
-.slider .slide-grande .image-container img {
+.slider .slide .image-container img, .slider .slide-grande .image-container img {
   width: 100%;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
@@ -737,13 +733,13 @@ p {
   transform: translate(-50%, -50%);
   z-index: -1;
   -o-object-fit: cover;
-  object-fit: cover; /* Ajusta el video sin deformación */
+     object-fit: cover; /* Ajusta el video sin deformación */
 }
 .content .filmcity {
   position: relative;
   font-family: "Poller One", serif;
   font-size: 15px;
-  color: #e50914;
+  color: #E50914;
   margin-top: 10px;
   margin-left: 20px;
 }
@@ -859,8 +855,7 @@ p {
   margin-bottom: 20px;
 }
 
-#reparto,
-#audio {
+#reparto, #audio {
   margin-top: 20px;
   grid-column: 2; /* El director y el audio están en la segunda columna */
 }
@@ -879,6 +874,54 @@ p strong {
   font-weight: 500;
 }
 
+.capitulos {
+  width: 90%;
+  margin: auto;
+}
+
+.temporadas {
+  text-align: center;
+  width: 100%;
+  border-radius: 20px;
+  background-color: rgba(75, 68, 68, 0.2980392157);
+  margin: auto;
+  padding: 1%;
+  margin-bottom: 5%;
+}
+.temporadas .temporadas_serie {
+  font-family: "Poppins", serif;
+  background-color: #242432;
+  border: none;
+  width: 80%;
+  color: white;
+  padding: 1%;
+  text-align: center;
+}
+
+.capitulo_pequeño {
+  background-color: rgba(75, 68, 68, 0.2980392157);
+  margin-bottom: 5%;
+  text-align: center;
+  padding: 2%;
+  border-radius: 20px;
+}
+
+@media (min-width: 768px) {
+  .temporadas {
+    width: 60%;
+  }
+}
+@media (min-width: 992px) {
+  .temporadas {
+    width: 40%;
+    margin: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .temporadas {
+    width: 35%;
+  }
+}
 footer {
   color: #ffffff;
   text-align: center;
@@ -911,7 +954,7 @@ footer .titulo {
 footer .titulo a {
   text-decoration: none;
   font-size: 30px;
-  color: #e50914;
+  color: #E50914;
   text-shadow: 2px 2px 4px #ffffff, -2px -2px 5px rgba(255, 255, 255, 0.5);
 }
 footer .copy p {
@@ -967,4 +1010,55 @@ footer .copy p {
     margin-top: 1px;
     font-size: 35px;
   }
-} /*# sourceMappingURL=estilos.css.map */
+}
+body {
+  border-color: black;
+}
+
+.contenedor {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  position: relative;
+}
+.contenedor .headerRepro {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3411764706);
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contenedor .headerRepro i {
+  font-size: 30px;
+  color: white;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.contenedor video {
+  display: block;
+  height: 100vh;
+}
+.contenedor .footerRepro {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3411764706);
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.contenedor .footerRepro i {
+  font-size: 30px;
+  color: white;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.contenedor .footerRepro .informacion {
+  color: white;
+  font-weight: bold;
+}/*# sourceMappingURL=estilos.css.map */
