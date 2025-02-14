@@ -1026,6 +1026,13 @@ body {
 .banner {
   width: 100%;
   margin: auto;
+  position: relative;
+}
+.banner .logo_pelicula {
+  width: 70%;
+  top: 20%;
+  left: 15%;
+  position: absolute;
 }
 
 .capitulos {
@@ -1095,11 +1102,21 @@ body {
 }
 
 @media (min-width: 768px) {
+  .banner .logo_pelicula {
+    width: 40%;
+    top: 30%;
+    left: 5%;
+  }
   .temporadas {
     width: 60%;
   }
 }
 @media (min-width: 992px) {
+  .banner .logo_pelicula {
+    width: 30%;
+    top: 45%;
+    left: 5%;
+  }
   .temporadas {
     width: 40%;
     margin: 0;
@@ -1112,6 +1129,11 @@ body {
   }
 }
 @media (min-width: 1200px) {
+  .banner .logo_pelicula {
+    width: 30%;
+    top: 50%;
+    left: 5%;
+  }
   .temporadas {
     width: 35%;
   }
