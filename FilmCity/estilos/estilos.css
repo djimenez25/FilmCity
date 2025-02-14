@@ -1023,8 +1023,13 @@ body {
   margin: auto;
 }
 
+.banner {
+  width: 100%;
+  margin: auto;
+}
+
 .capitulos {
-  width: 90%;
+  width: 95%;
   margin: auto;
   margin-top: 1%;
 }
