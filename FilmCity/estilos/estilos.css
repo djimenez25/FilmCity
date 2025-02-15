@@ -1061,6 +1061,64 @@ body {
   left: 15%;
   position: absolute;
 }
+.banner .detalles_serie {
+  position: absolute;
+  top: 65%;
+  left: 5%;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "boton_serie" "botones_serie" "descripcion_serie";
+}
+.banner .detalles_serie .boton_serie {
+  grid-area: boton_serie;
+  margin: auto;
+}
+.banner .detalles_serie .boton_serie .verAhora {
+  display: flex;
+  align-items: center;
+  width: 140px;
+  height: 33px;
+  border-radius: 50px;
+  background-color: grey;
+  font-family: "Poppins", serif;
+  font-size: 13px;
+  font-weight: bold;
+  color: white;
+  gap: 5px;
+  box-shadow: 0 5px 5px 0 rgb(39, 39, 39);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  border: none;
+  cursor: pointer;
+}
+.banner .detalles_serie .botones_serie {
+  grid-area: botones_serie;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin: auto;
+}
+.banner .detalles_serie .descripcion_serie {
+  grid-area: descripcion_serie;
+  display: none;
+}
+.banner .detalles_serie i {
+  margin-left: 23px;
+  font-size: 30px;
+  color: white;
+}
+.banner .botones {
+  position: absolute;
+  top: 80%;
+  left: 30%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.banner .botones i {
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
 
 .capitulos {
   width: 95%;
@@ -1131,8 +1189,31 @@ body {
 @media (min-width: 768px) {
   .banner .logo_pelicula {
     width: 40%;
-    top: 30%;
+    top: 35%;
     left: 5%;
+  }
+  .banner .detalles_serie {
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: "boton_serie botones_serie" "descripcion_serie descripcion_serie";
+    align-items: center;
+    top: 60%;
+  }
+  .banner .detalles_serie .boton_serie {
+    margin: 0;
+  }
+  .banner .detalles_serie .boton_serie .verAhora {
+    width: 160px;
+    height: 39px;
+    font-size: 17px;
+  }
+  .banner .detalles_serie .botones_serie {
+    width: 50%;
+    margin: 0;
+  }
+  .banner .detalles_serie .descripcion_serie {
+    display: block;
+    margin-top: 1%;
+    font-size: 102%;
   }
   .temporadas {
     width: 60%;
@@ -1143,6 +1224,16 @@ body {
     width: 30%;
     top: 45%;
     left: 5%;
+  }
+  .banner .detalles_serie {
+    margin-top: 2%;
+    grid-template-columns: 1fr 5fr;
+  }
+  .banner .detalles_serie .botones_serie {
+    width: 40%;
+  }
+  .banner .detalles_serie .descripcion_serie {
+    font-size: 125%;
   }
   .temporadas {
     width: 40%;
@@ -1160,6 +1251,16 @@ body {
     width: 30%;
     top: 50%;
     left: 5%;
+  }
+  .banner .detalles_serie {
+    margin-top: 5%;
+    grid-template-columns: 1fr 7fr;
+  }
+  .banner .detalles_serie .botones_serie {
+    width: 30%;
+  }
+  .banner .detalles_serie .descripcion_serie {
+    font-size: 150%;
   }
   .temporadas {
     width: 35%;

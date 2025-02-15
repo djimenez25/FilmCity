@@ -14,14 +14,88 @@ body{
         top: 20%;
         left: 15%;
         position: absolute;
-        
     }
+
+    .detalles_serie{
+        position: absolute;
+        top: 65%;
+        left: 5%;
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "boton_serie"
+        "botones_serie"
+        "descripcion_serie"
+        ;
+
+        .boton_serie{
+            grid-area: boton_serie;
+            margin: auto;
+
+            .verAhora {
+                display: flex;
+                align-items: center;
+                // top: 485px;
+                width: 140px;
+                height: 33px;
+                border-radius: 50px;
+                background-color: grey;
+                font-family: $fuente_principal;
+                font-size: 13px;
+                font-weight: bold;
+                color: white;
+                gap: 5px;
+                box-shadow: 0 5px 5px 0 rgb(39, 39, 39);
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                border: none;
+                cursor: pointer;
+            }    
+
+        }
+
+        .botones_serie{
+            grid-area: botones_serie;
+            // width: 70%;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            margin: auto;
+        }
+
+        .descripcion_serie{
+            grid-area: descripcion_serie;
+            display: none;
+        }
+        
+        i {
+            margin-left: 23px; // Reducido el margen izquierdo
+            font-size: 30px; // Reducido el tamaño del ícono
+            color: white;
+        }
+
+    }
+
+    .botones {
+        position: absolute;
+        top: 80%; // Ajustado para alinear con el botón "Ver ahora"
+        left: 30%; // Ajustado para colocar los íconos al lado del botón
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    
+        i {
+            font-size: 20px; // Reducido el tamaño de los íconos
+            color: white;
+            cursor: pointer;
+
+           
+        }
+    }    
 
 }
 
 
 //CAPITULOS
-
 .capitulos{
     width: 95%;
     margin: auto;
@@ -115,8 +189,41 @@ body{
     
         .logo_pelicula{
             width: 40%;
-            top: 30%;
+            top: 35%;
             left: 5%;
+        }
+
+        .detalles_serie{
+            grid-template-columns: 1fr 4fr;
+            grid-template-areas: 
+            "boton_serie botones_serie"
+            "descripcion_serie descripcion_serie"
+            ;
+            align-items: center;
+            top: 60%;
+
+            .boton_serie{
+                margin: 0;
+
+                .verAhora{
+                    width: 160px;
+                    height: 39px;
+                    font-size: 17px;
+                }
+
+            }
+
+            .botones_serie{
+                width: 50%;
+                margin: 0;
+            }
+
+            .descripcion_serie{
+                display: block;
+                margin-top: 1%;
+                font-size: 102%;
+            }
+
         }
     
     }
@@ -135,6 +242,20 @@ body{
             width: 30%;
             top: 45%;
             left: 5%;
+        }
+
+        .detalles_serie{
+            margin-top: 2%;
+            grid-template-columns: 1fr 5fr;
+
+            .botones_serie{
+                width: 40%;
+            }
+
+            .descripcion_serie{
+                font-size: 125%;
+            }
+
         }
     
     }
@@ -163,6 +284,20 @@ body{
             width: 30%;
             top: 50%;
             left: 5%;
+        }
+
+        .detalles_serie{
+            margin-top: 5%;
+            grid-template-columns: 1fr 7fr;
+
+            .botones_serie{
+                width: 30%;
+            }
+
+            .descripcion_serie{
+                font-size: 150%;
+            }
+
         }
     
     }
