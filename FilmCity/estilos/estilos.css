@@ -278,6 +278,9 @@ header .titulo a {
   margin-right: 70px;
   -webkit-text-stroke: 4px #595959;
 }
+.slider .slide.hover-active .ranking-number, .slider .slide-grande.hover-active .ranking-number {
+  opacity: 0;
+}
 .slider .slide .image-container, .slider .slide-grande .image-container {
   position: relative;
   z-index: 2;
@@ -288,6 +291,77 @@ header .titulo a {
   width: 100%;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+.slider .slide.hover-active .image-container img, .slider .slide-grande.hover-active .image-container img {
+  opacity: 0;
+}
+.slider .slide .detalles, .slider .slide-grande .detalles {
+  background-color: #242432;
+  width: 85%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 7.6%;
+  transition: 1s ease;
+  box-shadow: 0px 0px 147px 23px rgb(65, 64, 64);
+}
+.slider .slide .detalles:hover, .slider .slide-grande .detalles:hover {
+  z-index: 100;
+  width: 90%;
+}
+.slider .slide .imagen_card, .slider .slide-grande .imagen_card {
+  margin-bottom: 0px;
+}
+.slider .slide .video, .slider .slide-grande .video {
+  width: 100%;
+}
+.slider .slide .enlaces_pelicula, .slider .slide-grande .enlaces_pelicula {
+  padding: 2%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+}
+.slider .slide .enlaces_pelicula .peliculas_derecha, .slider .slide-grande .enlaces_pelicula .peliculas_derecha {
+  text-align: end;
+}
+.slider .slide .enlaces_pelicula .peliculas_izquierda, .slider .slide-grande .enlaces_pelicula .peliculas_izquierda {
+  text-align: start;
+}
+.slider .slide .valoracion_tiempo, .slider .slide-grande .valoracion_tiempo {
+  display: grid;
+  grid-template-columns: 3fr 4fr 6fr;
+  padding: 1%;
+  padding-left: 10%;
+}
+.slider .slide .genero, .slider .slide-grande .genero {
+  padding: 1%;
+  padding-left: 5%;
+}
+.slider .slide .align-right, .slider .slide-grande .align-right {
+  text-align: end;
+}
+.slider .slide .align-left, .slider .slide-grande .align-left {
+  text-align: start;
+  margin-left: 5%;
+}
+.slider .slide .text-start, .slider .slide-grande .text-start {
+  text-align: start;
+}
+.slider .slide .naranja, .slider .slide-grande .naranja {
+  border-radius: 6px;
+  text-align: center;
+  width: 100%;
+  height: 30px;
+  padding: 1%;
+}
+.slider .slide .verde, .slider .slide-grande .verde {
+  background-color: green;
+}
+.slider .slide .orange, .slider .slide-grande .orange {
+  background-color: orangered;
+}
+.slider .slide .red, .slider .slide-grande .red {
+  background-color: rgb(135, 22, 22);
 }
 .slider .slide-grande {
   position: relative;
@@ -376,6 +450,26 @@ header .titulo a {
     width: 140px;
     margin-left: -70px;
   }
+  .slider .slide .detalles {
+    width: 90%;
+    left: 2.5%;
+  }
+  .slider .slide .detalles:hover {
+    z-index: 100;
+    width: 95%;
+  }
+  .slider .slide .enlaces_pelicula {
+    grid-template-columns: 2fr 1fr;
+  }
+  .slider .slide .enlaces_pelicula .peliculas_derecha {
+    text-align: start;
+  }
+  .slider .slide .enlaces_pelicula .peliculas_izquierda {
+    text-align: end;
+  }
+  .slider .slide .valoracion_tiempo {
+    padding-left: 3%;
+  }
   .slider .slide-grande {
     min-width: 33.3333333333%;
   }
@@ -386,6 +480,26 @@ header .titulo a {
     width: 100%;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  .slider .slide-grande .detalles {
+    width: 110%;
+    left: -5%;
+  }
+  .slider .slide-grande .detalles:hover {
+    z-index: 100;
+    width: 120%;
+  }
+  .slider .slide-grande .enlaces_pelicula {
+    grid-template-columns: 3fr 1fr;
+  }
+  .slider .slide-grande .enlaces_pelicula .peliculas_derecha {
+    text-align: start;
+  }
+  .slider .slide-grande .enlaces_pelicula .peliculas_izquierda {
+    text-align: end;
+  }
+  .slider .slide-grande .valoracion_tiempo {
+    grid-template-columns: 2fr 3fr 1fr;
   }
 }
 @media (min-width: 992px) {
@@ -410,18 +524,35 @@ header .titulo a {
     min-width: 20%;
   }
   .slider .slide .ranking-number {
-    font-size: 150px;
+    font-size: 160px;
     margin-right: 0px;
   }
   .slider .slide .image-container {
-    width: 100px;
+    width: 110px;
     margin-left: -10px;
+  }
+  .slider .slide .detalles {
+    width: 90%;
+    left: 3%;
+  }
+  .slider .enlaces_pelicula {
+    grid-template-columns: 3fr 1fr;
+  }
+  .slider .enlaces_pelicula .peliculas_derecha {
+    text-align: start;
+  }
+  .slider .enlaces_pelicula .peliculas_izquierda {
+    text-align: end;
+  }
+  .slider .valoracion_tiempo {
+    grid-template-columns: 2fr 3fr 1fr;
+    padding: 110px;
   }
   .slider .slide-grande {
     min-width: 20%;
   }
   .slider .slide-grande .image-container {
-    width: 160px;
+    width: 170px;
   }
 }
 @media (min-width: 1200px) {

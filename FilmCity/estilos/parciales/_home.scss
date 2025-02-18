@@ -128,20 +128,121 @@
       -webkit-text-stroke: 4px #595959; // Borde grueso gris
     }
 
+    &.hover-active {
+      .ranking-number {
+        opacity: 0; // Oculta el número de ranking
+      }
+    }
+
     .image-container {
       position: relative;
       z-index: 2; // Imagen por encima del número
       width: 205px; // Ajusta el tamaño de la imagen
       margin-left: -86px; // Ajusta para superponer la imagen sobre el número
-
+      
       img {
         width: 100%;
-       
         border-radius: 10px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); // Sombra para resaltar
       }
     }
+
+     // Cuando la carta tiene la clase hover-active, la imagen se oculta
+  &.hover-active
+   {
+    .image-container img {
+      opacity: 0; // Oculta la imagen
+    }
   }
+
+    //CAJA DETALLES
+  .detalles {
+    background-color: $color_detalles;
+    width: 85%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 7.6%;
+    transition: 1s ease;
+    box-shadow: 0px 0px 147px 23px rgb(65, 64, 64);
+  }
+
+  .detalles:hover {
+    z-index: 100; //Nos lo pone encima de otra caja
+    width: 90%;
+}
+
+.imagen_card {
+  margin-bottom: 0px; // Espacio debajo del video
+}
+
+.video{
+  width: 100%;
+}
+
+.enlaces_pelicula{
+  padding: 2%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+
+  .peliculas_derecha{
+      text-align: end;
+  }
+  
+  .peliculas_izquierda{
+      text-align: start;
+  }
+
+}
+
+.valoracion_tiempo {
+  display: grid;
+  grid-template-columns: 3fr 4fr 6fr;
+  padding: 1%;
+  padding-left: 10%;
+}
+
+.genero {
+  padding: 1%;
+  padding-left: 5%;
+}
+
+.align-right {
+  text-align: end;
+}
+
+.align-left {
+  text-align: start;
+  margin-left: 5%;
+}
+
+.text-start{
+  text-align: start;
+}
+
+.naranja{
+  // background-color: orangered;
+  border-radius: 6px;
+  text-align: center;
+  width: 100%;
+  height: 30px;
+  padding: 1%;
+}
+
+.verde{
+  background-color: green;
+}
+
+.orange{
+  background-color: orangered;
+}
+
+.red{
+  background-color: rgb(135, 22, 22);
+}
+}
+  
 
   .slide-grande {
     position: relative;
@@ -258,6 +359,34 @@
         width: 140px; // Tamaño ajustado para tablets
         margin-left: -70px; // Ajuste de margen para tablets
       }
+
+      .detalles {
+        width: 90%;
+        left: 2.5%;
+    }
+
+    .detalles:hover {
+        z-index: 100; //Nos lo pone encima de otra caja
+        width: 95%;
+    }
+
+    .enlaces_pelicula{
+        grid-template-columns: 2fr 1fr;
+    
+        .peliculas_derecha{
+            text-align: start;
+        }
+        
+        .peliculas_izquierda{
+            text-align: end;
+        }
+    
+    }
+
+    .valoracion_tiempo {
+        padding-left: 3%;
+    }
+
     }
   }
 
@@ -275,6 +404,33 @@
           box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); // Sombra para resaltar
         }
       }
+
+      .detalles {
+        width: 110%;
+        left: -5%;
+    }
+
+    .detalles:hover {
+        z-index: 100; //Nos lo pone encima de otra caja
+        width: 120%;
+    }
+
+    .enlaces_pelicula{
+        grid-template-columns: 3fr 1fr;
+    
+        .peliculas_derecha{
+            text-align: start;
+        }
+        
+        .peliculas_izquierda{
+            text-align: end;
+        }
+    
+    }
+
+    .valoracion_tiempo {
+        grid-template-columns: 2fr 3fr 1fr;
+    }
     }
   }
 }
@@ -313,14 +469,40 @@
       min-width: calc(100% / 5); // 5 imágenes (20% del ancho)
 
       .ranking-number {
-        font-size: 150px; // Tamaño ajustado para escritorios
+        font-size: 160px; // Tamaño ajustado para escritorios
         margin-right: 0px; // Ajuste de margen para escritorios
       }
 
       .image-container {
-        width: 100px; // Tamaño ajustado para escritorios
+        width: 110px; // Tamaño ajustado para escritorios
         margin-left: -10px; // Ajuste de margen para escritorios
+
+        
       }
+
+      .detalles {
+        width: 90%;
+        left: 3%;
+    }
+
+    }
+    
+  .enlaces_pelicula{
+      grid-template-columns: 3fr 1fr;
+  
+      .peliculas_derecha{
+          text-align: start;
+      }
+      
+      .peliculas_izquierda{
+          text-align: end;
+      }
+  
+  }
+
+   .valoracion_tiempo {
+        grid-template-columns: 2fr 3fr 1fr;
+        padding: 110px;
     }
   }
 
@@ -329,7 +511,7 @@
       min-width: calc(100% / 5); // 5 imágenes (20% del ancho)
 
       .image-container {
-        width: 160px; // Ajusta el tamaño de la imagen
+        width: 170px; // Ajusta el tamaño de la imagen
       }
     }
   }
