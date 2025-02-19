@@ -1,46 +1,51 @@
 const caja_mostrar_series = document.querySelector(".series_catalogo");
+const select_genero = document.getElementById("select_genero");
+
 let caja_info;
+let series;
+let serie_caja;
 let fondo;
 let edad;
+let caja_informacion;
 
-function leerSeries() {
-  fetch("JS/peliculas-series.json", {})
-    .then((response) => {
-      return response.json();
-    })
-    .then((datos) => {
-      const series = datos.series;
-      series.forEach((serie) => {
-        const caja_serie = document.createElement("div");
-        let mostrar = `
+/**
+ * Funcion que nos recorre el array
+ * @param {*} serie 
+ */
+function recorrerArray(serie) {
+    const caja_serie = document.createElement("div");
+    let mostrar = `
                             <img src="${serie.Poster}"></img>
                         `;
-        caja_serie.innerHTML = mostrar;
-        caja_serie.classList.add("bottom");
-        caja_mostrar_series.appendChild(caja_serie);
+    caja_serie.innerHTML = mostrar;
+    caja_serie.classList.add("bottom");
+    caja_mostrar_series.appendChild(caja_serie);
 
-        caja_serie.addEventListener("mouseenter", () => {
-          const datos = [];
-          //Guardamos los datos de la serie en un array
-          datos.push({
-            Titulo: serie.Title,
-            Temporadas: serie.totalSeasons,
-            Rated: serie.Rated,
-            Genero: serie.Genre,
-          });
+    caja_serie.addEventListener("mouseenter", () => {
+        serie_caja = caja_serie;
+        pintarSerie(serie);
+    });
 
-          console.log(datos);
+    caja_serie.addEventListener("mouseleave", () => {
+        caja_serie.removeChild(caja_info);
+    });
+}
 
-          if (serie.Rated === "TV-14") {
-            fondo = "orange";
-            edad = "+14";
-          } else {
-            fondo = "red";
-            edad = "+18";
-          }
+/**
+ * Funcion que nos pinta una serie
+ * @param {} serie 
+ */
+function pintarSerie(serie) {
+    if (serie.Rated === "TV-14") {
+        fondo = "orange";
+        edad = "+14";
+    } else {
+        fondo = "red";
+        edad = "+18";
+    }
 
-          const caja_informacion = document.createElement("div");
-          let mostrar_informacion = `
+    caja_informacion = document.createElement("div");
+    let mostrar_informacion = `
                                             <div class="imagen_card">
                                                 <video class="video" autoplay="true">
                                                     <source src="multimedia/video/demo.mp4" type="video/mp4">
@@ -91,21 +96,71 @@ function leerSeries() {
                                                 <p>${serie.Genre}</p>
                                             </div>
                                         `;
-          caja_informacion.innerHTML = mostrar_informacion;
-          caja_informacion.classList.add("detalles");
-          caja_serie.appendChild(caja_informacion);
+    caja_informacion.innerHTML = mostrar_informacion;
+    caja_informacion.classList.add("detalles");
+    serie_caja.appendChild(caja_informacion);
 
-          caja_info = caja_informacion;
+    caja_info = caja_informacion;
+}
+
+/**
+ * Funcion que lee el JSON
+ */
+function leerSeries() {
+
+    fetch("JS/peliculas-series.json", {
+    }).then((response) => {
+        return response.json();
+    }).then((datos) => {
+        series = datos.series;
+        series.forEach(serie => {
+            recorrerArray(serie);
         });
 
-        caja_serie.addEventListener("mouseleave", () => {
-          caja_serie.removeChild(caja_info);
-        });
-      });
-    })
-    .catch((error) => {
-      console.log(error);
+    }).catch((error) => {
+        console.log(error);
     });
+
 }
 
 leerSeries();
+
+select_genero.addEventListener("change", () => {
+
+    switch (select_genero.value) {
+        case "Generos":
+            caja_mostrar_series.innerHTML = "";
+
+            series.forEach(serie => {
+                recorrerArray(serie);
+            });
+            break;
+        case "Drama":
+            caja_mostrar_series.innerHTML = "";
+            const array_drama = series.filter(serie => serie.Genre.includes("Drama"));
+
+            array_drama.forEach(serie => {
+                recorrerArray(serie);
+            });
+            break;
+        case "Comedia":
+            caja_mostrar_series.innerHTML = "";
+            const array_comedia = series.filter(serie => serie.Genre.includes("Comedy"));
+
+            array_comedia.forEach(serie => {
+                recorrerArray(serie);
+            });
+            break;
+        case "Accion":
+            caja_mostrar_series.innerHTML = "";
+            const array_accion = series.filter(serie => serie.Genre.includes("Action"));
+
+            array_accion.forEach(serie => {
+                recorrerArray(serie);
+            });
+            break;
+        default:
+            break;
+    }
+
+});
