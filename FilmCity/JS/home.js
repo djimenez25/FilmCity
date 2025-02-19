@@ -178,34 +178,29 @@ fetch("JS/peliculas-series.json")
     console.error("Error al cargar las series:", error);
   });
 
-function mostrarInformacionPelicula(carta, pelicula, serie) {
+function mostrarInformacionPelicula(carta, item) {
   const caja_informacion = document.createElement("div");
 
   let fondo;
   let edad;
 
-  // Verificar si es una película
-  if (pelicula) {
-    if (pelicula.Rated === "PG") {
+  // Determinar si es una película o una serie
+  if (item.Rated) {
+    if (item.Rated === "PG") {
       fondo = "verde";
       edad = "+5";
-    } else if (pelicula.Rated === "PG-13") {
+    } else if (item.Rated === "PG-13") {
       fondo = "orange";
       edad = "+13";
-    } else if (pelicula.Rated === "R") {
+    } else if (item.Rated === "R") {
       fondo = "red";
       edad = "+18";
-    }
-  }
-
-  // Verificar si es una serie
-  if (serie) {
-    if (serie.Rated === "TV-14") {
+    } else if (item.Rated === "TV-14") {
       fondo = "orange";
-      edad = "14";
-    } else {
+      edad = "+14";
+    } else if (item.Rated === "TV-MA") {
       fondo = "red";
-      edad = "18";
+      edad = "+18";
     }
   }
 
@@ -248,7 +243,7 @@ function mostrarInformacionPelicula(carta, pelicula, serie) {
             <p class="align-right naranja">${edad}</p>
           </div>
           <div class="align-left">
-            <p class="align-left">${pelicula.Runtime}</p>
+            <p class="align-left">${item.Runtime}</p>
           </div>
           <div class="align-left">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-badge-hd" viewBox="0 0 16 16">
@@ -258,7 +253,7 @@ function mostrarInformacionPelicula(carta, pelicula, serie) {
           </div>
         </div>
         <div class="genero text-start">
-          <p>${pelicula.Genre}</p>
+          <p>${item.Genre}</p>
         </div>
       `;
 

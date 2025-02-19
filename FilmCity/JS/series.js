@@ -3,44 +3,44 @@ let caja_info;
 let fondo;
 let edad;
 
-function leerSeries(){
-
-    fetch("JS/peliculas-series.json", {
-    }).then((response)=>{
-        return response.json();
-    }).then((datos)=>{
-        const series = datos.series;
-        series.forEach(serie => {
-            const caja_serie = document.createElement("div");
-            let mostrar = `
+function leerSeries() {
+  fetch("JS/peliculas-series.json", {})
+    .then((response) => {
+      return response.json();
+    })
+    .then((datos) => {
+      const series = datos.series;
+      series.forEach((serie) => {
+        const caja_serie = document.createElement("div");
+        let mostrar = `
                             <img src="${serie.Poster}"></img>
                         `;
-            caja_serie.innerHTML=mostrar;
-            caja_serie.classList.add("bottom");
-            caja_mostrar_series.appendChild(caja_serie);
+        caja_serie.innerHTML = mostrar;
+        caja_serie.classList.add("bottom");
+        caja_mostrar_series.appendChild(caja_serie);
 
-            caja_serie.addEventListener("mouseenter", () => {
-                const datos = [];
-                //Guardamos los datos de la serie en un array
-                datos.push({
-                    "Titulo": serie.Title,
-                    "Temporadas": serie.totalSeasons, 
-                    "Rated": serie.Rated, 
-                    "Genero": serie.Genre
-                });
+        caja_serie.addEventListener("mouseenter", () => {
+          const datos = [];
+          //Guardamos los datos de la serie en un array
+          datos.push({
+            Titulo: serie.Title,
+            Temporadas: serie.totalSeasons,
+            Rated: serie.Rated,
+            Genero: serie.Genre,
+          });
 
-                console.log(datos);
+          console.log(datos);
 
-                if(serie.Rated === "TV-14"){
-                    fondo = "orange";
-                    edad="14";
-                }else{
-                    fondo = "red";
-                    edad="18";
-                }
+          if (serie.Rated === "TV-14") {
+            fondo = "orange";
+            edad = "+14";
+          } else {
+            fondo = "red";
+            edad = "+18";
+          }
 
-                const caja_informacion = document.createElement("div");
-                let mostrar_informacion = `
+          const caja_informacion = document.createElement("div");
+          let mostrar_informacion = `
                                             <div class="imagen_card">
                                                 <video class="video" autoplay="true">
                                                     <source src="multimedia/video/demo.mp4" type="video/mp4">
@@ -91,23 +91,21 @@ function leerSeries(){
                                                 <p>${serie.Genre}</p>
                                             </div>
                                         `;
-                caja_informacion.innerHTML = mostrar_informacion;
-                caja_informacion.classList.add("detalles");
-                caja_serie.appendChild(caja_informacion);
+          caja_informacion.innerHTML = mostrar_informacion;
+          caja_informacion.classList.add("detalles");
+          caja_serie.appendChild(caja_informacion);
 
-                caja_info = caja_informacion;
-            });
-
-            caja_serie.addEventListener("mouseleave", () => {
-                caja_serie.removeChild(caja_info);
-            });
-
+          caja_info = caja_informacion;
         });
 
-    }).catch((error)=>{
-        console.log(error);
+        caja_serie.addEventListener("mouseleave", () => {
+          caja_serie.removeChild(caja_info);
+        });
+      });
+    })
+    .catch((error) => {
+      console.log(error);
     });
-
 }
 
 leerSeries();

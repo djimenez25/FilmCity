@@ -1,49 +1,50 @@
 const caja_mostrar_peliculas = document.querySelector(".peliculas_catalogo");
 let caja_info;
-let fondo; 
+let fondo;
 let edad;
 
 function leerPeliculas() {
-    fetch("JS/peliculas-series.json", {
-    }).then((response) => {
-        return response.json();
-    }).then((datos) => {
-        const peliculas = datos.peliculas;
-        peliculas.forEach(pelicula => {
-            const caja_pelicula = document.createElement("div");
-            let mostrar = `
+  fetch("JS/peliculas-series.json", {})
+    .then((response) => {
+      return response.json();
+    })
+    .then((datos) => {
+      const peliculas = datos.peliculas;
+      peliculas.forEach((pelicula) => {
+        const caja_pelicula = document.createElement("div");
+        let mostrar = `
                             <img src="${pelicula.Poster}"></img>
                         `;
-            caja_pelicula.innerHTML = mostrar;
-            caja_pelicula.classList.add("bottom");
-            caja_mostrar_peliculas.appendChild(caja_pelicula);
+        caja_pelicula.innerHTML = mostrar;
+        caja_pelicula.classList.add("bottom");
+        caja_mostrar_peliculas.appendChild(caja_pelicula);
 
-            caja_pelicula.addEventListener("mouseenter", () => {
-                const datos = [];
-                //Guardamos los datos de la peli en un array
-                datos.push({
-                    "Titulo": pelicula.Title,
-                    "TG": pelicula.Rated,
-                    "Time": pelicula.Runtime,
-                    "Genero": pelicula.Genre
-                });
+        caja_pelicula.addEventListener("mouseenter", () => {
+          const datos = [];
+          //Guardamos los datos de la peli en un array
+          datos.push({
+            Titulo: pelicula.Title,
+            TG: pelicula.Rated,
+            Time: pelicula.Runtime,
+            Genero: pelicula.Genre,
+          });
 
-                console.log(datos);
+          console.log(datos);
 
-                const caja_informacion = document.createElement("div");
+          const caja_informacion = document.createElement("div");
 
-                if(pelicula.Rated === "PG"){
-                    fondo = "verde";
-                    edad="5";
-                }else if(pelicula.Rated === "PG-13"){
-                    fondo = "orange";
-                    edad="13";
-                }else if(pelicula.Rated === "R"){
-                    fondo = "red";
-                    edad="18";
-                }
+          if (pelicula.Rated === "PG") {
+            fondo = "verde";
+            edad = "+5";
+          } else if (pelicula.Rated === "PG-13") {
+            fondo = "orange";
+            edad = "+13";
+          } else if (pelicula.Rated === "R") {
+            fondo = "red";
+            edad = "+18";
+          }
 
-                let mostrar_informacion = `
+          let mostrar_informacion = `
                                             <div class="imagen_card">
                                                 <video class="video" autoplay="true">
                                                     <source src="multimedia/video/demo.mp4" type="video/mp4">
@@ -94,23 +95,21 @@ function leerPeliculas() {
                                                 <p>${pelicula.Genre}</p>
                                             </div>
                                         `;
-                caja_informacion.innerHTML = mostrar_informacion;
-                caja_informacion.classList.add("detalles");
-                caja_pelicula.appendChild(caja_informacion);
+          caja_informacion.innerHTML = mostrar_informacion;
+          caja_informacion.classList.add("detalles");
+          caja_pelicula.appendChild(caja_informacion);
 
-                caja_info = caja_informacion;
-            });
-
-            caja_pelicula.addEventListener("mouseleave", () => {
-                caja_pelicula.removeChild(caja_info);
-            });
-
+          caja_info = caja_informacion;
         });
 
-    }).catch((error) => {
-        console.log(error);
+        caja_pelicula.addEventListener("mouseleave", () => {
+          caja_pelicula.removeChild(caja_info);
+        });
+      });
+    })
+    .catch((error) => {
+      console.log(error);
     });
-
 }
 
 leerPeliculas();
