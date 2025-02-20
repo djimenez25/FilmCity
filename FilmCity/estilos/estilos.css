@@ -17,6 +17,7 @@ img {
 body {
   background-color: black !important;
   font-family: "Poppins", serif !important;
+  overflow-x: hidden;
 }
 
 header {
@@ -1591,7 +1592,7 @@ body {
 .contenedor .footerRepro #duracionPelicula {
   position: absolute;
   font-size: 17px;
-  bottom: 55px;
+  bottom: 45px;
   left: 95%;
   color: #b0aaaa;
 }
@@ -1605,14 +1606,18 @@ body {
   position: absolute;
   left: 220px;
   width: 300px;
+  transform: rotate(-90deg); /* Rota la barra 90 grados */
+  transform-origin: left top; /* Ajusta el punto de origen de la rotación */
+  bottom: -45px;
+  border-radius: 20px;
 }
 .contenedor .footerRepro .volumen button {
   margin-right: -25px;
   transition: color 0s ease, transform 0s ease;
+  transform: rotate(90deg); /* Rota la barra 90 grados */
 }
 .contenedor .footerRepro .volumen button:hover {
   background-color: rgba(0, 0, 0, 0);
-  transform: scale(1); /* Aumenta un poco el tamaño al hacer hover */
 }
 .contenedor .footerRepro .volumen input {
   -webkit-appearance: none;
@@ -1622,6 +1627,10 @@ body {
   margin-right: -15px;
   width: 200px;
   margin-bottom: 7px;
+  margin-left: 4px;
+}
+.contenedor .footerRepro .volumen:hover {
+  background-color: rgba(95, 95, 95, 0.4745098039);
 }
 .contenedor .footerRepro .informacion {
   color: white;
