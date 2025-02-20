@@ -28,7 +28,7 @@
     <header>
       <div class="titulo"><a href="home.html">FILMCITY</a></div>
       <i class="desplegable bi bi-list"></i>
-      <div class="secciones">
+      <div class="secciones" id="menu-movil">
         <a href="home.html"><b>Inicio</b></a>
         <a href="peliculas.html">Peliculas</a>
         <a href="series.html">Series</a>
@@ -66,12 +66,20 @@
           data-bs-target="#carouselNetflix"
           data-bs-slide-to="2"
         ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselNetflix"
+          data-bs-slide-to="3"
+        ></button>
       </div>
 
       <div class="carousel-inner">
         <!-- Slide 1 -->
         <div class="carousel-item active">
-          <img src="multimedia/imagenes/banner_harry.jpeg" alt="Harry Potter" />
+          <img
+            src="multimedia/imagenes/banner_harry_potter2.jpg"
+            alt="Harry Potter"
+          />
           <div class="carousel-caption">
             <h1>Harry Potter y la Piedra Filosofal</h1>
             <p>
@@ -83,9 +91,9 @@
               <a href="reproductor_peliculas.html" class="btn-netflix">
                 <i class="bi bi-play-fill"></i> Ver ahora
               </a>
-              <button class="btn-plus">
+              <a href="detalles_peliculas.html" class="btn-plus">
                 <i class="bi bi-plus-lg"></i>
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -93,7 +101,7 @@
         <!-- Slide 2 -->
         <div class="carousel-item">
           <img
-            src="multimedia/imagenes/banner_jurasicpark.jpg"
+            src="multimedia/imagenes/banner_jurasicpark2.jpg"
             alt="El Señor de los Anillos"
           />
           <div class="carousel-caption">
@@ -105,12 +113,12 @@
               vida de todos, incluida la de sus nietos.
             </p>
             <div class="btn-container">
-              <button class="btn-netflix">
+              <a href="reproductor_peliculas.html" class="btn-netflix">
                 <i class="bi bi-play-fill"></i> Ver ahora
-              </button>
-              <button class="btn-plus">
+              </a>
+              <a href="detalles_peliculas.html" class="btn-plus">
                 <i class="bi bi-plus-lg"></i>
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -118,7 +126,7 @@
         <!-- Slide 3 -->
         <div class="carousel-item">
           <img
-            src="multimedia/imagenes/banner_vengadores.jpg"
+            src="multimedia/imagenes/banner_vengadores2.jpg"
             alt="Nueva película"
           />
           <div class="carousel-caption">
@@ -129,12 +137,35 @@
               alienígena de esclavizar a la humanidad.
             </p>
             <div class="btn-container">
-              <button class="btn-netflix">
+              <a href="reproductor_peliculas.html" class="btn-netflix">
                 <i class="bi bi-play-fill"></i> Ver ahora
-              </button>
-              <button class="btn-plus">
+              </a>
+              <a href="detalles_peliculas.html" class="btn-plus">
                 <i class="bi bi-plus-lg"></i>
-              </button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="carousel-item">
+          <img
+            src="multimedia/imagenes/banner_señor_anillos.webp"
+            alt="Nueva película"
+          />
+          <div class="carousel-caption">
+            <h1>El señor de los anillos: la Comunidad del Anillo</h1>
+            <p>
+              En la Segunda Edad de la Tierra Media, los señores de los Elfos,
+              los Enanos y los Hombres reciben anillos de poder.
+            </p>
+            <div class="btn-container">
+              <a href="reproductor_peliculas.html" class="btn-netflix">
+                <i class="bi bi-play-fill"></i> Ver ahora
+              </a>
+              <a href="detalles_peliculas.html" class="btn-plus">
+                <i class="bi bi-plus-lg"></i>
+              </a>
             </div>
           </div>
         </div>

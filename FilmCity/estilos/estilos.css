@@ -33,6 +33,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
+  /* Estilo cuando el menú está activo */
 }
 header .desplegable {
   display: block;
@@ -40,6 +41,7 @@ header .desplegable {
   color: white;
   margin-left: -100px;
   margin-top: 13px;
+  cursor: pointer;
 }
 header .perfil {
   display: flex;
@@ -62,16 +64,30 @@ header .perfil .lupa {
 }
 header .secciones {
   display: none;
+  flex-direction: column;
+  background-color: rgba(10, 10, 10, 0.7);
+  position: absolute;
+  top: 60px;
+  left: 110px;
+  width: 40%;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
 }
 header .secciones a {
+  display: block;
   text-decoration: none;
   color: #ffffff;
   font-weight: 250;
+  padding: 10px;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 header .secciones a:hover {
   transform: scale(1.1);
   opacity: 0.8;
+}
+header .secciones.active {
+  display: flex;
 }
 header .titulo {
   font-family: "Poller One", serif;
@@ -87,6 +103,10 @@ header .titulo a {
 
 /* Tablets (>= 576px) */
 @media (min-width: 576px) {
+  header .secciones {
+    width: 30%;
+    left: 150px;
+  }
   header .perfil {
     gap: 20px;
   }
@@ -124,6 +144,11 @@ header .titulo a {
     font-size: 16px;
     color: #ffffff;
     margin-top: 20px;
+    position: static;
+    flex-direction: row;
+    background-color: transparent;
+    width: auto;
+    padding: 0;
   }
   header .desplegable {
     display: none;
@@ -890,6 +915,7 @@ p {
   z-index: -1;
   -o-object-fit: cover;
      object-fit: cover; /* Ajusta el video sin deformación */
+  filter: grayscale(20%) contrast(150%) brightness(30%);
 }
 .content .filmcity {
   position: relative;
@@ -1194,6 +1220,9 @@ body {
   margin: auto;
   position: relative;
 }
+.banner img {
+  filter: grayscale(20%) contrast(120%) brightness(70%);
+}
 .banner .logo_pelicula {
   width: 70%;
   top: 20%;
@@ -1352,8 +1381,9 @@ body {
   }
   .banner .detalles_serie .descripcion_serie {
     display: block;
-    margin-top: 1%;
-    font-size: 102%;
+    margin-top: 3%;
+    margin-right: 10%;
+    font-size: 90%;
   }
   .temporadas {
     width: 60%;
@@ -1373,7 +1403,7 @@ body {
     width: 40%;
   }
   .banner .detalles_serie .descripcion_serie {
-    font-size: 125%;
+    font-size: 110%;
   }
   .temporadas {
     width: 40%;
@@ -1400,7 +1430,9 @@ body {
     width: 30%;
   }
   .banner .detalles_serie .descripcion_serie {
-    font-size: 150%;
+    margin-top: 1%;
+    margin-right: 25%;
+    font-size: 130%;
   }
   .temporadas {
     width: 35%;

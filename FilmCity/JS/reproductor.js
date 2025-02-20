@@ -220,13 +220,38 @@ document.onscroll = resetTimer;
 //funcion para pasar de capitulo y cambiar el numero del capitulo
 document.addEventListener("DOMContentLoaded", function () {
   let capituloActual = 1; // Número de capítulo inicial
+  let temporadaActual = 1; // Número de temporada inicial
   const nombreEpisodio = document.getElementById("nombre_episodio");
   const botonSiguiente = document.getElementById("siguiente");
   const video = document.querySelector("video"); // Selecciona el video en la página
 
   function cambiarCapitulo() {
-    capituloActual++; // Aumenta el número del capítulo
-    nombreEpisodio.textContent = `Los Soprano T1: Capítulo ${capituloActual}`; // Actualiza el texto
+    // Verifica si es el último capítulo de la última temporada
+    if (capituloActual === 12 && temporadaActual === 5) {
+      // Reinicia a la temporada 1, capítulo 1
+      temporadaActual = 1;
+      capituloActual = 1;
+
+      // Actualiza el texto del episodio
+      nombreEpisodio.textContent = `Los Soprano T${temporadaActual}: Capítulo ${capituloActual}`;
+
+      // Detiene el video y lo reinicia al principio
+      video.pause();
+      video.currentTime = 0;
+      return; // Sale de la función
+    }
+
+    // Lógica para cambiar de capítulo o temporada
+    if (capituloActual < 12) {
+      capituloActual++; // Aumenta el número del capítulo
+    } else {
+      // Si es el capítulo 12, cambia de temporada
+      temporadaActual++;
+      capituloActual = 1; // Reinicia el contador de capítulos
+    }
+
+    // Actualiza el texto del episodio
+    nombreEpisodio.textContent = `Los Soprano T${temporadaActual}: Capítulo ${capituloActual}`;
 
     // Reinicia el video para simular cambio de capítulo
     video.currentTime = 0;

@@ -1,3 +1,10 @@
+const menuToggle = document.querySelector(".desplegable");
+const menu = document.querySelector(".secciones");
+
+menuToggle.addEventListener("click", function () {
+  menu.classList.toggle("active");
+});
+
 fetch("JS/peliculas-series.json") // Cargar el JSON externo
   .then((response) => response.json()) // Convertir la respuesta en un objeto JavaScript
   .then((data) => {

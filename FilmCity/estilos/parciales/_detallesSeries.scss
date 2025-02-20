@@ -9,6 +9,11 @@ body{
     margin: auto;
     position: relative;
 
+     img{
+         filter: grayscale(20%) contrast(120%) brightness(70%);
+    }
+    
+
     .logo_pelicula{
         width: 70%;
         top: 20%;
@@ -220,8 +225,9 @@ body{
 
             .descripcion_serie{
                 display: block;
-                margin-top: 1%;
-                font-size: 102%;
+                margin-top: 3%;
+                margin-right: 10%;
+                font-size: 90%;
             }
 
         }
@@ -253,7 +259,7 @@ body{
             }
 
             .descripcion_serie{
-                font-size: 125%;
+                font-size: 110%;
             }
 
         }
@@ -295,7 +301,9 @@ body{
             }
 
             .descripcion_serie{
-                font-size: 150%;
+                margin-top: 1%;
+                margin-right: 25%;
+                font-size: 130%;
             }
 
         }

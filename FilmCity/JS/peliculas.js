@@ -1,3 +1,10 @@
+const menuToggle = document.querySelector(".desplegable");
+const menu = document.querySelector(".secciones");
+
+menuToggle.addEventListener("click", function () {
+  menu.classList.toggle("active");
+});
+
 const caja_mostrar_peliculas = document.querySelector(".peliculas_catalogo");
 const select_genero = document.getElementById("select_genero");
 let caja_info;
@@ -9,7 +16,7 @@ let caja_informacion;
 
 /**
  * Funcion que nos recorre el array
- * @param {*} pelicula 
+ * @param {*} pelicula
  */
 function recorrerArray(pelicula) {
   const caja_pelicula = document.createElement("div");
@@ -22,7 +29,7 @@ function recorrerArray(pelicula) {
 
   caja_pelicula.addEventListener("mouseenter", () => {
     pelicula_caja = caja_pelicula;
-    pintarPelicula(pelicula)
+    pintarPelicula(pelicula);
   });
 
   caja_pelicula.addEventListener("mouseleave", () => {
@@ -32,12 +39,12 @@ function recorrerArray(pelicula) {
 
 /**
  * Funcion que nos pinta la pelicula
- * @param {*} pelicula 
+ * @param {*} pelicula
  */
 function pintarPelicula(pelicula) {
   if (pelicula.Rated === "PG") {
     fondo = "verde";
-    edad = "5";
+    edad = "+5";
   } else if (pelicula.Rated === "PG-13") {
     fondo = "orange";
     edad = "+13";
@@ -55,7 +62,7 @@ function pintarPelicula(pelicula) {
                                 </div>
                                 <div class="enlaces_pelicula">
                                     <div class="peliculas_derecha">
-                                        <a href="detalles_peliculas.html">
+                                        <a href="reproductor_peliculas.html">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="white" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
                                                 <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
                                             </svg>
@@ -106,59 +113,63 @@ function pintarPelicula(pelicula) {
 }
 
 function leerPeliculas() {
-  fetch("JS/peliculas-series.json", {
-  }).then((response) => {
-    return response.json();
-  }).then((datos) => {
-    peliculas = datos.peliculas;
-    peliculas.forEach(pelicula => {
-      recorrerArray(pelicula);
+  fetch("JS/peliculas-series.json", {})
+    .then((response) => {
+      return response.json();
+    })
+    .then((datos) => {
+      peliculas = datos.peliculas;
+      peliculas.forEach((pelicula) => {
+        recorrerArray(pelicula);
+      });
+    })
+    .catch((error) => {
+      console.log(error);
     });
-
-  }).catch((error) => {
-    console.log(error);
-  });
-
 }
 
 leerPeliculas();
 
 select_genero.addEventListener("change", () => {
-
   switch (select_genero.value) {
     case "Generos":
       caja_mostrar_peliculas.innerHTML = "";
 
-      peliculas.forEach(pelicula => {
+      peliculas.forEach((pelicula) => {
         recorrerArray(pelicula);
       });
       break;
     case "Drama":
       caja_mostrar_peliculas.innerHTML = "";
-      const array_drama = peliculas.filter(pelicula => pelicula.Genre.includes("Drama"));
+      const array_drama = peliculas.filter((pelicula) =>
+        pelicula.Genre.includes("Drama")
+      );
 
-      array_drama.forEach(pelicula => {
+      array_drama.forEach((pelicula) => {
         recorrerArray(pelicula);
       });
       break;
     case "Comedia":
       caja_mostrar_peliculas.innerHTML = "";
-      const array_comedia = peliculas.filter(pelicula => pelicula.Genre.includes("Comedy"));
+      const array_comedia = peliculas.filter((pelicula) =>
+        pelicula.Genre.includes("Comedy")
+      );
 
-      array_comedia.forEach(pelicula => {
+      array_comedia.forEach((pelicula) => {
         recorrerArray(pelicula);
       });
       break;
     case "Accion":
       caja_mostrar_peliculas.innerHTML = "";
-      const array_accion = peliculas.filter(pelicula => pelicula.Genre.includes("Action"));
+      const array_accion = peliculas.filter((pelicula) =>
+        pelicula.Genre.includes("Action")
+      );
 
-      array_accion.forEach(pelicula => {
+      array_accion.forEach((pelicula) => {
         recorrerArray(pelicula);
       });
       break;
     default:
       break;
   }
-
 });

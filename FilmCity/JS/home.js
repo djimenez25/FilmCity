@@ -1,3 +1,10 @@
+const menuToggle = document.querySelector(".desplegable");
+const menu = document.querySelector(".secciones");
+
+menuToggle.addEventListener("click", function () {
+  menu.classList.toggle("active");
+});
+
 // Función para mover el carrusel
 function moveSlide(direction, type) {
   let slidesContainer, slides, totalSlides, slidesToShow;
@@ -204,6 +211,24 @@ function mostrarInformacionPelicula(carta, item) {
     }
   }
 
+  let linkReproductor;
+  if (item.Type === "movie") {
+    linkReproductor = "reproductor_peliculas.html";
+  } else if (item.Type === "series") {
+    linkReproductor = "reproductor_series.html"; // Asegúrate de tener esta página
+  } else {
+    linkReproductor = "#"; // Por si acaso
+  }
+
+  let linkDetalles;
+  if (item.Type === "movie") {
+    linkDetalles = "detalles_peliculas.html";
+  } else if (item.Type === "series") {
+    linkDetalles = "detalles_series.html"; // Asegúrate de tener esta página
+  } else {
+    linkDetalles = "#"; // Por si acaso
+  }
+
   let mostrar_informacion = `
         <div class="imagen_card">
           <video class="video" autoplay="true" muted loop>
@@ -213,7 +238,7 @@ function mostrarInformacionPelicula(carta, item) {
         </div>
         <div class="enlaces_pelicula">
           <div class="peliculas_derecha">
-            <a href="detalles_peliculas.html">
+            <a href="${linkReproductor}">
               <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="white" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
                 <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
               </svg>
@@ -231,7 +256,7 @@ function mostrarInformacionPelicula(carta, item) {
             </a>
           </div>
           <div class="peliculas_izquierda">
-            <a href="detalles_peliculas.html">
+            <a href="${linkDetalles}">
               <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="white" class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"/>
               </svg>
