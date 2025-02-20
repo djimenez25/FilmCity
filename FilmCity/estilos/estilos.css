@@ -1513,6 +1513,7 @@ body {
   height: 100%;
   background-color: rgb(0, 0, 0);
   position: relative;
+  overflow: hidden;
 }
 .contenedor .headerRepro {
   position: absolute;
@@ -1523,6 +1524,22 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.contenedor .headerRepro button {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font-size: inherit;
+  transition: color 0.5s ease, transform 0.3s ease;
+}
+.contenedor .headerRepro button:focus {
+  outline: none;
+}
+.contenedor .headerRepro button:hover {
+  background-color: rgba(75, 68, 68, 0.2980392157);
+  color: #857171; /* Cambia de color al pasar el cursor (puedes modificarlo) */
+  transform: scale(1.1); /* Aumenta un poco el tamaño al hacer hover */
 }
 .contenedor .headerRepro i {
   font-size: 30px;
@@ -1539,17 +1556,72 @@ body {
   bottom: 0;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.3411764706);
-  height: 60px;
+  height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
+}
+.contenedor .footerRepro button {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font-size: inherit;
+  transition: color 0.5s ease, transform 0.3s ease;
+}
+.contenedor .footerRepro button:focus {
+  outline: none;
+}
+.contenedor .footerRepro button:hover {
+  background-color: rgba(75, 68, 68, 0.2980392157);
+  color: #857171; /* Cambia de color al pasar el cursor (puedes modificarlo) */
+  transform: scale(1.1); /* Aumenta un poco el tamaño al hacer hover */
+}
+.contenedor .footerRepro .duracion {
+  -webkit-appearance: none;
+  height: 7px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 45px;
+  width: 90%;
+  left: 40px;
+  background: rgba(230, 0, 0, 0.637);
+}
+.contenedor .footerRepro #duracionPelicula {
+  position: absolute;
+  font-size: 17px;
+  bottom: 55px;
+  left: 95%;
+  color: #b0aaaa;
 }
 .contenedor .footerRepro i {
   font-size: 30px;
   color: white;
   margin-left: 20px;
   margin-right: 20px;
+}
+.contenedor .footerRepro .volumen {
+  position: absolute;
+  left: 220px;
+  width: 300px;
+}
+.contenedor .footerRepro .volumen button {
+  margin-right: -25px;
+  transition: color 0s ease, transform 0s ease;
+}
+.contenedor .footerRepro .volumen button:hover {
+  background-color: rgba(0, 0, 0, 0);
+  transform: scale(1); /* Aumenta un poco el tamaño al hacer hover */
+}
+.contenedor .footerRepro .volumen input {
+  -webkit-appearance: none;
+  height: 7px;
+  border-radius: 5px;
+  background: rgba(230, 0, 0, 0.637);
+  margin-right: -15px;
+  width: 200px;
+  margin-bottom: 7px;
 }
 .contenedor .footerRepro .informacion {
   color: white;

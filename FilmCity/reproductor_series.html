@@ -11,27 +11,53 @@
     <link rel="stylesheet" href="estilos/estilos.css" />
   </head>
   <body>
-    <div class="contenedor">
+    <div class="contenedor" id="contenedor">
       <div class="headerRepro">
-        <a href=""> <i class="bi bi-arrow-left"></i> </a>
-        <a href=""> <i class="bi bi-flag"></i> </a>
+        <a href="detalles_series.html"> <i class="bi bi-arrow-left"></i> </a>
+        <button><i class="bi bi-flag"></i></button>
       </div>
-      <video class="video" src="multimedia/video/demo.mp4"></video>
+      <video
+        id="pelicula"
+        class="video"
+        src="multimedia/video/demo.mp4"
+      ></video>
 
       <div class="footerRepro">
+        <input type="range" id="tiempoPelicula" class="duracion" />
+        <p id="duracionPelicula"></p>
         <div class="controlador">
-          <i id="play" class="bi bi-play-fill"></i>
-          <i class="bi bi-arrow-counterclockwise"></i>
-          <i id="adelantar" class="bi bi-arrow-clockwise"></i>
+          <button id="play"><i class="bi bi-play-fill"></i></button>
+          <button id="atrasar">
+            <i class="bi bi-arrow-counterclockwise"></i>
+          </button>
+          <button id="adelantar"><i class="bi bi-arrow-clockwise"></i></button>
         </div>
-        <div class="informacion">Los Soprano T1: Capitulo</div>
+        <div class="volumen">
+          <button id="mute" class="mute">
+            <i class="bi bi-volume-off-fill"></i>
+          </button>
+          <input
+            type="range"
+            name=""
+            id="volumen"
+            value="1"
+            min="0"
+            max="1"
+            step="any"
+          />
+          <button id="volumenUp"><i class="bi bi-volume-up-fill"></i></button>
+        </div>
+        <div class="informacion" id="nombre_episodio">
+          Los Soprano T1: Capitulo 1
+        </div>
         <div class="opciones">
-          <i class="bi bi-skip-end"></i>
-          <i class="bi bi-collection"></i>
-          <i class="bi bi-chat-right-text"></i>
-          <i class="bi bi-aspect-ratio"></i>
+          <a href="" id="siguiente"><i class="bi bi-skip-end"></i></a>
+          <a href="detalles_series.html"><i class="bi bi-collection"></i></a>
+          <button><i class="bi bi-chat-right-text"></i></button>
+          <button id="full"><i class="bi bi-aspect-ratio"></i></button>
         </div>
       </div>
     </div>
   </body>
+  <script src="JS/reproductor.js"></script>
 </html>
